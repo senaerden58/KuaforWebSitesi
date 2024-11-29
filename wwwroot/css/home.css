@@ -1,0 +1,62 @@
+﻿.homeBody {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Resmin dışına taşan içerikleri gizler */ 
+}
+
+    .homeBody img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+       
+    }
+
+    .homeBody h1 {
+        position: absolute;
+        font-style: italic; /* Eğik yazı */
+        font-family: 'Dancing Script',cursive;
+        top: 72%; /* Yatay olarak ortalar */
+        left: 38%; /* Dikey olarak ortalar */
+        font-weight: bold; /* Keskinlik için kalın yazı tipi */
+        transform: translate(-50%, -50%); /* Orta noktayı tam olarak ortalamak için */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Yumuşak gölge */
+        font-size: 8vw; /* Ekran genişliğine göre font boyutunu ayarlar */
+        color: white;
+        background-color: transparent; /* Arka plan rengini şeffaf yapar */
+    }
+
+    .homeBody img {
+        transform: translateX(-50px); /* X ekseninde 5px sağa taşıma */
+       
+        transition: all 0.8s; /* Tüm değişiklikler için 0.5 saniyelik geçiş efekti */
+        opacity: 0; /* Görünmez başlangıç */
+    }
+
+    .homeBody.active img {
+        transform: translateX(0px); /* Orijinal konumuna dön */
+        opacity: 1; /* Görünür hale getir */
+    }
+
+
+    .homeBody h1 {
+        position: absolute;
+
+        transform: translateY(-20px);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .homeBody.active h1 {
+        position: absolute;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+
+
+
+
