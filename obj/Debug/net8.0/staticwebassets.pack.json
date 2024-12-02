@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KuaforWebSitesi.bundle.scp.css",
-      "PackagePath": "staticwebassets\\KuaforWebSitesi.g80djtlqhu.bundle.scp.css"
+      "PackagePath": "staticwebassets\\KuaforWebSitesi.t86djbmy4b.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\fontFamily.css",
@@ -15,6 +15,10 @@
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\kayit.css",
+      "PackagePath": "staticwebassets\\css\\kayit.css"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
@@ -269,6 +273,14 @@
       "PackagePath": "staticwebassets\\web\\images\\ShineLaBflu.png"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\cilt.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\cilt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\kuaforLogo.png",
+      "PackagePath": "staticwebassets\\web\\images\\kuaforLogo.png"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\logo.png",
       "PackagePath": "staticwebassets\\web\\images\\logo.png"
     },
@@ -277,8 +289,24 @@
       "PackagePath": "staticwebassets\\web\\images\\logo1.png"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\makyaj.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\makyaj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\manikur.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\manikur.jpg"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\of.png",
       "PackagePath": "staticwebassets\\web\\images\\of.png"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\randevu.png",
+      "PackagePath": "staticwebassets\\web\\images\\randevu.png"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\sac.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\sac.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KuaforWebSitesi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -2,9 +2,10 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand[b-f9uy4h9ous] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    margin-bottom: 0px;
 }
 
 a[b-f9uy4h9ous] {
@@ -25,9 +26,11 @@ a[b-f9uy4h9ous] {
 
 .border-top[b-f9uy4h9ous] {
   border-top: 1px solid #e5e5e5;
+    margin-bottom:0px;
 }
 .border-bottom[b-f9uy4h9ous] {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0px;
 }
 
 .box-shadow[b-f9uy4h9ous] {

@@ -1,6 +1,7 @@
 wwwroot\css\fontFamily.css
 wwwroot\css\home.css
 wwwroot\css\index.css
+wwwroot\css\kayit.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\scroll.js
@@ -62,8 +63,14 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\web\images\cilt.jpg
+wwwroot\web\images\kuaforLogo.png
 wwwroot\web\images\logo.png
 wwwroot\web\images\logo1.png
+wwwroot\web\images\makyaj.jpg
+wwwroot\web\images\manikur.jpg
 wwwroot\web\images\of.png
+wwwroot\web\images\randevu.png
+wwwroot\web\images\sac.jpg
 wwwroot\web\images\ShineLaB.png
 wwwroot\web\images\ShineLaBflu.png

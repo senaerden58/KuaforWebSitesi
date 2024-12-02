@@ -35,8 +35,38 @@ html,body, footer {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-
 img,video{
     width:100%;
+}
+
+.footer {
+
+    background-color: #CBB26A; /* Arka plan rengi */
+    width:100%;
+}
+.footer .footerDiv {
+    background-color: #CBB26A; /* Arka plan rengi */
+    color: #f9f9f9;
+    text-align: right;
+    padding: 15px 0;
+    font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
+    font-size: 14px; /* Yazý boyutu */
+}
+
+.footer .footerDiv a {
+    color:#f9f9f9; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldýrýr */
+    background-color: transparent;
+}
+
+.footer .footerDiv a:hover {
+    text-decoration: underline; /* Üzerine gelindiðinde alt çizgi ekler */
+    color: #808080; 
+}
+
+.footer .icons {
+    text-align: center;
+    background-color: #CBB26A;
+    background-color: transparent;
 }
 

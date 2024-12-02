@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ShineLaB</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <header class="home">
@@ -13,7 +14,7 @@
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
                 <div class="container-fluid">
                     <span class="logo">
-                        <img src="~/web/images/logo1.png" alt="logo">
+                        <img src="~/web/images/kuaforLogo.png" alt="logo">
                     </span>
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShineLaB</a>
 
@@ -28,7 +29,10 @@
                             </li>
                             @*buraya sayfa isimleri eklenir controller seklinde*@
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Musteri" asp-action="MusteriList">Tüm Müşteriler</a>
                             </li>
 
                         </ul>
@@ -38,21 +42,33 @@
             </nav>
         </div>
     </header>
+    
     <div class="mainDiv">
         <main role="main">
             @RenderBody()
         </main>
     </div>
-    
-    <footer class="border-top footer text-muted">
-        <div class="footerDiv">
-            &copy; 2024 - KuaforWebSitesi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+  
+
+    <footer class= "footer">
+            <div class="footerDiv">
+                <!--sayfalari ekle-->
+                &copy; 2024 - ShineLab - <a asp-area="" asp-controller="Home" asp-action="Index">Privacy</a>
+            </div>
+         <div class="icons">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-pinterest"></i>
         </div>
-    </footer>
+   
+   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+    </footer>
 </body>
 </html>
 

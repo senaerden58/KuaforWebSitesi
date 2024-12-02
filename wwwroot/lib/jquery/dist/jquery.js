@@ -1199,7 +1199,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 
 	// Support: IE<10
 	// Check if getElementById returns elements by name
-	// The broken getElementById methods don't pick up programmatically-set names,
+	// The broken getElementById methods don't pick up prMusteriammatically-set names,
 	// so use a roundabout getElementsByName test
 	support.getById = assert( function( el ) {
 		docElem.appendChild( el ).id = expando;
@@ -3696,7 +3696,7 @@ jQuery.extend( {
 
 				// action, add listener, callbacks,
 				// ... .then handlers, argument index, [final state]
-				[ "notify", "progress", jQuery.Callbacks( "memory" ),
+				[ "notify", "prMusteriess", jQuery.Callbacks( "memory" ),
 					jQuery.Callbacks( "memory" ), 2 ],
 				[ "resolve", "done", jQuery.Callbacks( "once memory" ),
 					jQuery.Callbacks( "once memory" ), 0, "resolved" ],
@@ -3717,23 +3717,23 @@ jQuery.extend( {
 				},
 
 				// Keep pipe for back-compat
-				pipe: function( /* fnDone, fnFail, fnProgress */ ) {
+				pipe: function( /* fnDone, fnFail, fnPrMusteriess */ ) {
 					var fns = arguments;
 
 					return jQuery.Deferred( function( newDefer ) {
 						jQuery.each( tuples, function( _i, tuple ) {
 
-							// Map tuples (progress, done, fail) to arguments (done, fail, progress)
+							// Map tuples (prMusteriess, done, fail) to arguments (done, fail, prMusteriess)
 							var fn = isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
 
-							// deferred.progress(function() { bind to newDefer or newDefer.notify })
+							// deferred.prMusteriess(function() { bind to newDefer or newDefer.notify })
 							// deferred.done(function() { bind to newDefer or newDefer.resolve })
 							// deferred.fail(function() { bind to newDefer or newDefer.reject })
 							deferred[ tuple[ 1 ] ]( function() {
 								var returned = fn && fn.apply( this, arguments );
 								if ( returned && isFunction( returned.promise ) ) {
 									returned.promise()
-										.progress( newDefer.notify )
+										.prMusteriess( newDefer.notify )
 										.done( newDefer.resolve )
 										.fail( newDefer.reject );
 								} else {
@@ -3747,7 +3747,7 @@ jQuery.extend( {
 						fns = null;
 					} ).promise();
 				},
-				then: function( onFulfilled, onRejected, onProgress ) {
+				then: function( onFulfilled, onRejected, onPrMusteriess ) {
 					var maxDepth = 0;
 					function resolve( depth, deferred, handler, special ) {
 						return function() {
@@ -3795,7 +3795,7 @@ jQuery.extend( {
 												resolve( maxDepth, deferred, Thrower, special )
 											);
 
-										// Normal processors (resolve) also hook into progress
+										// Normal processors (resolve) also hook into prMusteriess
 										} else {
 
 											// ...and disregard older resolution values
@@ -3876,13 +3876,13 @@ jQuery.extend( {
 
 					return jQuery.Deferred( function( newDefer ) {
 
-						// progress_handlers.add( ... )
+						// prMusteriess_handlers.add( ... )
 						tuples[ 0 ][ 3 ].add(
 							resolve(
 								0,
 								newDefer,
-								isFunction( onProgress ) ?
-									onProgress :
+								isFunction( onPrMusteriess ) ?
+									onPrMusteriess :
 									Identity,
 								newDefer.notifyWith
 							)
@@ -3925,7 +3925,7 @@ jQuery.extend( {
 			var list = tuple[ 2 ],
 				stateString = tuple[ 5 ];
 
-			// promise.progress = list.add
+			// promise.prMusteriess = list.add
 			// promise.done = list.add
 			// promise.fail = list.add
 			promise[ tuple[ 1 ] ] = list.add;
@@ -3948,15 +3948,15 @@ jQuery.extend( {
 					// fulfilled_handlers.disable
 					tuples[ 3 - i ][ 3 ].disable,
 
-					// progress_callbacks.lock
+					// prMusteriess_callbacks.lock
 					tuples[ 0 ][ 2 ].lock,
 
-					// progress_handlers.lock
+					// prMusteriess_handlers.lock
 					tuples[ 0 ][ 3 ].lock
 				);
 			}
 
-			// progress_handlers.fire
+			// prMusteriess_handlers.fire
 			// fulfilled_handlers.fire
 			// rejected_handlers.fire
 			list.add( tuple[ 3 ].fire );
@@ -4038,7 +4038,7 @@ jQuery.extend( {
 } );
 
 
-// These usually indicate a programmer mistake during development,
+// These usually indicate a prMusteriammer mistake during development,
 // warn about them ASAP rather than swallowing them by default.
 var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
 
@@ -4589,18 +4589,18 @@ jQuery.extend( {
 				jQuery.dequeue( elem, type );
 			};
 
-		// If the fx queue is dequeued, always remove the progress sentinel
-		if ( fn === "inprogress" ) {
+		// If the fx queue is dequeued, always remove the prMusteriess sentinel
+		if ( fn === "inprMusteriess" ) {
 			fn = queue.shift();
 			startLength--;
 		}
 
 		if ( fn ) {
 
-			// Add a progress sentinel to prevent the fx queue from being
+			// Add a prMusteriess sentinel to prevent the fx queue from being
 			// automatically dequeued
 			if ( type === "fx" ) {
-				queue.unshift( "inprogress" );
+				queue.unshift( "inprMusteriess" );
 			}
 
 			// Clear up the last queue stop function
@@ -4646,7 +4646,7 @@ jQuery.fn.extend( {
 				// Ensure a hooks for this queue
 				jQuery._queueHooks( this, type );
 
-				if ( type === "fx" && queue[ 0 ] !== "inprogress" ) {
+				if ( type === "fx" && queue[ 0 ] !== "inprMusteriess" ) {
 					jQuery.dequeue( this, type );
 				}
 			} );
@@ -5607,7 +5607,7 @@ jQuery.event = {
 };
 
 // Ensure the presence of an event listener that handles manually-triggered
-// synthetic events by interrupting progress until reinvoked in response to
+// synthetic events by interrupting prMusteriess until reinvoked in response to
 // *native* events that it fires directly, ensuring that state changes have
 // already occurred before other listeners are invoked.
 function leverageNative( el, type, expectSync ) {
@@ -7267,12 +7267,12 @@ jQuery.fx.step = {};
 
 
 var
-	fxNow, inProgress,
+	fxNow, inPrMusteriess,
 	rfxtypes = /^(?:toggle|show|hide)$/,
 	rrun = /queueHooks$/;
 
 function schedule() {
-	if ( inProgress ) {
+	if ( inPrMusteriess ) {
 		if ( document.hidden === false && window.requestAnimationFrame ) {
 			window.requestAnimationFrame( schedule );
 		} else {
@@ -7570,7 +7570,7 @@ function Animation( elem, properties, options ) {
 				return remaining;
 			}
 
-			// If this was an empty animation, synthesize a final progress notification
+			// If this was an empty animation, synthesize a final prMusteriess notification
 			if ( !length ) {
 				deferred.notifyWith( elem, [ animation, 1, 0 ] );
 			}
@@ -7644,7 +7644,7 @@ function Animation( elem, properties, options ) {
 
 	// Attach callbacks from options
 	animation
-		.progress( animation.opts.progress )
+		.prMusteriess( animation.opts.prMusteriess )
 		.done( animation.opts.done, animation.opts.complete )
 		.fail( animation.opts.fail )
 		.always( animation.opts.always );
@@ -7921,16 +7921,16 @@ jQuery.fx.timer = function( timer ) {
 
 jQuery.fx.interval = 13;
 jQuery.fx.start = function() {
-	if ( inProgress ) {
+	if ( inPrMusteriess ) {
 		return;
 	}
 
-	inProgress = true;
+	inPrMusteriess = true;
 	schedule();
 };
 
 jQuery.fx.stop = function() {
-	inProgress = null;
+	inPrMusteriess = null;
 };
 
 jQuery.fx.speeds = {

@@ -32,3 +32,4 @@ C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\obj\Debug\net8.0\refi
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\obj\Debug\net8.0\KuaforWebSitesi.pdb
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\obj\Debug\net8.0\KuaforWebSitesi.genruntimeconfig.cache
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\obj\Debug\net8.0\ref\KuaforWebSitesi.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\obj\Debug\net8.0\KuaforWebSitesi.sourcelink.json
