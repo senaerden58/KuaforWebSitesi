@@ -1,0 +1,173 @@
+﻿.calisanBody {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+   
+}
+    .calisanBody h1 {
+        position: absolute;
+        font-family: 'Josefin Sans',sans-serif;
+        top: 10%;
+        float:left;
+        margin-bottom:0;
+        align-content: center;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        font-size: 3vw; /* Ekran genişliğine göre font boyutunu ayarlar */
+        color: #CBB26A;
+        background-color: transparent; /* Arka plan rengini şeffaf yapar */
+    }
+.about {
+    display: flex;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom:0;
+    margin-left: 10px;
+    gap: 0px; /* Küçük resimler arasında boşluk bırakır */
+    position: absolute; /* Ana resmin üstünde yer alır */
+    top: 50%; /* Ana resmin ortasına yerleştirir */
+    background-color: transparent;
+    transform: translateY(-50%); /* Y ekseninde ortalar */
+}
+.altKisim {
+    display: flex;
+    border-radius: 10px;
+    margin-top:15%;
+    margin-left: 10px;
+    gap: 0px; /* Küçük resimler arasında boşluk bırakır */
+    position: absolute; /* Ana resmin üstünde yer alır */
+    top: 50%; /* Ana resmin ortasına yerleştirir */
+    background-color: transparent;
+    transform: translateY(-50%); /* Y ekseninde ortalar */
+}
+
+
+.calisan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    overflow: hidden;
+    width: 200px; /* Küçük resimlerin genişliği */
+    height: 200px; /* Küçük resimlerin yüksekliği */
+    border-radius: 10px;
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+.altKisim .calisan {
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+    margin-left: 10px;
+    align-items: center;
+    overflow: hidden;
+    width: 200px; /* Küçük resimlerin genişliği */
+    height: 200px; /* Küçük resimlerin yüksekliği */
+    border-radius: 10px;
+    background-color: transparent; /* Arka planı şeffaf yapar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+.altKisim h1 {
+    position: absolute;
+    font-family: 'Josefin Sans',sans-serif;
+    margin-top:-50px;
+    text-align:center;
+    margin-left:22%;
+  
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 3vw; /* Ekran genişliğine göre font boyutunu ayarlar */
+    color: #CBB26A;
+    background-color: transparent; /* Arka plan rengini şeffaf yapar */
+}
+
+.about .calisan img {
+    width: 100%; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
+    height: 100%; /* Kapsayıcı yüksekliğine uyar */
+    object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.altKisim .calisan img:hover {
+    width: 100%; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
+    height: 100%; /* Kapsayıcı yüksekliğine uyar */
+    object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.about .calisan img:hover, .altKisim .calisan img:hover {
+    transform: scale(1.1); /* Hover efekti */
+}
+
+    /*
+        .calisan .photo img:hover {
+            transform: scale(1.1);*/ /* Resmin üzerine gelindiğinde büyümesini sağlar */
+        /*}*/
+
+
+    /*Scroll animation "target" leri unutma */
+/*.about .calisan {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+        .about .calisan.active {
+            opacity: 1;
+        }
+
+        .about .calisan .text {
+            transform: translateX(-20px);
+            transition: all 0.5s;
+        }
+
+        .about .calisan.active .text {
+            transform: translateX(0px);
+        }
+
+        .about .calisan .text {
+            transform: translateX(-20px);
+            transition: all 0.5s;
+        }
+
+        .about .calisan:nth-child(2n) .text {
+            transform: translateX(20px);
+            transition: all 0.5s;
+        }
+
+        .about .calisan.active .text {
+            transform: translateX(0px);
+        }
+
+
+        .about .calisan .photo {
+            transform: translateX(20px);
+            transition: all 0.5s;
+        }
+
+        .about .calisan:nth-child(2n) .photo {
+            transform: translateX(-20px);
+            transition: all 0.5s;
+        }
+
+        .about .calisan.active .photo {
+            transform: translateX(0px);
+        }*/
+@media (max-width: 768px) {
+    .calisanBody h1 {
+        font-size: 12vw; /* Küçük ekranlar için font boyutunu ayarlar */
+    }
+}

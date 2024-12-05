@@ -1,51 +1,25 @@
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand[b-f9uy4h9ous] {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-    margin-bottom: 0px;
-}
-
-a[b-f9uy4h9ous] {
-  color: #0077cc;
-}
-
-.btn-primary[b-f9uy4h9ous] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active[b-f9uy4h9ous], .nav-pills .show > .nav-link[b-f9uy4h9ous] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top[b-f9uy4h9ous] {
+/*.border-top {
   border-top: 1px solid #e5e5e5;
     margin-bottom:0px;
-}
-.border-bottom[b-f9uy4h9ous] {
+}*/
+/*.border-bottom {
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 0px;
 }
 
-.box-shadow[b-f9uy4h9ous] {
+.box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy[b-f9uy4h9ous] {
-  font-size: 1rem;
-  line-height: inherit;
-}
 
-.footer[b-f9uy4h9ous] {
+
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
-}
+}*/

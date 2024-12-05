@@ -1,0 +1,59 @@
+﻿@model KuaforWebSitesi.Models.Calisan
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/calisan.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fontFamily.css" asp-append-version="true" />
+</head>
+
+<body class="calisanKismi">
+    <div class="alert-danger">@TempData["msj"]</div>
+    <div class="calisanBody">
+        <img src="~/web/images/calisanlar/calisan.png" alt="background" />
+        <h1>Stilistler</h1>
+        <div class="about"> 
+            <!--resim uzeri resim-->
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/calisan1.jpg" alt="calisan1" />
+            </div>
+
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/calisan2.jpg" alt="calisan2">
+            </div>
+
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/calisan3.jpg" alt="calisan3">
+            </div>
+
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/calisan4.jpg" alt="calisan4" />
+            </div>
+            
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/calisan5.jpg" alt="calisan5" />
+            </div>
+
+            
+        </div>
+        <div class="altKisim">
+            <h1>Estetisyenler</h1>
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/acalisan1.jpeg" alt="acalisan1" />
+            </div>
+
+            <div class="calisan">
+                <img src="~/web/images/calisanlar/acalisan2.jpg" alt="acalisan2" />
+            </div>
+        </div>
+    </div>
+
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>
+

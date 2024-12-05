@@ -1,0 +1,48 @@
+﻿@model KuaforWebSitesi.Models.Musteri
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/giris.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fontFamily.css" asp-append-version="true" />
+</head>
+<body class="girisSistemi">
+    <div class="giris">
+        <img src="~/web/images/girisSayfasi.png" alt="kayit">
+        <div class="alert-danger">@TempData["msj"]</div> 
+        <form asp-controller="Musteri" asp-action="MusteriGiris" method="post">
+            <div class="formGrup">
+                <input id="MusteriAd" class="form-control" asp-for="MusteriAd" type="text" required />
+                <label for="MusteriAd">Adınız</label>
+                <span asp-validation-for="MusteriAd" class="text-danger"></span>
+            </div>
+
+            <div class="formGrup">
+                <input id="MusteriSoyad" class="form-control" asp-for="MusteriSoyad" type="text" required />
+                <label for="MusteriSoyad">Soyadınız</label>
+                <span asp-validation-for="MusteriSoyad" class="text-danger"></span>
+            </div>
+
+            <div class="formGrup">
+                <input id="MusteriSifre" class="form-control" asp-for="MusteriSifre" type="password" required />
+                <label for="MusteriSifre">Şifre Oluşturun</label>
+                <span asp-validation-for="MusteriSifre" class="text-danger"></span>
+            </div>
+
+          
+
+
+
+          
+            <input class="button" type="submit" value="Giris Yap" />
+
+        </form>
+    </div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

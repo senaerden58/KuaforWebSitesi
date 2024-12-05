@@ -19,3 +19,5 @@ const observer = new IntersectionObserver(callBack, options);
 homeBody.forEach((target) => {
     observer.observe(target);
 });
+
+

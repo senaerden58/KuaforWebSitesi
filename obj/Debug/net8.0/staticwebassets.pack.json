@@ -2,15 +2,35 @@
   "Files": [
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KuaforWebSitesi.bundle.scp.css",
-      "PackagePath": "staticwebassets\\KuaforWebSitesi.t86djbmy4b.bundle.scp.css"
+      "PackagePath": "staticwebassets\\KuaforWebSitesi.1toxhu931y.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\calisan.css",
+      "PackagePath": "staticwebassets\\css\\calisan.css"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\calisanDetay.css",
+      "PackagePath": "staticwebassets\\css\\calisanDetay.css"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\fontFamily.css",
       "PackagePath": "staticwebassets\\css\\fontFamily.css"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\giris.css",
+      "PackagePath": "staticwebassets\\css\\giris.css"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\hizmetler.css",
+      "PackagePath": "staticwebassets\\css\\hizmetler.css"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\iletisim.css",
+      "PackagePath": "staticwebassets\\css\\iletisim.css"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\index.css",
@@ -29,8 +49,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\Görünür.js",
+      "PackagePath": "staticwebassets\\js\\Görünür.js"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\scroll.js",
       "PackagePath": "staticwebassets\\js\\scroll.js"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\scroll1.js",
+      "PackagePath": "staticwebassets\\js\\scroll1.js"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\site.js",
@@ -273,8 +301,72 @@
       "PackagePath": "staticwebassets\\web\\images\\ShineLaBflu.png"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\acalisan1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\acalisan2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan.png",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan.png"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan6.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan6.jpg"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\cilt.jpg",
       "PackagePath": "staticwebassets\\web\\images\\cilt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\girisSayfasi.png",
+      "PackagePath": "staticwebassets\\web\\images\\girisSayfasi.png"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\hizmetler\\cilt.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\hizmetler\\cilt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\hizmetler\\gelin.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\hizmetler\\gelin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\hizmetler\\manikur.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\hizmetler\\manikur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\hizmetler\\sacBoyama.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\hizmetler\\sacBoyama.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\hizmetler\\sacSekillendir.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\hizmetler\\sacSekillendir.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\iletisim.png",
+      "PackagePath": "staticwebassets\\web\\images\\iletisim.png"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\kuaforLogo.png",

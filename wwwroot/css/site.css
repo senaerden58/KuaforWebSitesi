@@ -2,11 +2,22 @@ html,body, footer {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    margin-bottom:0;
     box-sizing: border-box;
+    padding:0;
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
 }
+.navbar a {
+    color: #CBB26A !important; /* Pembe renk */
+    text-decoration: none; /* Alt çizgiyi kaldýrýr, opsiyonel */
+    padding:0;
+}
+
+    .navbar a:hover {
+        color: #CBB36F !important; /* Hover durumunda koyu pembe */
+    }
 
 * {
     background-color: #f9f9f9;
@@ -14,6 +25,7 @@ html,body, footer {
 
 .home .navbar {
     width: 100%;
+    padding:0;
 }
 
 .home .navbar-nav {
@@ -40,9 +52,12 @@ img,video{
 }
 
 .footer {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #CBB26A; /* Arka plan rengi */
-    width:100%;
+    width: 100%;
 }
 .footer .footerDiv {
     background-color: #CBB26A; /* Arka plan rengi */
@@ -64,9 +79,18 @@ img,video{
     color: #808080; 
 }
 
-.footer .icons {
-    text-align: center;
-    background-color: #CBB26A;
-    background-color: transparent;
+    .footer .icons i {
+        margin: 0 5px;
+        font-size: 1.5rem;
+        color: #333;
+        text-align: center;
+
+        background-color: transparent;
+    }
+
+
+
+.icons i:hover {
+    color: #007bff; /* Hover rengini ayarlayýn */
 }
 
