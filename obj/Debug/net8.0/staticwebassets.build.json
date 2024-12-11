@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AzIeBGJ43Vzw/mBFemrnxZWSRCmXn45TjkdhZvtLcgU=",
+  "Hash": "FLcfOp2y1PE/C4NoxXDegJ2WhZlcZByJFuHiOvbeOLo=",
   "Source": "KuaforWebSitesi",
   "BasePath": "_content/KuaforWebSitesi",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pst0rn5yqj",
-      "Integrity": "2R3/S5fpgBFj7UNA0QPzB/szWI5Gma14KYpiuwpULwE=",
+      "Fingerprint": "gi1sridm9m",
+      "Integrity": "WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\calisan.css"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l1av7ln1yz",
-      "Integrity": "mc/fyHj+BsNYTlQMTUi/hBJHGGIScjduiAcvDX7omAY=",
+      "Fingerprint": "rfnalfzfai",
+      "Integrity": "2anHUvAs28COvezp0nhI/1s2Vyjfvw8lKJdiFEZrkpA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\iletisim.css"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zo7uz2j5nu",
-      "Integrity": "cz0gHe6B/JIXlRAhzBWtDy6cekiOjaq/TVCEYApaeVI=",
+      "Fingerprint": "rilsd5cyin",
+      "Integrity": "8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2150,7 +2150,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4983"
+          "Value": "5540"
         },
         {
           "Name": "Content-Type",
@@ -2158,11 +2158,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2R3/S5fpgBFj7UNA0QPzB/szWI5Gma14KYpiuwpULwE=\""
+          "Value": "\"WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:44:32 GMT"
+          "Value": "Sat, 07 Dec 2024 16:04:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2172,12 +2172,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2R3/S5fpgBFj7UNA0QPzB/szWI5Gma14KYpiuwpULwE="
+          "Value": "sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s="
         }
       ]
     },
     {
-      "Route": "css/calisan.pst0rn5yqj.css",
+      "Route": "css/calisan.gi1sridm9m.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\calisan.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2187,7 +2187,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4983"
+          "Value": "5540"
         },
         {
           "Name": "Content-Type",
@@ -2195,11 +2195,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2R3/S5fpgBFj7UNA0QPzB/szWI5Gma14KYpiuwpULwE=\""
+          "Value": "\"WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:44:32 GMT"
+          "Value": "Sat, 07 Dec 2024 16:04:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2209,7 +2209,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pst0rn5yqj"
+          "Value": "gi1sridm9m"
         },
         {
           "Name": "label",
@@ -2217,7 +2217,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2R3/S5fpgBFj7UNA0QPzB/szWI5Gma14KYpiuwpULwE="
+          "Value": "sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s="
         }
       ]
     },
@@ -2642,7 +2642,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2090"
+          "Value": "3015"
         },
         {
           "Name": "Content-Type",
@@ -2650,11 +2650,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mc/fyHj+BsNYTlQMTUi/hBJHGGIScjduiAcvDX7omAY=\""
+          "Value": "\"2anHUvAs28COvezp0nhI/1s2Vyjfvw8lKJdiFEZrkpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 15:24:39 GMT"
+          "Value": "Sat, 07 Dec 2024 11:33:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2664,12 +2664,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mc/fyHj+BsNYTlQMTUi/hBJHGGIScjduiAcvDX7omAY="
+          "Value": "sha256-2anHUvAs28COvezp0nhI/1s2Vyjfvw8lKJdiFEZrkpA="
         }
       ]
     },
     {
-      "Route": "css/iletisim.l1av7ln1yz.css",
+      "Route": "css/iletisim.rfnalfzfai.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\iletisim.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2679,7 +2679,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2090"
+          "Value": "3015"
         },
         {
           "Name": "Content-Type",
@@ -2687,11 +2687,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mc/fyHj+BsNYTlQMTUi/hBJHGGIScjduiAcvDX7omAY=\""
+          "Value": "\"2anHUvAs28COvezp0nhI/1s2Vyjfvw8lKJdiFEZrkpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 15:24:39 GMT"
+          "Value": "Sat, 07 Dec 2024 11:33:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2701,7 +2701,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l1av7ln1yz"
+          "Value": "rfnalfzfai"
         },
         {
           "Name": "label",
@@ -2709,7 +2709,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mc/fyHj+BsNYTlQMTUi/hBJHGGIScjduiAcvDX7omAY="
+          "Value": "sha256-2anHUvAs28COvezp0nhI/1s2Vyjfvw8lKJdiFEZrkpA="
         }
       ]
     },
@@ -2888,7 +2888,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1924"
+          "Value": "4007"
         },
         {
           "Name": "Content-Type",
@@ -2896,11 +2896,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cz0gHe6B/JIXlRAhzBWtDy6cekiOjaq/TVCEYApaeVI=\""
+          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 10:45:56 GMT"
+          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2910,12 +2910,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cz0gHe6B/JIXlRAhzBWtDy6cekiOjaq/TVCEYApaeVI="
+          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
         }
       ]
     },
     {
-      "Route": "css/site.zo7uz2j5nu.css",
+      "Route": "css/site.rilsd5cyin.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2925,7 +2925,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1924"
+          "Value": "4007"
         },
         {
           "Name": "Content-Type",
@@ -2933,11 +2933,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cz0gHe6B/JIXlRAhzBWtDy6cekiOjaq/TVCEYApaeVI=\""
+          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 10:45:56 GMT"
+          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2947,7 +2947,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zo7uz2j5nu"
+          "Value": "rilsd5cyin"
         },
         {
           "Name": "label",
@@ -2955,7 +2955,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cz0gHe6B/JIXlRAhzBWtDy6cekiOjaq/TVCEYApaeVI="
+          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
         }
       ]
     },

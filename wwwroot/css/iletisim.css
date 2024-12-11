@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -65,9 +64,9 @@ form {
         cursor: pointer;
     }
 
-        form button:hover {
-            background-color: #0056b3;
-        }
+form button:hover {
+    background-color: #0056b3;
+}
 
 
 
@@ -78,13 +77,15 @@ form {
     margin-bottom: 40px;
 }
 
-    .contact-header h1 {
-        font-size: 2.5rem;
-    }
+.contact-header h1 {
+    font-size: 2.5rem;
+    text-align:center;
+}
 
 .contact-info {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     gap: 20px;
     justify-content: space-between;
 }
@@ -98,9 +99,12 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-    .info-box h2 {
-        margin-top: 0;
-    }
+.info-box h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
 
 iframe {
     width: 100%;
@@ -108,16 +112,40 @@ iframe {
     border: 0;
 }
 
+.info-box i {
+    display: inline-block; /* Blok düzeneği sağlar */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2rem; /* Daha büyük ikon boyutu */
+    color: #555; /* Yumuşak bir renk */
+    background-color: #f0f0f0; /* Hafif arka plan */
+    padding: 15px; /* İkonun etrafına boşluk ekler */
+    border-radius: 50%; /* Yuvarlak şekil */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    transition: all 0.3s ease-in-out; /* Geçiş animasyonu */
+}
+
+.info-box i:hover {
+    color: #fff; /* İkon rengini beyaz yap */
+    background-color: #CBB26A; /* Arka plan rengini mavi yap */
+    transform: scale(1.2); /* Hafif büyütme efekti */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Gölgeyi güçlendir */
+}
+
+
 .info-box p {
     margin: 10px 0;
+    text-align: center;
 }
 
 .info-box a {
     color: #007BFF;
     text-decoration: none;
+    margin-bottom:15px;
 }
 
-    .info-box a:hover {
-        text-decoration: underline;
-    }
+.info-box a:hover {
+    text-decoration: underline;
+}
 

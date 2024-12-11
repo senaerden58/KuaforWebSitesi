@@ -12,10 +12,44 @@
     height: auto;
    
 }
-    .calisanBody h1 {
+.calisanBody img{
+    width:100%;
+    height:auto;
+}
+.headerText {
+    position:absolute;
+    text-align: center;
+    margin-top: 50px; /* Üstten boşluk bırak */
+    background-color:transparent;
+    width: auto; /* Yatayda genişlik */
+    top:0%;
+}
+
+    .headerText p {
+        background-color: transparent;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2vw; /* Ekran genişliğine göre font boyutunu ayarla */
+        color: #CBB26A;
+        margin-bottom: 0px;
+        font-weight: bold;
+        margin-top: 5px !important;
+    }
+
+    .headerText h3 {
+        background-color: transparent;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1vw; /* Ekran genişliğine göre font boyutunu ayarla */
+        color: #333;
+        
+        margin: 0;
+        padding: 10px;
+    }
+
+
+    .calisanBody h2 {
         position: absolute;
         font-family: 'Josefin Sans',sans-serif;
-        top: 10%;
+        margin-top:14%;
         float:left;
         margin-bottom:0;
         align-content: center;
@@ -28,7 +62,7 @@
 .about {
     display: flex;
     border-radius: 10px;
-    margin-top: -150px;
+    margin-top: -250px;
     margin-bottom:0;
     margin-left: 10px;
     gap: 0px; /* Küçük resimler arasında boşluk bırakır */
@@ -40,13 +74,14 @@
 .altKisim {
     display: flex;
     border-radius: 10px;
-    margin-top:15%;
+    flex-wrap: wrap; /* Küçük ekranlar için uygun */
+    margin-top: 10%;
     margin-left: 10px;
-    gap: 0px; /* Küçük resimler arasında boşluk bırakır */
+   
     position: absolute; /* Ana resmin üstünde yer alır */
     top: 50%; /* Ana resmin ortasına yerleştirir */
     background-color: transparent;
-    transform: translateY(-50%); /* Y ekseninde ortalar */
+  
 }
 
 
@@ -55,19 +90,21 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
+    margin-top: 200px;
     align-items: center;
     overflow: hidden;
     width: 200px; /* Küçük resimlerin genişliği */
     height: 200px; /* Küçük resimlerin yüksekliği */
     border-radius: 10px;
     background-color: transparent; /* Arka planı şeffaf yapar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+  
 }
+
 
 .altKisim .calisan {
     display: flex;
     flex-direction: column;
-    margin-top:100px;
+    margin-top:-100px;
     margin-left: 10px;
     align-items: center;
     overflow: hidden;
@@ -75,18 +112,17 @@
     height: 200px; /* Küçük resimlerin yüksekliği */
     border-radius: 10px;
     background-color: transparent; /* Arka planı şeffaf yapar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+   
 }
 
-.altKisim h1 {
+.altKisim h2 {
     position: absolute;
     font-family: 'Josefin Sans',sans-serif;
     margin-top:-50px;
     text-align:center;
-    margin-left:22%;
-  
+    margin-left:20%;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-size: 3vw; /* Ekran genişliğine göre font boyutunu ayarlar */
     color: #CBB26A;
     background-color: transparent; /* Arka plan rengini şeffaf yapar */
@@ -98,76 +134,73 @@
     object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.5s;
+  
+   
 }
+.about .calisan{
+    position:relative;
+}
+
+.altKisim .calisan {
+    position: relative;
+}
+
+.calisan .calisanAdAlan {
+    margin-top:15px;
+    position: absolute;
+    color: #CBB26A;
+    display: flex;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0;
+    background-color: transparent;
+    font-family: 'Josefin Sans',sans-serif;
+}
+.about .calisan:hover img
+ {
+    filter: brightness(50%); /* Hover sırasında resmin kararması */
+    opacity: 1; /* Hover sırasında yazının görünür hale gelmesi */
+}
+.altKisim .calisan:hover img {
+    filter: brightness(50%); /* Hover sırasında resmin kararması */
+    opacity: 1; /* Hover sırasında yazının görünür hale gelmesi */
+}
+ .calisan:hover .calisanAdAlan{
+    opacity:1;
+}
+
 
 .altKisim .calisan img:hover {
     width: 100%; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
     height: 100%; /* Kapsayıcı yüksekliğine uyar */
     object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
     border-radius: 10px;
+    opacity: 0.7; /* Resme tıklanabilirlik efekti */
     cursor: pointer;
     transition: all 0.5s;
 }
 .about .calisan img:hover, .altKisim .calisan img:hover {
-    transform: scale(1.1); /* Hover efekti */
+    filter: brightness(50%);
+    opacity:1;
 }
 
-    /*
-        .calisan .photo img:hover {
-            transform: scale(1.1);*/ /* Resmin üzerine gelindiğinde büyümesini sağlar */
-        /*}*/
 
-
-    /*Scroll animation "target" leri unutma */
-/*.about .calisan {
-        opacity: 0;
-        transition: all 0.5s;
-    }
-
-        .about .calisan.active {
-            opacity: 1;
-        }
-
-        .about .calisan .text {
-            transform: translateX(-20px);
-            transition: all 0.5s;
-        }
-
-        .about .calisan.active .text {
-            transform: translateX(0px);
-        }
-
-        .about .calisan .text {
-            transform: translateX(-20px);
-            transition: all 0.5s;
-        }
-
-        .about .calisan:nth-child(2n) .text {
-            transform: translateX(20px);
-            transition: all 0.5s;
-        }
-
-        .about .calisan.active .text {
-            transform: translateX(0px);
-        }
-
-
-        .about .calisan .photo {
-            transform: translateX(20px);
-            transition: all 0.5s;
-        }
-
-        .about .calisan:nth-child(2n) .photo {
-            transform: translateX(-20px);
-            transition: all 0.5s;
-        }
-
-        .about .calisan.active .photo {
-            transform: translateX(0px);
-        }*/
+   
+/* Responsive Design */
 @media (max-width: 768px) {
-    .calisanBody h1 {
-        font-size: 12vw; /* Küçük ekranlar için font boyutunu ayarlar */
+    .headerText p, .headerText h3, .calisanBody h2 {
+        font-size: 4vw; /* Küçük ekranlar için daha büyük font boyutu */
     }
+
+    .calisan {
+        width: 150px; /* Küçük ekranlar için daha küçük resimler */
+        height: 150px;
+    }
+
+        .calisan img {
+            width: 100%;
+            height: 100%;
+        }
 }

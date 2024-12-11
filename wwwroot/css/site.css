@@ -10,15 +10,17 @@ html,body, footer {
     scroll-behavior: smooth;
 }
 .navbar a {
-    color: #CBB26A !important; /* Pembe renk */
+    color: #CBB26A !important; 
     text-decoration: none; /* Alt çizgiyi kaldýrýr, opsiyonel */
     padding:0;
+    font-size:15px;
 }
 
     .navbar a:hover {
         color: #CBB36F !important; /* Hover durumunda koyu pembe */
-    }
-
+        text-decoration:underline;
+        font-size:17px;
+}
 * {
     background-color: #f9f9f9;
 }
@@ -52,45 +54,88 @@ img,video{
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display:flex;
     padding: 10px 20px;
     background-color: #CBB26A; /* Arka plan rengi */
     width: 100%;
 }
-.footer .footerDiv {
-    background-color: #CBB26A; /* Arka plan rengi */
-    color: #f9f9f9;
-    text-align: right;
-    padding: 15px 0;
-    font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
-    font-size: 14px; /* Yazý boyutu */
-}
-
-.footer .footerDiv a {
-    color:#f9f9f9; /* Link rengi */
-    text-decoration: none; /* Alt çizgiyi kaldýrýr */
-    background-color: transparent;
-}
-
-.footer .footerDiv a:hover {
-    text-decoration: underline; /* Üzerine gelindiðinde alt çizgi ekler */
-    color: #808080; 
-}
-
-    .footer .icons i {
-        margin: 0 5px;
-        font-size: 1.5rem;
-        color: #333;
-        text-align: center;
-
+    .footer .information {
+        flex: 5;
+        text-align: left; /* Yazýlarý sað hizalar */
+        background-color: transparent; /* Arka planý kaldýrýr */
+        color: #f9f9f9;
+        padding: 0;
+        margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
+        font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
+        font-size: 16px; /* Yazý boyutu */
+        margin-bottom: 15px;
+    }
+    .footer .footerDiv {
+        flex:7;
+        text-align: right; /* Yazýlarý sað hizalar */
+        background-color: transparent; /* Arka planý kaldýrýr */
+        color: #f9f9f9;
+        padding: 0;
+        margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
+        font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
+        font-size: 16px; /* Yazý boyutu */
+        margin-bottom: 15px;
+    }
+    .footer .information img {
+        height: 40px;
+        width: auto;
+        border-radius:90px;
         background-color: transparent;
+        margin-bottom: 8px;
+    }
+    .footer .information h6 {
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+    .footer .information p {
+        background-color: transparent;
+        margin-bottom: 0px;
+        font-size:smaller
     }
 
+        .footer .footerDiv a {
+            color: #f9f9f9; /* Link rengi */
+            text-decoration: none; /* Alt çizgiyi kaldýrýr */
+            background-color: transparent;
+            margin-bottom:15px;
+        }
 
+            .footer .footerDiv a:hover {
+                text-decoration: underline; /* Üzerine gelindiðinde alt çizgi ekler */
+                color: #808080; /* Alt çizgi üzerindeki renk */
+            }
 
-.icons i:hover {
-    color: #007bff; /* Hover rengini ayarlayýn */
-}
+    .footer .icons {
+        
+        display: flex;
+        align-items: center; /* Ýkonlarý yatay hizalar */
+        justify-content: flex-end; /* Sað hizalama */
+        background-color: transparent;
+        gap: 10px; /* Ýkonlar arasýna boþluk býrakýr */
+    }
 
+        .footer .icons i {
+            margin-top:15px;
+            font-size: 2rem; /* Ýkonlarý büyüt */
+            color: #555; /* Daha yumuþak bir renk */
+            text-align: center;
+            background-color: #f0f0f0; /* Hafif bir arka plan */
+            border-radius: 50%; /* Yuvarlak kenarlar */
+            padding: 10px; /* Ýkonlarýn etrafýna boþluk ekler */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+            transition: all 0.3s ease-in-out; /* Geçiþ animasyonu */
+        }
+
+            .footer .icons i:hover {
+                color: #fff; /* Rengi beyaza deðiþtir */
+                background-color: #CBB26A; /* Arka planý altýn rengine çevir */
+                transform: scale(1.2); /* Ýkonlarý büyüt */
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Gölgeyi güçlendir */
+            }
+
+  

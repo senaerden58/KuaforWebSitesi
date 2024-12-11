@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Calisan
+
+
+<h2>Çalışan Ekle</h2>
+
+<form asp-action="CalisanKaydet" method="post">
+    <div class="form-group">
+        <label for="CalisanAd">Ad</label>
+        <input type="text" class="form-control" id="CalisanAd" name="CalisanAd" required />
+    </div>
+    <div class="form-group">
+        <label for="CalisanSoyad">Soyad</label>
+        <input type="text" class="form-control" id="CalisanSoyad" name="CalisanSoyad" required />
+    </div>
+    <div class="form-group">
+        <label for="CalisanEmail">Email</label>
+        <input type="email" class="form-control" id="CalisanEmail" name="CalisanEmail" required />
+    </div>
+    <div class="form-group">
+        <label for="CalisanTelefon">Telefon</label>
+        <input type="text" class="form-control" id="CalisanTelefon" name="CalisanTelefon" required />
+    </div>
+    <div class="form-group">
+        <label for="CalisanSifre">Şifre</label>
+        <input type="password" class="form-control" id="CalisanSifre" name="CalisanSifre" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

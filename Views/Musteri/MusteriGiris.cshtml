@@ -1,4 +1,5 @@
 ﻿@model KuaforWebSitesi.Models.Musteri
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,35 +11,22 @@
 <body class="girisSistemi">
     <div class="giris">
         <img src="~/web/images/girisSayfasi.png" alt="kayit">
-        <div class="alert-danger">@TempData["msj"]</div> 
+        <div class="alert-danger">@TempData["msj"]</div>
         <form asp-controller="Musteri" asp-action="MusteriGiris" method="post">
             <div class="formGrup">
-                <input id="MusteriAd" class="form-control" asp-for="MusteriAd" type="text" required />
-                <label for="MusteriAd">Adınız</label>
-                <span asp-validation-for="MusteriAd" class="text-danger"></span>
+                <input id="MusteriMail" name="MusteriMail" class="form-control" type="email" required />
+                <label for="MusteriMail">E-Mailiniz</label>
+                <span asp-validation-for="MusteriMail" class="text-danger"></span>
             </div>
-
-            <div class="formGrup">
-                <input id="MusteriSoyad" class="form-control" asp-for="MusteriSoyad" type="text" required />
-                <label for="MusteriSoyad">Soyadınız</label>
-                <span asp-validation-for="MusteriSoyad" class="text-danger"></span>
-            </div>
-
-            <div class="formGrup">
-                <input id="MusteriSifre" class="form-control" asp-for="MusteriSifre" type="password" required />
+            <div class="formGrup">          
+                <input id="MusteriSifre" name="MusteriSifre" class="form-control" type="password" required />
                 <label for="MusteriSifre">Şifre Oluşturun</label>
                 <span asp-validation-for="MusteriSifre" class="text-danger"></span>
             </div>
-
-          
-
-
-
-          
             <input class="button" type="submit" value="Giris Yap" />
-
         </form>
     </div>
+
     @section Scripts {
         @{
             await Html.RenderPartialAsync("_ValidationScriptsPartial");
