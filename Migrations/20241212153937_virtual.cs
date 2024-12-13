@@ -5,7 +5,7 @@
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class HizmetDetay : Migration
+    public partial class @virtual : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

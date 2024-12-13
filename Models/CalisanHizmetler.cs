@@ -7,13 +7,13 @@ namespace KuaforWebSitesi.Models
         [Key]
         public int CalisanHizmetID { get; set; }
 
-        [Required]
-        public int CalisanID { get; set; }
-        public Calisan Calisan { get; set; }
 
-        [Required]
+        public int CalisanID { get; set; }
+        public Calisan? Calisan { get; set; }
+
+      
         public int HizmetID { get; set; }
-        public Hizmetler Hizmetler { get; set; }
+        public Hizmetler? Hizmet { get; set; }
 
 
     }

@@ -1,0 +1,17 @@
+﻿@model KuaforWebSitesi.Models.Musteri
+
+<form asp-action="SifreDegistir" method="post">
+    <div class="form-group">
+        <label for="EskiSifre">Eski Şifre</label>
+        <input type="password" class="form-control" id="EskiSifre" name="eskiSifre" required />
+    </div>
+    <div class="form-group">
+        <label for="YeniSifre">Yeni Şifre</label>
+        <input type="password" class="form-control" id="YeniSifre" name="yeniSifre" required />
+    </div>
+    <div class="form-group">
+        <label for="TelefonNumarasi">Telefon Numarası</label>
+        <input type="text" class="form-control" id="TelefonNumarasi" name="telefonNumarasi" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Şifreyi Değiştir</button>
+</form>

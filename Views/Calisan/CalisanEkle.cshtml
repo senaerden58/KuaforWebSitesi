@@ -1,33 +1,51 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@model Calisan
-
+﻿@model KuaforWebSitesi.Models.Calisan
+@using System.Text.Json
 
 <h2>Çalışan Ekle</h2>
 
 <form asp-action="CalisanKaydet" method="post">
     <div class="form-group">
-        <label for="CalisanAd">Ad</label>
+        <label for="CalisanAd">Ad:</label>
         <input type="text" class="form-control" id="CalisanAd" name="CalisanAd" required />
     </div>
     <div class="form-group">
-        <label for="CalisanSoyad">Soyad</label>
+        <label for="CalisanSoyad">Soyad:</label>
         <input type="text" class="form-control" id="CalisanSoyad" name="CalisanSoyad" required />
     </div>
     <div class="form-group">
-        <label for="CalisanEmail">Email</label>
-        <input type="email" class="form-control" id="CalisanEmail" name="CalisanEmail" required />
+        <label for="CalisanMail">Email:</label>
+        <input type="email" class="form-control" id="CalisanMail" name="CalisanMail" required />
     </div>
     <div class="form-group">
-        <label for="CalisanTelefon">Telefon</label>
+        <label for="CalisanTelefon">Telefon:</label>
         <input type="text" class="form-control" id="CalisanTelefon" name="CalisanTelefon" required />
     </div>
     <div class="form-group">
-        <label for="CalisanSifre">Şifre</label>
+        <label for="CalisanSifre">Şifre:</label>
         <input type="password" class="form-control" id="CalisanSifre" name="CalisanSifre" required />
     </div>
+
+     <div class="form-group">
+        <label>Çalışacağı Günler:</label>
+            @foreach (var gun in ViewBag.Gunler as List<KuaforWebSitesi.Models.Gunler>)
+            {
+                <input type="checkbox" name="selectedGunler" value="@gun.GunID" /> @gun.GunAdi <br />
+            }
+        </div>
+        @* Hizmetleri seçmek için bir liste *@
+
+
+    <div class="form-group">
+        <label>Hizmetler:</label>
+       
+            @foreach (var hizmet in ViewBag.Hizmetler as List<KuaforWebSitesi.Models.Hizmetler>)
+            {
+                <input type="checkbox" name="selectedHizmetler" value="@hizmet.HizmetID" /> @hizmet.HizmetAdi <br />
+            }
+        
+        </div>
+     
+
     <button type="submit" class="btn btn-primary">Kaydet</button>
 </form>
+

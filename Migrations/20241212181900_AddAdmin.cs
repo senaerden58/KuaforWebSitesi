@@ -5,30 +5,36 @@
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class AddGunler : Migration
+    public partial class AddAdmin : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Gunler",
+                name: "Admin",
                 columns: table => new
                 {
-                    GunID = table.Column<int>(type: "int", nullable: false)
+                    AdminID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    GunAdi = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    AdminMail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdminSifre = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Gunler", x => x.GunID);
+                    table.PrimaryKey("PK_Admin", x => x.AdminID);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Admin",
+                columns: new[] { "AdminID", "AdminMail", "AdminSifre" },
+                values: new object[] { 1, "b211210041@sakarya.edu.tr", "sau" });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Gunler");
+                name: "Admin");
         }
     }
 }

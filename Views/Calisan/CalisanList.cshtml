@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<KuaforWebSitesi.Models.Calisan>
+
+
+<h2>Calisan Listesi</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Email</th>
+            <th>Telefon</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var calisan in Model)
+        {
+            <tr>
+                <td>@calisan.CalisanAd</td>
+                <td>@calisan.CalisanSoyad</td>
+                <td>@calisan.CalisanMail</td>
+                <td>@calisan.CalisanTelefon</td>
+              
+            </tr>
+        }
+    </tbody>
+</table>

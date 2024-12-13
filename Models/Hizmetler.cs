@@ -16,7 +16,11 @@ namespace KuaforWebSitesi.Models
         [Required]
         public decimal Fiyat { get; set; } // Hizmetin fiyatı
         public int HizmetKategoriID { get; set; }
-        public HizmetKategori HizmetKategori { get; set; }  // Kategoriye bağlanma
-        public ICollection<CalisanHizmetler> CalisanHizmetler { get; set; }
+        public HizmetKategori HizmetKategoriler { get; set; }  // Kategoriye bağlanma
+       
+
+        public ICollection<Randevu>? Randevular { get; set; }
+
+        public ICollection<CalisanHizmetler>? CalisanHizmetler { get; set; }
     }
 }

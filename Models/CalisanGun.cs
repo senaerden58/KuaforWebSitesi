@@ -7,9 +7,9 @@ namespace KuaforWebSitesi.Models
         [Key]
         public int CalisanGunID { get; set; }
         public int CalisanID { get; set; }
-        public virtual Calisan Calisanlar { get; set; }
+        public  Calisan? Calisanlar { get; set; }
 
         public int GunID { get; set; }
-        public virtual Gunler Gunler { get; set; }
+        public  Gunler? Gunler { get; set; }
     }
 }

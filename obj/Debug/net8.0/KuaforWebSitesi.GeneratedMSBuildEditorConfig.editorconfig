@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDYWxpc2FuRWtsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Calisan/CalisanList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDYWxpc2FuTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Calisan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Musteri/MusteriList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxNdXN0ZXJpTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Musteri/SifreDegistir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxTaWZyZURlZ2lzdGlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Shared/Error.cshtml]

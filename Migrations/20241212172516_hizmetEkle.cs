@@ -5,7 +5,7 @@
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class AddHizmetAndKategoriAdlari : Migration
+    public partial class hizmetEkle : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

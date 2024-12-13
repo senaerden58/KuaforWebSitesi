@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    [Migration("20241211170039_AddHizmetKategoriHizmetTablosu")]
-    partial class AddHizmetKategoriHizmetTablosu
+    [Migration("20241212134039_AddInitialGunler")]
+    partial class AddInitialGunler
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,9 +53,6 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ResimYolu")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("CalisanID");
 
                     b.ToTable("Calisanlar");
@@ -81,7 +78,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.HasIndex("GunID");
 
-                    b.ToTable("CalisanGun");
+                    b.ToTable("CalisanGunler");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanHizmetler", b =>
@@ -98,14 +95,11 @@ namespace KuaforWebSitesi.Migrations
                     b.Property<int>("HizmetID")
                         .HasColumnType("int");
 
-                    b.Property<int>("HizmetlerHizmetID")
-                        .HasColumnType("int");
-
                     b.HasKey("CalisanHizmetID");
 
                     b.HasIndex("CalisanID");
 
-                    b.HasIndex("HizmetlerHizmetID");
+                    b.HasIndex("HizmetID");
 
                     b.ToTable("CalisanHizmetler");
                 });
@@ -125,6 +119,43 @@ namespace KuaforWebSitesi.Migrations
                     b.HasKey("GunID");
 
                     b.ToTable("Gunler");
+
+                    b.HasData(
+                        new
+                        {
+                            GunID = 1,
+                            GunAdi = "Pazartesi"
+                        },
+                        new
+                        {
+                            GunID = 2,
+                            GunAdi = "Salı"
+                        },
+                        new
+                        {
+                            GunID = 3,
+                            GunAdi = "Çarşamba"
+                        },
+                        new
+                        {
+                            GunID = 4,
+                            GunAdi = "Perşembe"
+                        },
+                        new
+                        {
+                            GunID = 5,
+                            GunAdi = "Cuma"
+                        },
+                        new
+                        {
+                            GunID = 6,
+                            GunAdi = "Cumartesi"
+                        },
+                        new
+                        {
+                            GunID = 7,
+                            GunAdi = "Pazar"
+                        });
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.HizmetKategori", b =>
@@ -159,10 +190,15 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("HizmetKategoriID")
+                        .HasColumnType("int");
+
                     b.Property<TimeSpan>("Sure")
                         .HasColumnType("time");
 
                     b.HasKey("HizmetID");
+
+                    b.HasIndex("HizmetKategoriID");
 
                     b.ToTable("Hizmetler");
                 });
@@ -201,6 +237,44 @@ namespace KuaforWebSitesi.Migrations
                     b.ToTable("Musteriler");
                 });
 
+            modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
+                {
+                    b.Property<int>("RandevuID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RandevuID"));
+
+                    b.Property<int?>("CalisanID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Durum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("HizmetID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MusteriID")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("Saat")
+                        .HasColumnType("time");
+
+                    b.Property<DateTime>("Tarih")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("RandevuID");
+
+                    b.HasIndex("CalisanID");
+
+                    b.HasIndex("HizmetID");
+
+                    b.HasIndex("MusteriID");
+
+                    b.ToTable("Randevular");
+                });
+
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanGun", b =>
                 {
                     b.HasOne("KuaforWebSitesi.Models.Calisan", "Calisanlar")
@@ -228,15 +302,50 @@ namespace KuaforWebSitesi.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmetler")
+                    b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmet")
                         .WithMany("CalisanHizmetler")
-                        .HasForeignKey("HizmetlerHizmetID")
+                        .HasForeignKey("HizmetID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Calisan");
 
-                    b.Navigation("Hizmetler");
+                    b.Navigation("Hizmet");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Hizmetler", b =>
+                {
+                    b.HasOne("KuaforWebSitesi.Models.HizmetKategori", "HizmetKategori")
+                        .WithMany("Hizmetler")
+                        .HasForeignKey("HizmetKategoriID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HizmetKategori");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
+                {
+                    b.HasOne("KuaforWebSitesi.Models.Calisan", "Calisan")
+                        .WithMany("Randevular")
+                        .HasForeignKey("CalisanID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmet")
+                        .WithMany("Randevular")
+                        .HasForeignKey("HizmetID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("KuaforWebSitesi.Models.Musteri", "Musteri")
+                        .WithMany("Randevular")
+                        .HasForeignKey("MusteriID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Calisan");
+
+                    b.Navigation("Hizmet");
+
+                    b.Navigation("Musteri");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Calisan", b =>
@@ -244,6 +353,8 @@ namespace KuaforWebSitesi.Migrations
                     b.Navigation("CalisanGunler");
 
                     b.Navigation("CalisanHizmetler");
+
+                    b.Navigation("Randevular");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Gunler", b =>
@@ -251,9 +362,21 @@ namespace KuaforWebSitesi.Migrations
                     b.Navigation("CalisanGunler");
                 });
 
+            modelBuilder.Entity("KuaforWebSitesi.Models.HizmetKategori", b =>
+                {
+                    b.Navigation("Hizmetler");
+                });
+
             modelBuilder.Entity("KuaforWebSitesi.Models.Hizmetler", b =>
                 {
                     b.Navigation("CalisanHizmetler");
+
+                    b.Navigation("Randevular");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Musteri", b =>
+                {
+                    b.Navigation("Randevular");
                 });
 #pragma warning restore 612, 618
         }

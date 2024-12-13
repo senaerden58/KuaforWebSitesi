@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Data;
+using System.Runtime.Intrinsics.Arm;
+using KuaforWebSitesi.Migrations;
 
 
 namespace KuaforWebSitesi.Models
@@ -14,16 +16,15 @@ namespace KuaforWebSitesi.Models
         {
         }
 
-
         public DbSet<Musteri> Musteriler { get; set; }
         public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Hizmetler> Hizmetler { get; set; }
-        //public DbSet<Randevu> Randevular { get; set; }
-        //public DbSet<Admin> Adminler { get; set; }
-        //public DbSet<CalisanHizmetler> CalisanHizmetler { get; set; }
+        public DbSet<Randevu> Randevular { get; set; }
+        public DbSet<Admin> Admin { get; set; }
+        public DbSet<CalisanHizmetler> CalisanHizmetler { get; set; }
         public DbSet<Gunler> Gunler { get; set; }
         public DbSet<HizmetKategori> HizmetKategoriler { get; set; }
-        //public DbSet<CalisanGun> CalisanGunler { get; set; }    
+        public DbSet<CalisanGun> CalisanGunler { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -43,20 +44,102 @@ namespace KuaforWebSitesi.Models
                 .HasForeignKey(cg => cg.GunID);
 
             modelBuilder.Entity<Hizmetler>()
-                 .HasOne(h => h.HizmetKategori)   // Hizmetler tablosunun bir HizmetKategori'ye ait olduğunu belirtiyoruz
+                 .HasOne(h => h.HizmetKategoriler)   // Hizmetler tablosunun bir HizmetKategori'ye ait olduğunu belirtiyoruz
                  .WithMany(k => k.Hizmetler)     // HizmetKategori tablosunun birden fazla Hizmetler içerebileceğini belirtiyoruz
                  .HasForeignKey(h => h.HizmetKategoriID); // Yabancı anahtar ilişkisini kuruyoruz
 
 
+            modelBuilder.Entity<CalisanHizmetler>()
+                .HasOne(ch => ch.Calisan)
+                .WithMany(c => c.CalisanHizmetler)
+                .HasForeignKey(ch => ch.CalisanID);
 
+            modelBuilder.Entity<CalisanHizmetler>()
+                .HasOne(ch => ch.Hizmet)
+                .WithMany(h => h.CalisanHizmetler)
+                .HasForeignKey(ch => ch.HizmetID);
+
+            // Randevu ile Musteri arasındaki ilişki
+            modelBuilder.Entity<Randevu>()
+             .HasOne(r => r.Musteri)     // Randevu, Müşteri'ye bağlı
+             .WithMany(m => m.Randevular)
+            .HasForeignKey(r => r.MusteriID)
+            .OnDelete(DeleteBehavior.Cascade); // Müşteri silindiğinde, ona ait randevular silinsin
+
+            modelBuilder.Entity<Randevu>()
+                .HasOne(r => r.Calisan)     // Randevu, Çalışan'a bağlı
+                .WithMany(c => c.Randevular)
+                .HasForeignKey(r => r.CalisanID)
+                .OnDelete(DeleteBehavior.Cascade); // Çalışan silindiğinde, ona ait randevular silinsin
+
+            modelBuilder.Entity<Randevu>()
+                .HasOne(r => r.Hizmet)     // Randevu, Hizmet'e bağlı
+                .WithMany(h => h.Randevular)
+                .HasForeignKey(r => r.HizmetID)
+                .OnDelete(DeleteBehavior.Cascade); // Hizmet silindiğinde, ona ait randevular silinsin
+
+            modelBuilder.Entity<Gunler>().HasData(
+                     new Gunler { GunID = 1, GunAdi = "Pazartesi" },
+                     new Gunler { GunID = 2, GunAdi = "Salı" },
+                    new Gunler { GunID = 3, GunAdi = "Çarşamba" },
+                    new Gunler { GunID = 4, GunAdi = "Perşembe" },
+                    new Gunler { GunID = 5, GunAdi = "Cuma" },
+                    new Gunler { GunID = 6, GunAdi = "Cumartesi" },
+                    new Gunler { GunID = 7, GunAdi = "Pazar" }
+       );
+
+
+            modelBuilder.Entity<HizmetKategori>().HasData(
+new HizmetKategori { HizmetKategoriID = 1, KategoriAdi = "Saç Kesimi" },
+new HizmetKategori { HizmetKategoriID = 2, KategoriAdi = "Saç Bakımı" },
+new HizmetKategori { HizmetKategoriID = 3, KategoriAdi = "Manikür" },
+new HizmetKategori { HizmetKategoriID = 4, KategoriAdi = "Pedikür" },
+new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
+);
+
+
+
+
+            modelBuilder.Entity<Hizmetler>().HasData(
+              new Hizmetler { HizmetID = 1, HizmetAdi = "Fön", Sure = TimeSpan.FromHours(1), Fiyat = 400, HizmetKategoriID = 2 },
+              new Hizmetler { HizmetID = 2, HizmetAdi = "Maşa", Sure = TimeSpan.FromHours(1), Fiyat = 800, HizmetKategoriID = 2 },
+              new Hizmetler { HizmetID = 3, HizmetAdi = "Örgü", Sure = TimeSpan.FromHours(1), Fiyat = 1000, HizmetKategoriID = 2 },
+              new Hizmetler { HizmetID = 4, HizmetAdi = "Topuz", Sure = TimeSpan.FromHours(1), Fiyat = 1200, HizmetKategoriID = 2 },
+              new Hizmetler { HizmetID = 5, HizmetAdi = "Saç Kesim", Sure = TimeSpan.FromHours(1), Fiyat = 1300, HizmetKategoriID = 2 },
+              new Hizmetler { HizmetID = 6, HizmetAdi = "Cila", Sure = TimeSpan.FromMinutes(45), Fiyat = 2500, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 7, HizmetAdi = "Dip Boya", Sure = TimeSpan.FromHours(1), Fiyat = 1250, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 8, HizmetAdi = "Transparan Boya", Sure = TimeSpan.FromHours(1), Fiyat = 1750, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 9, HizmetAdi = "Bütün Boya", Sure = TimeSpan.FromHours(2), Fiyat = 2500, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 10, HizmetAdi = "Brushlight", Sure = TimeSpan.FromHours(3), Fiyat = 5500, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 11, HizmetAdi = "Highlight", Sure = TimeSpan.FromHours(5), Fiyat = 6000, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 12, HizmetAdi = "Röfle", Sure = TimeSpan.FromHours(5), Fiyat = 8000, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 13, HizmetAdi = "Sakinleştirici Bakım", Sure = TimeSpan.FromMinutes(90), Fiyat = 4000, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 14, HizmetAdi = "Düzleştirici Bakım", Sure = TimeSpan.FromMinutes(150), Fiyat = 6000, HizmetKategoriID = 1 },
+              new Hizmetler { HizmetID = 15, HizmetAdi = "Gelin Saçı", Sure = TimeSpan.FromHours(3), Fiyat = 6000, HizmetKategoriID = 5 },
+              new Hizmetler { HizmetID = 16, HizmetAdi = "Gelin Makyajı", Sure = TimeSpan.FromMinutes(90), Fiyat = 6000, HizmetKategoriID = 5 },
+              new Hizmetler { HizmetID = 17, HizmetAdi = "Manikür", Sure = TimeSpan.FromMinutes(45), Fiyat = 750, HizmetKategoriID = 3 },
+              new Hizmetler { HizmetID = 18, HizmetAdi = "Pedikür", Sure = TimeSpan.FromMinutes(45), Fiyat = 750, HizmetKategoriID = 3 },
+              new Hizmetler { HizmetID = 19, HizmetAdi = "El Kalıcı Oje", Sure = TimeSpan.FromMinutes(45), Fiyat = 550, HizmetKategoriID = 3 },
+              new Hizmetler { HizmetID = 20, HizmetAdi = "Ayak Kalıcı Oje", Sure = TimeSpan.FromMinutes(45), Fiyat = 750, HizmetKategoriID = 3 },
+              new Hizmetler { HizmetID = 21, HizmetAdi = "Profesyonel Cilt Bakımı", Sure = TimeSpan.FromMinutes(90), Fiyat = 2500, HizmetKategoriID = 4 },
+              new Hizmetler { HizmetID = 22, HizmetAdi = "Kaş Alımı", Sure = TimeSpan.FromMinutes(20), Fiyat = 400, HizmetKategoriID = 4 },
+              new Hizmetler { HizmetID = 23, HizmetAdi = "Kirpik Lifting", Sure = TimeSpan.FromMinutes(45), Fiyat = 1250, HizmetKategoriID = 4 },
+              new Hizmetler { HizmetID = 24, HizmetAdi = "Karbon Peeling", Sure = TimeSpan.FromMinutes(45), Fiyat = 1500, HizmetKategoriID = 4 }
+          );
+
+            modelBuilder.Entity<Admin>().HasData(
+                new Admin { AdminID = 1, AdminMail = "b211210041@sakarya.edu.tr", AdminSifre = "sau" }
+                );
 
         }
 
-
-
+    }
 }
 
-}
+
+
+
+
 
 
 

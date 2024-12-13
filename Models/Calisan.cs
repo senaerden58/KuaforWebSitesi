@@ -19,9 +19,9 @@ namespace KuaforWebSitesi.Models
         public string CalisanTelefon { get; set; }
         [Required]
         public string CalisanSifre { get; set; }
-        public string? ResimYolu { get; set; }
-      public ICollection<CalisanHizmetler> CalisanHizmetler { get; set; }
-        ////public ICollection<Randevu> Randevular { get; set; }
-        public virtual ICollection<CalisanGun> CalisanGunler { get; set; }
+    
+        public ICollection<CalisanHizmetler>? CalisanHizmetler { get; set; }
+        public ICollection<Randevu>? Randevular { get; set; } = new List<Randevu>();
+        public ICollection<CalisanGun>? CalisanGunler { get; set; }
     }
 }

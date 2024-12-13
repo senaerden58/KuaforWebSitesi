@@ -49,7 +49,7 @@ namespace KuaforWebSitesi.Models
 
 
 
-        //public ICollection<Randevu> Randevular { get; set; }
+        public virtual ICollection<Randevu> Randevular { get; set; } = new List<Randevu>();
     }
 }
 //using Microsoft.EntityFrameworkCore;
