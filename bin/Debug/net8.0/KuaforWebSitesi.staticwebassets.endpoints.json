@@ -823,6 +823,88 @@
       ]
     },
     {
+      "Route": "css/randevu.css",
+      "AssetFile": "css/randevu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 17:48:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="
+        }
+      ]
+    },
+    {
+      "Route": "css/randevu.ctvqwmfcqb.css",
+      "AssetFile": "css/randevu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 17:48:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ctvqwmfcqb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="
+        },
+        {
+          "Name": "label",
+          "Value": "css/randevu.css"
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
@@ -837,7 +919,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4007"
+          "Value": "4655"
         },
         {
           "Name": "Content-Type",
@@ -845,22 +927,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
+          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
+          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
+          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
         }
       ]
     },
     {
-      "Route": "css/site.rilsd5cyin.css",
+      "Route": "css/site.q8lb6wv7i1.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -874,7 +956,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4007"
+          "Value": "4655"
         },
         {
           "Name": "Content-Type",
@@ -882,21 +964,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
+          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
+          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rilsd5cyin"
+          "Value": "q8lb6wv7i1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
+          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
         },
         {
           "Name": "label",
@@ -1065,6 +1147,88 @@
         {
           "Name": "label",
           "Value": "js/Görünür.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/randevu.js",
+      "AssetFile": "js/randevu.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 16:12:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="
+        }
+      ]
+    },
+    {
+      "Route": "js/randevu.klax6a0pnn.js",
+      "AssetFile": "js/randevu.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 16:12:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "klax6a0pnn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="
+        },
+        {
+          "Name": "label",
+          "Value": "js/randevu.js"
         }
       ]
     },

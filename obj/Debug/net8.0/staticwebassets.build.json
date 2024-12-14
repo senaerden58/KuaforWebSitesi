@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FLcfOp2y1PE/C4NoxXDegJ2WhZlcZByJFuHiOvbeOLo=",
+  "Hash": "Mvj7zc2ulL4Mseu/T71gUSD4o4SvnP4FfB1DCmg3ShY=",
   "Source": "KuaforWebSitesi",
   "BasePath": "_content/KuaforWebSitesi",
   "Mode": "Default",
@@ -248,6 +248,27 @@
       "OriginalItemSpec": "wwwroot\\css\\kayit.css"
     },
     {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\randevu.css",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "css/randevu#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ctvqwmfcqb",
+      "Integrity": "cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\randevu.css"
+    },
+    {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "SourceId": "KuaforWebSitesi",
       "SourceType": "Discovered",
@@ -262,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rilsd5cyin",
-      "Integrity": "8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=",
+      "Fingerprint": "q8lb6wv7i1",
+      "Integrity": "tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -309,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Görünür.js"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\randevu.js",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "js/randevu#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "klax6a0pnn",
+      "Integrity": "6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\randevu.js"
     },
     {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\scroll.js",
@@ -2878,6 +2920,88 @@
       ]
     },
     {
+      "Route": "css/randevu.css",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\randevu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 17:48:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="
+        }
+      ]
+    },
+    {
+      "Route": "css/randevu.ctvqwmfcqb.css",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\randevu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 17:48:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ctvqwmfcqb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/randevu.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2888,7 +3012,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4007"
+          "Value": "4655"
         },
         {
           "Name": "Content-Type",
@@ -2896,11 +3020,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
+          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
+          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2910,12 +3034,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
+          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
         }
       ]
     },
     {
-      "Route": "css/site.rilsd5cyin.css",
+      "Route": "css/site.q8lb6wv7i1.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2925,7 +3049,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4007"
+          "Value": "4655"
         },
         {
           "Name": "Content-Type",
@@ -2933,11 +3057,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\""
+          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 12:16:25 GMT"
+          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2947,7 +3071,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rilsd5cyin"
+          "Value": "q8lb6wv7i1"
         },
         {
           "Name": "label",
@@ -2955,7 +3079,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="
+          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
         }
       ]
     },
@@ -3120,6 +3244,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-v7eUR8ji4E2mhYmbKBsTPDfYj48QS6DUW8jFHwIN42E="
+        }
+      ]
+    },
+    {
+      "Route": "js/randevu.js",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\randevu.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 16:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="
+        }
+      ]
+    },
+    {
+      "Route": "js/randevu.klax6a0pnn.js",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\randevu.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 14 Dec 2024 16:12:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "klax6a0pnn"
+        },
+        {
+          "Name": "label",
+          "Value": "js/randevu.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="
         }
       ]
     },

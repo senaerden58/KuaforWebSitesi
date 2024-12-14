@@ -72,8 +72,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxNdXN0ZXJpTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Musteri/SifreDegistir.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxTaWZyZURlZ2lzdGlyLmNzaHRtbA==
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Musteri/ProfilGoruntule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxQcm9maWxHb3J1bnR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Musteri/ProfilGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzdGVyaVxQcm9maWxHdW5jZWxsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Randevu/RandevuAl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1QWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Shared/Error.cshtml]

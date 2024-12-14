@@ -1,0 +1,40 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+select, input {
+    padding: 5px;
+    margin: 10px 0;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+#randevuGunu {
+    position: relative;
+    z-index: 9999;
+}
+.fc-day {
+    pointer-events: all; /* Tıklanabilir yapmak için */
+}

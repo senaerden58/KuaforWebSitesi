@@ -108,17 +108,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IHs5TL6ui7SneJrbsFVqhHOX2YiDhillS76e4UubZzI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1890"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IHs5TL6ui7SneJrbsFVqhHOX2YiDhillS76e4UubZzI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 18:12:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/randevu.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\randevu.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"578"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 17:48:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/randevu.ctvqwmfcqb.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\randevu.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ctvqwmfcqb"},{"Name":"integrity","Value":"sha256-cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/randevu.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"578"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cLRrJCYn9UTEl2a5pxY1WKY8Zxd6gjU5SrMJfJanPFY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 17:48:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 12:16:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4655"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 14:39:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.rilsd5cyin.css">
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.q8lb6wv7i1.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rilsd5cyin"},{"Name":"integrity","Value":"sha256-8/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4007"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00228/wdHyg0Eec1i2X08QK2Mn3WuTzhatv8WFTqJLLaQrc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 12:16:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q8lb6wv7i1"},{"Name":"integrity","Value":"sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4655"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 14:39:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -143,6 +155,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xsnrbbqs67"},{"Name":"integrity","Value":"sha256-v7eUR8ji4E2mhYmbKBsTPDfYj48QS6DUW8jFHwIN42E="},{"Name":"label","Value":"_content/KuaforWebSitesi/js/G\u00F6r\u00FCn\u00FCr.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"218"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v7eUR8ji4E2mhYmbKBsTPDfYj48QS6DUW8jFHwIN42E=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Dec 2024 15:42:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/randevu.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\randevu.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1255"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 16:12:18 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/randevu.klax6a0pnn.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\randevu.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"klax6a0pnn"},{"Name":"integrity","Value":"sha256-6CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8="},{"Name":"label","Value":"_content/KuaforWebSitesi/js/randevu.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1255"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226CGDaVmMDVJWQinmDbdAWcODdMHj3tyhbO9rxcHaeC8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 16:12:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/scroll.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\scroll.js'))</AssetFile>

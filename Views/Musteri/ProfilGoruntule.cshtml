@@ -1,0 +1,30 @@
+﻿
+@model KuaforWebSitesi.Models.Musteri
+
+@{
+    ViewBag.Title = "Profil Görüntüle";
+}
+
+<h2>Profiliniz</h2>
+
+@if (TempData["msj"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["msj"]
+    </div>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4>@Model.MusteriAd @Model.MusteriSoyad</h4>
+    </div>
+    <div class="card-body">
+        <p><strong>E-posta:</strong> @Model.MusteriMail</p>
+        <p><strong>Telefon:</strong> @Model.MusteriTelefon</p>
+    </div>
+    <div class="card-footer">
+     @*    <a href="@Url.Action("ProfilGuncelle", "Musteri")" class="btn btn-primary">Profil Düzenle</a> *@
+        <a href="@Url.Action("MusteriCikis", "Musteri")" class="btn btn-danger">Çıkış Yap</a>
+    </div>
+</div>
+

@@ -39,40 +39,42 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim</a>
                             </li>
-                            <li class="nav-item">
+                            @* <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanEkle">Çalışan Ekle</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> *@
+                            @*   <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanList">Çalışan Listesi</a>
-                            </li>
+                            </li> *@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriCikis">Çıkış Yap</a>
                             </li>
-                            <li class="nav-item">
+                            @*  <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGoruntule">Goruntule</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> *@
+                            @*  <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> *@
+                            @*  <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>
-                            </li>
-                            <li class="nav-item">
+                            </li> *@
+                            @*  <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriSil">Musteri Sil</a>
-                            </li>
+                            </li> *@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGoruntule">Profil Goruntule</a>
                             </li>
+
+
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="SifreDegistir">Şifre Değiştir</a>
-                            </li>
-                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGuncelle">Profil Guncelle</a>
                             </li>
-                            <li class="nav-item">
+                            @*  <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGuncelle">Musteri Guncelle</a>
-                            </li>
+                            </li> *@
 
+                            <li class="nav-item">
+                                <a class="nav-link btn" asp-area="" asp-controller="Randevu" asp-action="RandevuAl" role="button">Randevu Al</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -89,13 +91,13 @@
 
 
     <footer class="footer">
-            <div class="information">
-                <img src="~/web/images/kuaforLogo.png" alt="logo">
-                <h6>ShineLaB</h6>
-                <p>İstanbul,Beşiktaş</p>
-                <p>+90 212 345 67 89</p>
-                <p>info@shineLab.com</p>
-            </div>
+        <div class="information">
+            <img src="~/web/images/kuaforLogo.png" alt="logo">
+            <h6>ShineLaB</h6>
+            <p>İstanbul,Beşiktaş</p>
+            <p>+90 212 345 67 89</p>
+            <p>info@shineLab.com</p>
+        </div>
         <div class="footerDiv">
             <!--sayfalari ekle-->
             <a asp-area="" asp-controller="Home" asp-action="Index">ShineLaB |</a>
@@ -109,13 +111,13 @@
             <a asp-area="" asp-controller="Hizmetler" asp-action="Index">Hizmetler |</a>
 
             <a asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim |</a>
-            
-        <div class="icons">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-pinterest"></i>
-        </div>
+
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
         </div>
 
         <script src="~/lib/jquery/dist/jquery.min.js"></script>

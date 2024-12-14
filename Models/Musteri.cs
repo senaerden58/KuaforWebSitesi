@@ -1,7 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace KuaforWebSitesi.Models
 {
+    [Index(nameof(MusteriMail), IsUnique = true)]
+    [Index(nameof(MusteriTelefon), IsUnique = true)]
     public class Musteri
     {
         [Key]
@@ -37,7 +40,7 @@ namespace KuaforWebSitesi.Models
 
         [Required(ErrorMessage = "Lütfen şifre oluşturunuz.")]
         [MinLength(6, ErrorMessage = "Şifre en az 6 karakter olmalıdır.")]
-        [RegularExpression(@"^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{6,}$",
+        [RegularExpression(@"^(?=.*[A-ZİĞÜŞÇÖ])(?=.*\d)[A-Za-zİıĞğÜüŞşÇçÖö\d@$!%*?&]{6,}$",
         ErrorMessage = "Şifre en az 6 karakter olmalı, en az 1 büyük harf ve en az 1 rakam içermelidir.")]
         public string MusteriSifre { get; set; }
 

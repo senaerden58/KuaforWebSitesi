@@ -8,7 +8,7 @@
         public int? HizmetID { get; set; }
         public DateTime Tarih { get; set; }
         public TimeSpan Saat { get; set; }
-        public string Durum { get; set; } // Randevu durumu (Onaylandı, Beklemede, İptal Edildi vb.)
+        public string Durum { get; set; } = "Bekliyor"; // Randevu durumu (Onaylandı, Beklemede, İptal Edildi vb.)
         // Navigation properties
         public virtual Musteri Musteri { get; set; }
         public virtual Calisan Calisan { get; set; }

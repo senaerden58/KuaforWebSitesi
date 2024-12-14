@@ -7,9 +7,11 @@ wwwroot\css\home.css
 wwwroot\css\iletisim.css
 wwwroot\css\index.css
 wwwroot\css\kayit.css
+wwwroot\css\randevu.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\Görünür.js
+wwwroot\js\randevu.js
 wwwroot\js\scroll.js
 wwwroot\js\scroll1.js
 wwwroot\js\site.js

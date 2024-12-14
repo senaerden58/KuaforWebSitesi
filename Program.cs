@@ -5,15 +5,17 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
+
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Oturumun zaman aþýmý süresi
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
+    options.Cookie.SameSite = SameSiteMode.Lax; // SameSite politikasýný ayarlama (isteðe baðlý)
 });
-
+builder.Services.AddControllersWithViews();  // MVC için gerekli hizmeti ekleyin
 
 builder.Services.AddDbContext<KuaforDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

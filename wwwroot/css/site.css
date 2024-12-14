@@ -16,22 +16,51 @@ html,body, footer {
     font-size:15px;
 }
 
-    .navbar a:hover {
-        color: #CBB36F !important; /* Hover durumunda koyu pembe */
-        text-decoration:underline;
-        font-size:17px;
+.navbar a:hover {
+    color: #CBB36F !important; /* Hover durumunda koyu pembe */
+    text-decoration:underline;
+    font-size:17px;
 }
-* {
+
+.home .navbar .nav-item .nav-link.btn {
+    padding: 5px 15px; /* Butonun iç paddingini biraz artýrdým */
+    font-size: 0.8rem;
+    background-color: #f9f9f9;
+    font-weight: bold !important;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto; /* Navbar içinde saða yaslamak için */
+    border: 1px solid #CBB26A; /* Butona kenarlýk ekledim */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Yumuþak geçiþ */
+}
+
+.home .navbar .nav-item .nav-link.btn:hover {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+*{
     background-color: #f9f9f9;
 }
 
 .home .navbar {
     width: 100%;
-    padding:0;
+    position: relative;
+    margin: 0 auto; /* Ortalamak için */
+    box-sizing: border-box;
+    display: flex; /* Flexbox ile öðeleri hizalamak */
+    justify-content: center; /* Navbar'ý yatayda ortalamak */
+    padding: 0;
+}
+.navbar .nav-item:last-child {
+    margin-left: auto; /* Son öðeyi saða yerleþtir */
 }
 
 .home .navbar-nav {
     width: 100%;
+    align-items: center; /* Menü öðelerini dikeyde ortalar */
+    justify-content: space-around; /* Menü öðeleri arasýnda eþit boþluk býrakýr */
+    padding: 0 20px; /* Navbar kenarlarýna biraz boþluk eklemek */
 }
 
 .home .logo img {
@@ -53,89 +82,90 @@ img,video{
     width:100%;
 }
 
+/*footer kýsmý*/
+
 .footer {
    display:flex;
     padding: 10px 20px;
     background-color: #CBB26A; /* Arka plan rengi */
     width: 100%;
 }
-    .footer .information {
-        flex: 5;
-        text-align: left; /* Yazýlarý sað hizalar */
-        background-color: transparent; /* Arka planý kaldýrýr */
-        color: #f9f9f9;
-        padding: 0;
-        margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
-        font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
-        font-size: 16px; /* Yazý boyutu */
-        margin-bottom: 15px;
-    }
-    .footer .footerDiv {
-        flex:7;
-        text-align: right; /* Yazýlarý sað hizalar */
-        background-color: transparent; /* Arka planý kaldýrýr */
-        color: #f9f9f9;
-        padding: 0;
-        margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
-        font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
-        font-size: 16px; /* Yazý boyutu */
-        margin-bottom: 15px;
-    }
-    .footer .information img {
-        height: 40px;
-        width: auto;
-        border-radius:90px;
-        background-color: transparent;
-        margin-bottom: 8px;
-    }
-    .footer .information h6 {
-        background-color: transparent;
-        margin-bottom: 10px;
-    }
-    .footer .information p {
-        background-color: transparent;
-        margin-bottom: 0px;
-        font-size:smaller
-    }
+.footer .information {
+    flex: 5;
+    text-align: left; /* Yazýlarý sað hizalar */
+    background-color: transparent; /* Arka planý kaldýrýr */
+    color: #f9f9f9;
+    padding: 0;
+    margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
+    font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
+    font-size: 16px; /* Yazý boyutu */
+    margin-bottom: 15px;
+}
+.footer .footerDiv {
+    flex:7;
+    text-align: right; /* Yazýlarý sað hizalar */
+    background-color: transparent; /* Arka planý kaldýrýr */
+    color: #f9f9f9;
+    padding: 0;
+    margin-right: 15px; /* Ýkonlarla arasýnda boþluk býrakýr */
+    font-family: 'Josefin Sans', sans-serif; /* Yazý tipi */
+    font-size: 16px; /* Yazý boyutu */
+    margin-bottom: 15px;
+}
+.footer .information img {
+    height: 40px;
+    width: auto;
+    border-radius:90px;
+    background-color: transparent;
+    margin-bottom: 8px;
+}
+.footer .information h6 {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.footer .information p {
+    background-color: transparent;
+    margin-bottom: 0px;
+    font-size:smaller
+}
 
-        .footer .footerDiv a {
-            color: #f9f9f9; /* Link rengi */
-            text-decoration: none; /* Alt çizgiyi kaldýrýr */
-            background-color: transparent;
-            margin-bottom:15px;
-        }
+.footer .footerDiv a {
+    color: #f9f9f9; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldýrýr */
+    background-color: transparent;
+    margin-bottom:15px;
+}
 
-            .footer .footerDiv a:hover {
-                text-decoration: underline; /* Üzerine gelindiðinde alt çizgi ekler */
-                color: #808080; /* Alt çizgi üzerindeki renk */
-            }
+.footer .footerDiv a:hover {
+    text-decoration: underline; /* Üzerine gelindiðinde alt çizgi ekler */
+    color: #808080; /* Alt çizgi üzerindeki renk */
+}
 
-    .footer .icons {
-        
-        display: flex;
-        align-items: center; /* Ýkonlarý yatay hizalar */
-        justify-content: flex-end; /* Sað hizalama */
-        background-color: transparent;
-        gap: 10px; /* Ýkonlar arasýna boþluk býrakýr */
-    }
+.footer .icons {
+    
+    display: flex;
+    align-items: center; /* Ýkonlarý yatay hizalar */
+    justify-content: flex-end; /* Sað hizalama */
+    background-color: transparent;
+    gap: 10px; /* Ýkonlar arasýna boþluk býrakýr */
+}
 
-        .footer .icons i {
-            margin-top:15px;
-            font-size: 2rem; /* Ýkonlarý büyüt */
-            color: #555; /* Daha yumuþak bir renk */
-            text-align: center;
-            background-color: #f0f0f0; /* Hafif bir arka plan */
-            border-radius: 50%; /* Yuvarlak kenarlar */
-            padding: 10px; /* Ýkonlarýn etrafýna boþluk ekler */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
-            transition: all 0.3s ease-in-out; /* Geçiþ animasyonu */
-        }
+.footer .icons i {
+    margin-top:15px;
+    font-size: 2rem; /* Ýkonlarý büyüt */
+    color: #555; /* Daha yumuþak bir renk */
+    text-align: center;
+    background-color: #f0f0f0; /* Hafif bir arka plan */
+    border-radius: 50%; /* Yuvarlak kenarlar */
+    padding: 10px; /* Ýkonlarýn etrafýna boþluk ekler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+    transition: all 0.3s ease-in-out; /* Geçiþ animasyonu */
+}
 
-            .footer .icons i:hover {
-                color: #fff; /* Rengi beyaza deðiþtir */
-                background-color: #CBB26A; /* Arka planý altýn rengine çevir */
-                transform: scale(1.2); /* Ýkonlarý büyüt */
-                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Gölgeyi güçlendir */
-            }
+.footer .icons i:hover {
+    color: #fff; /* Rengi beyaza deðiþtir */
+    background-color: #CBB26A; /* Arka planý altýn rengine çevir */
+    transform: scale(1.2); /* Ýkonlarý büyüt */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Gölgeyi güçlendir */
+}
 
-  

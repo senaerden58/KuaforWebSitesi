@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\css\\kayit.css"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\randevu.css",
+      "PackagePath": "staticwebassets\\css\\randevu.css"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -51,6 +55,10 @@
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\Görünür.js",
       "PackagePath": "staticwebassets\\js\\Görünür.js"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\randevu.js",
+      "PackagePath": "staticwebassets\\js\\randevu.js"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\scroll.js",
