@@ -92,6 +92,15 @@
         async function getGunler() {
             const calisanID = document.getElementById("calisan").value;
             if (!calisanID) return;
+                    const gunlerMap = {
+            "pazartesi": "monday",
+            "salı": "tuesday",
+            "çarşamba": "wednesday",
+            "perşembe": "thursday",
+            "cuma": "friday",
+            "cumartesi": "saturday",
+            "pazar": "sunday"
+        };
 
             try {
                 const response = await fetch(`/Randevu/GetCalisanGunler?calisanID=${calisanID}`);
@@ -102,7 +111,8 @@
                     return;
                 }
 
-                const availableDays = gunler;  // Çalışanın çalıştığı günler
+                       const availableDays = gunler.map(gun => gunlerMap[gun.toLowerCase()]);
+        // Çalışanın çalıştığı günler
 
                  $("#randevuGunu").datepicker("destroy");
         $("#randevuGunu").datepicker({
