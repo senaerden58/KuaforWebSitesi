@@ -3,7 +3,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()  // Herhangi bir kaynaktan gelen isteklere izin verir
+              .AllowAnyMethod()  // Herhangi bir HTTP methoduna izin verir (GET, POST, vb.)
+              .AllowAnyHeader(); // Herhangi bir header'a izin verir
+    });
+});
 // Add services to the container.
 
 builder.Services.AddDistributedMemoryCache();
@@ -39,6 +47,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+app.UseDeveloperExceptionPage(); // Geliþtirici ortamýnda detaylý hata mesajlarý gösterir
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

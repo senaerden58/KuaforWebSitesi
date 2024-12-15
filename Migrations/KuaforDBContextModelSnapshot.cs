@@ -151,21 +151,22 @@ namespace KuaforWebSitesi.Migrations
 
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanGun", b =>
                 {
-                    b.Property<int>("CalisanGunID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CalisanGunID"));
-
                     b.Property<int>("CalisanID")
                         .HasColumnType("int");
 
                     b.Property<int>("GunID")
                         .HasColumnType("int");
 
-                    b.HasKey("CalisanGunID");
+                    b.Property<TimeSpan>("BaslangicSaati")
+                        .HasColumnType("time");
 
-                    b.HasIndex("CalisanID");
+                    b.Property<TimeSpan>("BitisSaati")
+                        .HasColumnType("time");
+
+                    b.Property<int>("CalisanGunID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CalisanID", "GunID");
 
                     b.HasIndex("GunID");
 
@@ -174,165 +175,219 @@ namespace KuaforWebSitesi.Migrations
                     b.HasData(
                         new
                         {
-                            CalisanGunID = 1,
                             CalisanID = 1,
-                            GunID = 1
+                            GunID = 1,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 1
                         },
                         new
                         {
-                            CalisanGunID = 2,
                             CalisanID = 1,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 2
                         },
                         new
                         {
-                            CalisanGunID = 3,
                             CalisanID = 2,
-                            GunID = 2
+                            GunID = 2,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 3
                         },
                         new
                         {
-                            CalisanGunID = 4,
                             CalisanID = 2,
-                            GunID = 3
+                            GunID = 3,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 4
                         },
                         new
                         {
-                            CalisanGunID = 5,
                             CalisanID = 2,
-                            GunID = 4
+                            GunID = 4,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 5
                         },
                         new
                         {
-                            CalisanGunID = 6,
                             CalisanID = 2,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 6
                         },
                         new
                         {
-                            CalisanGunID = 7,
                             CalisanID = 2,
-                            GunID = 6
+                            GunID = 6,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 7
                         },
                         new
                         {
-                            CalisanGunID = 8,
                             CalisanID = 3,
-                            GunID = 1
+                            GunID = 1,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 8
                         },
                         new
                         {
-                            CalisanGunID = 9,
                             CalisanID = 3,
-                            GunID = 3
+                            GunID = 3,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 9
                         },
                         new
                         {
-                            CalisanGunID = 10,
                             CalisanID = 3,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 10
                         },
                         new
                         {
-                            CalisanGunID = 11,
                             CalisanID = 3,
-                            GunID = 6
+                            GunID = 6,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 11
                         },
                         new
                         {
-                            CalisanGunID = 12,
                             CalisanID = 4,
-                            GunID = 1
+                            GunID = 1,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 12
                         },
                         new
                         {
-                            CalisanGunID = 13,
                             CalisanID = 4,
-                            GunID = 2
+                            GunID = 2,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 13
                         },
                         new
                         {
-                            CalisanGunID = 14,
                             CalisanID = 4,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 14
                         },
                         new
                         {
-                            CalisanGunID = 15,
                             CalisanID = 4,
-                            GunID = 6
+                            GunID = 6,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 15
                         },
                         new
                         {
-                            CalisanGunID = 16,
                             CalisanID = 5,
-                            GunID = 1
+                            GunID = 1,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 16
                         },
                         new
                         {
-                            CalisanGunID = 17,
                             CalisanID = 5,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 17
                         },
                         new
                         {
-                            CalisanGunID = 18,
                             CalisanID = 5,
-                            GunID = 7
+                            GunID = 7,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 18
                         },
                         new
                         {
-                            CalisanGunID = 19,
                             CalisanID = 6,
-                            GunID = 2
+                            GunID = 2,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 19
                         },
                         new
                         {
-                            CalisanGunID = 20,
                             CalisanID = 6,
-                            GunID = 3
+                            GunID = 3,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 20
                         },
                         new
                         {
-                            CalisanGunID = 21,
                             CalisanID = 6,
-                            GunID = 5
+                            GunID = 5,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 21
                         },
                         new
                         {
-                            CalisanGunID = 22,
                             CalisanID = 6,
-                            GunID = 6
+                            GunID = 6,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 22
                         },
                         new
                         {
-                            CalisanGunID = 23,
                             CalisanID = 6,
-                            GunID = 7
+                            GunID = 7,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 23
                         },
                         new
                         {
-                            CalisanGunID = 24,
                             CalisanID = 7,
-                            GunID = 1
+                            GunID = 1,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 24
                         },
                         new
                         {
-                            CalisanGunID = 25,
                             CalisanID = 7,
-                            GunID = 3
+                            GunID = 3,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 25
                         },
                         new
                         {
-                            CalisanGunID = 26,
                             CalisanID = 7,
-                            GunID = 4
+                            GunID = 4,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 26
                         },
                         new
                         {
-                            CalisanGunID = 27,
                             CalisanID = 7,
-                            GunID = 7
+                            GunID = 7,
+                            BaslangicSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            BitisSaati = new TimeSpan(0, 0, 0, 0, 0),
+                            CalisanGunID = 27
                         });
                 });
 
@@ -1275,17 +1330,17 @@ namespace KuaforWebSitesi.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RandevuID"));
 
-                    b.Property<int?>("CalisanID")
+                    b.Property<int>("CalisanID")
                         .HasColumnType("int");
 
                     b.Property<string>("Durum")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("HizmetID")
+                    b.Property<int>("HizmetID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MusteriID")
+                    b.Property<int>("MusteriID")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("Saat")
@@ -1359,17 +1414,20 @@ namespace KuaforWebSitesi.Migrations
                     b.HasOne("KuaforWebSitesi.Models.Calisan", "Calisan")
                         .WithMany("Randevular")
                         .HasForeignKey("CalisanID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmet")
                         .WithMany("Randevular")
                         .HasForeignKey("HizmetID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("KuaforWebSitesi.Models.Musteri", "Musteri")
                         .WithMany("Randevular")
                         .HasForeignKey("MusteriID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Calisan");
 

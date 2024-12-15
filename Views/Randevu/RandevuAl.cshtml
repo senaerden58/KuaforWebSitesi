@@ -7,55 +7,97 @@
     <p style="color:green;">@TempData["msj"]</p>
 }
 
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-    <!-- Bootstrap CSS Linki -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-
-<form id="randevuForm" method="post" class="mb-4">
-    <!-- Hizmet Seçimi -->
-    <div class="mb-3">
-        <label for="hizmet" class="form-label">Hizmet Seç:</label>
-        <select id="hizmet" name="hizmetID" class="form-select" onchange="getCalisanlar()">
-            <option value="">Hizmet Seçin</option>
-            @foreach (var hizmet in ViewBag.Hizmetler)
-            {
-                <option value="@hizmet.HizmetID">@hizmet.HizmetAdi</option>
-            }
-        </select>
-    </div>
-
-    <!-- Çalışan Seçimi -->
-    <div class="mb-3">
-        <label for="calisan" class="form-label">Çalışan Seç:</label>
-        <select id="calisan" name="calisanID" class="form-select" disabled onchange="getGunler()">
-            <option value="">Önce Hizmet Seçin</option>
-        </select>
-    </div>
-
-    <!-- Çalışan Günleri Seçimi -->
-    <div class="mb-3">
-        <label for="randevuGunu" class="form-label">Randevu Günü Seç:</label>
-        <input type="text" id="randevuGunu" name="randevuGunu" class="form-control" disabled />
-        <div id="calisanGunlerNotu" class="mt-2 text-muted"></div> <!-- Günlerin notlarını buraya ekleyeceğiz -->
-    </div>
-
-    <button type="submit" class="btn btn-primary">Randevu Al</button>
-</form>
-
-@section Scripts {
-    <!-- jQuery ve jQuery UI için gerekli linkler -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Al</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI (make sure jQuery UI is loaded after jQuery) -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/randevu.css" />
+</head>
+<body>
+    <form id="randevuForm" asp-action="RandevuAlFinal" method="post" class="mb-4">
+        @Html.AntiForgeryToken()
+
+        <!-- Hizmet Seçimi -->
+        <div class="mb-3">
+            <label for="hizmet" class="form-label">Hizmet Seç:</label>
+            <select id="hizmet" name="hizmetID" class="form-select" onchange="getCalisanlar()" required>
+                <option value="">Hizmet Seçin</option>
+                @if (ViewData["Hizmetler"] != null)
+                {
+                    foreach (var hizmet in (List<KuaforWebSitesi.Models.Hizmetler>)ViewData["Hizmetler"])
+                    {
+                        <option value="@hizmet.HizmetID">@hizmet.HizmetAdi</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Çalışan Seçimi -->
+        <div class="mb-3">
+            <label for="calisan" class="form-label">Çalışan Seç:</label>
+            <select id="calisan" name="calisanID" class="form-select" disabled onchange="GetCalisanGunler()" required>
+                <option value="">Önce Hizmet Seçin</option>
+            </select>
+        </div>
+
+        <!-- Çalışan Günleri Seçimi -->
+        <div class="mb-3">
+            <label for="randevuGunu" class="form-label">Randevu Günü Seç:</label>
+            <input type="date" id="randevuGunu" name="randevuGunu" class="form-control" disabled required />
+            <div id="calisanGunlerNotu" class="mt-2 text-muted"></div>
+        </div>
+
+        <!-- Saat Seçimi -->
+        <div class="mb-3">
+            <label for="randevuSaati" class="form-label">Randevu Saati Seçin:</label>
+            <select id="randevuSaati" name="randevuSaati" class="form-select" required disabled>
+                <option value="">Saat Seçin</option>
+            </select>
+        </div>
+
+        <!-- Müşteri Seçimi -->
+        <div class="mb-3">
+            <label for="musteri" class="form-label">Müşteri Seç:</label>
+            <select id="musteri" name="musteriID" class="form-select" required>
+                <option value="">Müşteri Seçin</option>
+                @foreach (var musteri in (List<Musteri>)ViewData["Musteriler"])
+                {
+                    <option value="@musteri.MusteriID">@musteri.MusteriAd @musteri.MusteriSoyad</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Randevu Al</button>
+    </form>
+
+    
+
+
+  
+
     <script>
-        // Hizmet seçildiğinde çalışanları yükleyelim
+        // Hizmet seçildiğinde çalışanları yükle
         async function getCalisanlar() {
             const hizmetID = document.getElementById("hizmet").value;
+            const calisanDropdown = document.getElementById("calisan");
+
             if (!hizmetID) {
-                document.getElementById("calisan").innerHTML = '<option value="">Hizmet Seçin</option>';
-                document.getElementById("calisan").disabled = true;
+                calisanDropdown.innerHTML = '<option value="">Hizmet Seçin</option>';
+                calisanDropdown.disabled = true;
                 return;
             }
 
@@ -63,82 +105,94 @@
                 const response = await fetch(`/Randevu/GetCalisanlar?hizmetID=${hizmetID}`);
                 const calisanlar = await response.json();
 
-                if (calisanlar.error) {
-                    console.error("Hata:", calisanlar.error);
-                    return;
+                if (response.ok && calisanlar.length) {
+                    calisanDropdown.innerHTML = '<option value="">Çalışan Seçin</option>';
+                    calisanlar.forEach(calisan => {
+                        calisanDropdown.innerHTML += `<option value="${calisan.calisanID}">${calisan.ad} ${calisan.soyad}</option>`;
+                    });
+                    calisanDropdown.disabled = false;
+                } else {
+                    alert("Çalışanlar yüklenemedi. Lütfen tekrar deneyin.");
                 }
-
-                const calisanDropdown = document.getElementById("calisan");
-                calisanDropdown.innerHTML = '<option value="">Çalışan Seçin</option>';
-
-                calisanlar.forEach(calisan => {
-                    const option = document.createElement("option");
-                    option.value = calisan.calisanID;
-                    option.textContent = `${calisan.ad} ${calisan.soyad}`;
-                    calisanDropdown.appendChild(option);
-                });
-
-                document.getElementById("calisan").disabled = false;
-                document.getElementById("randevuGunu").disabled = true;
-                document.getElementById("calisanGunlerNotu").innerHTML = ''; // Çalışan günlerini sıfırlayalım
             } catch (error) {
                 console.error("Çalışanları alırken bir hata oluştu:", error);
             }
         }
 
-        // Çalışan seçildiğinde çalışan günlerini yükleyelim
-               // Çalışan seçildiğinde çalışan günlerini yükleyelim
-               // Çalışan seçildiğinde çalışan günlerini yükleyelim
-        async function getGunler() {
+        // Çalışan seçildiğinde günleri yükle
+        async function GetCalisanGunler() {
             const calisanID = document.getElementById("calisan").value;
+            const randevuGunu = document.getElementById("randevuGunu");
+            const calisanGunlerNotu = document.getElementById("calisanGunlerNotu");
+
             if (!calisanID) return;
-                    const gunlerMap = {
-            "pazartesi": "monday",
-            "salı": "tuesday",
-            "çarşamba": "wednesday",
-            "perşembe": "thursday",
-            "cuma": "friday",
-            "cumartesi": "saturday",
-            "pazar": "sunday"
-        };
 
             try {
                 const response = await fetch(`/Randevu/GetCalisanGunler?calisanID=${calisanID}`);
                 const gunler = await response.json();
 
-                if (gunler.error) {
-                    console.error("Hata:", gunler.error);
-                    return;
+                if (response.ok && gunler.length) {
+                    const gunlerMap = { "pazartesi": 1, "salı": 2, "çarşamba": 3, "perşembe": 4, "cuma": 5, "cumartesi": 6, "pazar": 0 };
+                    const availableDays = gunler.map(gun => gunlerMap[gun.toLowerCase()]);
+
+                    // Destroy any previous datepicker and reinitialize it with the new available days
+                    if ($.fn.datepicker) {
+                        $(randevuGunu).datepicker("destroy");  // Destroy previous instance
+                        $(randevuGunu).datepicker({
+                            beforeShowDay: function(date) {
+                                // Restrict days based on availableDays
+                                return [availableDays.includes(date.getDay())];
+                            }
+                        });
+                    } else {
+                        console.error("datepicker fonksiyonu yüklenemedi.");
+                    }
+
+                    randevuGunu.disabled = false;
+                    calisanGunlerNotu.textContent = `Bu çalışan şu günlerde çalışıyor: ${gunler.join(", ")}`;
+                } else {
+                    alert("Çalışan günleri yüklenemedi.");
                 }
-
-                       const availableDays = gunler.map(gun => gunlerMap[gun.toLowerCase()]);
-        // Çalışanın çalıştığı günler
-
-                 $("#randevuGunu").datepicker("destroy");
-        $("#randevuGunu").datepicker({
-            beforeShowDay: function (date) {
-                // Seçilen günün adını al
-                const day = date.toLocaleString('en-us', { weekday: 'long' }).toLowerCase(); // Örn: "monday"
-
-                // Çalışanın o gün çalışıp çalışmadığını kontrol et
-                const isAvailable = availableDays.includes(day); // Eğer o gün çalışıyorsa true, değilse false
-                return [isAvailable]; // Eğer çalışıyorsa o günü seçilebilir yap
-            },
-            onSelect: function (dateText) {
-                console.log("Seçilen tarih: " + dateText);  // Seçilen tarihi kontrol et
-            }
-        });
-
-                document.getElementById("randevuGunu").disabled = false;
-
-                // Çalışan günlerini not olarak gösterelim
-                const gunlerNotu = availableDays.join(", ");
-                document.getElementById("calisanGunlerNotu").innerHTML = `Not: Seçilen çalışan bu günlerde çalışmaktadır: ${gunlerNotu}`;
             } catch (error) {
-                console.error("Çalışan günlerini alırken bir hata oluştu:", error);
+                console.error("Günleri alırken bir hata oluştu:", error);
+            }
+        }
+
+        // Saat seçimini yükle
+               // Saat seçimini yükle
+        async function getUygunSaatler() {
+            const calisanID = document.getElementById("calisan").value;
+            const tarih = document.getElementById("randevuGunu").value;
+            const hizmetID = document.getElementById("hizmet").value;
+            const saatDropdown = document.getElementById("randevuSaati");
+
+            if (!calisanID || !tarih || !hizmetID) return;
+
+            try {
+                const response = await fetch(`/Randevu/GetUygunSaatler?calisanID=${calisanID}&tarih=${tarih}&hizmetID=${hizmetID}`);
+                const saatler = await response.json();
+
+                if (response.ok && saatler.length) {
+                    saatDropdown.innerHTML = '<option value="">Saat Seçin</option>';
+                    saatler.forEach(saat => {
+                        saatDropdown.innerHTML += `<option value="${saat}">${saat}</option>`;
+                    });
+                    saatDropdown.disabled = false; // Saatler yüklendiyse dropdown aktif olur
+                } else {
+                    saatDropdown.innerHTML = '<option value="">Uygun saat bulunamadı</option>';
+                    saatDropdown.disabled = true; // Saatler yoksa dropdown disabled kalır
+                }
+            } catch (error) {
+                console.error("Saatleri alırken bir hata oluştu:", error);
             }
         }
 
 
+        // Event listeners for date and service changes to trigger saatler
+        document.getElementById("hizmet").addEventListener("change", getUygunSaatler);
+        document.getElementById("randevuGunu").addEventListener("change", getUygunSaatler);
     </script>
-}
+
+</body>
+</html>
+

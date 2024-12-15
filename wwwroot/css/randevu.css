@@ -1,8 +1,8 @@
-﻿
-body {
+﻿body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
+
 
 h2 {
     color: #333;
@@ -27,6 +27,7 @@ button {
     cursor: pointer;
 }
 
+
     button:hover {
         background-color: #45a049;
     }
@@ -35,6 +36,13 @@ button {
     position: relative;
     z-index: 9999;
 }
+
 .fc-day {
     pointer-events: all; /* Tıklanabilir yapmak için */
+}
+
+#saat {
+    display: block;
+    width: 200px;
+    margin-top: 10px;
 }

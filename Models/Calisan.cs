@@ -23,5 +23,6 @@ namespace KuaforWebSitesi.Models
         public ICollection<CalisanHizmetler>? CalisanHizmetler { get; set; }
         public ICollection<Randevu>? Randevular { get; set; } = new List<Randevu>();
         public ICollection<CalisanGun>? CalisanGunler { get; set; }
+        //public ICollection<CalisanSaat>? CalisanSaatler { get; set; }   
     }
 }
