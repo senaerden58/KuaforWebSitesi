@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Randevu>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Listesi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Randevu Listesi</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Randevu ID</th>
+                    <th>Müşteri Adı</th>
+                    <th>Hizmet Adı</th>
+                    <th>Tarih</th>
+                    <th>Saat</th>
+                    <th>Çalışan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var randevu in Model)
+                {
+                    <tr>
+                        <td>@randevu.RandevuID</td>
+                        <td>@randevu.Musteri.MusteriAd</td>
+                        <td>@randevu.Hizmet.HizmetAdi</td>
+                        <td>@randevu.Tarih.ToString("dd MMM yyyy")</td>
+                        <td>@randevu.Saat.ToString(@"hh\:mm")</td>
+                        <td>@randevu.Calisan.CalisanAd @randevu.Calisan.CalisanSoyad</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional: Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

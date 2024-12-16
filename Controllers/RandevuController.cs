@@ -119,74 +119,65 @@ namespace KuaforWebSitesi.Controllers
 
             return Json(calisanlar);
         }
-        public async Task<List<DateTime>> GetUygunSaatler(int calisanID, DateTime tarih, int hizmetSuresi, int hizmetID)
+        public async Task<List<TimeSpan>> GetUygunSaatler(int calisanID, DateTime tarih, int hizmetID)
         {
-            // Tarihe göre gün bilgisini alıyoruz
-            var gunAdi = tarih.DayOfWeek.ToString();  // Pazartesi, Salı vb. alıyoruz
-            var gun = await db.Gunler
-                .FirstOrDefaultAsync(g => g.GunAdi == gunAdi);
+            // Seçilen hizmetin süresini alıyoruz
+            var hizmet = await db.Hizmetler
+                .FirstOrDefaultAsync(h => h.HizmetID == hizmetID);
 
-            if (gun == null)
+            if (hizmet == null)
             {
-                throw new Exception("Gün bulunamadı.");
+                throw new Exception("Seçilen hizmet bulunamadı.");
             }
 
-            // İlgili gün ve çalışan için saat dilimlerini alıyoruz
-            var calisanGunler = await db.CalisanGunler
-                .Where(cs => cs.CalisanID == calisanID && cs.GunID == gun.GunID)
-                .ToListAsync();
+            TimeSpan hizmetSuresi = hizmet.Sure; // Hizmet süresi zaten TimeSpan türünde, direkt alıyoruz
 
-            if (calisanGunler == null || !calisanGunler.Any())
+            // Tarihe göre çalışanın çalışma saatlerini alıyoruz
+            var gunAdi = tarih.DayOfWeek.ToString(); // Pazartesi, Salı vb.
+            var calisanGun = await db.CalisanGunler
+                .FirstOrDefaultAsync(cg => cg.CalisanID == calisanID && cg.GunID == (int)tarih.DayOfWeek);
+
+            if (calisanGun == null)
             {
-                throw new Exception("Bu gün için uygun saatler bulunamadı.");
+                throw new Exception("Bu gün için çalışma saatleri bulunamadı.");
             }
 
-            // Mevcut randevuları kontrol ediyoruz
             var mevcutRandevular = await db.Randevular
                 .Where(r => r.CalisanID == calisanID && r.Tarih.Date == tarih.Date)
                 .ToListAsync();
 
-            List<DateTime> uygunSaatler = new List<DateTime>();
+            var uygunSaatler = new List<TimeSpan>();
 
-            // Saat aralıklarını döngü ile kontrol ediyoruz
-            foreach (var calisanGun in calisanGunler)
+            // Çalışma saatleri arasında uygun saatleri kontrol ediyoruz
+            for (var saat = calisanGun.BaslangicSaati;
+                 saat < calisanGun.BitisSaati;
+                 saat = saat.Add(hizmetSuresi)) // Hizmet süresi kadar aralık
             {
-                TimeSpan baslangicSaati = calisanGun.BaslangicSaati; // Başlangıç saatini alıyoruz
-                TimeSpan bitisSaati = calisanGun.BitisSaati; // Bitiş saatini alıyoruz
-
-                // Başlangıç saatinden bitiş saatine kadar 30 dakikalık aralıklarla kontrol ediyoruz
-                for (TimeSpan saat = baslangicSaati; saat < bitisSaati; saat = saat.Add(TimeSpan.FromMinutes(30))) // 30 dakikalık aralıklarla ekliyoruz
+                bool cakismaVar = mevcutRandevular.Any(r =>
                 {
-                    // Mevcut randevularla çakışıp çakışmadığını kontrol ediyoruz
-                    bool randevuCakismiyor = true;
-                    foreach (var randevu in mevcutRandevular)
-                    {
-                        TimeSpan randevuBaslangic = randevu.Saat.TimeOfDay; // Randevunun başlangıç saatini alıyoruz
-                        TimeSpan randevuBitis = randevuBaslangic.Add(TimeSpan.FromMinutes(hizmetSuresi)); // Randevunun bitiş saatini hesaplıyoruz
+                    var randevuBaslangic = r.Saat;
+                    TimeSpan randevuBitis = randevuBaslangic.Add(hizmetSuresi); // Hizmet süresini ekliyoruz
+                    TimeSpan yeniRandevuBitis = saat.Add(hizmetSuresi); // Yeni randevu bitiş saati
 
-                        // Saat aralığının mevcut randevu ile çakışıp çakışmadığını kontrol ediyoruz
-                        if ((saat >= randevuBaslangic && saat < randevuBitis) ||
-                            (saat.Add(TimeSpan.FromMinutes(hizmetSuresi)) > randevuBaslangic && saat.Add(TimeSpan.FromMinutes(hizmetSuresi)) <= randevuBitis))
-                        {
-                            randevuCakismiyor = false;
-                            break;
-                        }
-                    }
+                    return (saat >= randevuBaslangic && saat < randevuBitis) ||
+                           (yeniRandevuBitis > randevuBaslangic && yeniRandevuBitis <= randevuBitis);
+                });
 
-                    if (randevuCakismiyor)
-                    {
-                        // Eğer çakışma yoksa uygun saati listeye ekliyoruz
-                        uygunSaatler.Add(tarih.Date.Add(saat)); // Tarih ile saati birleştirip ekliyoruz
-                    }
+                if (!cakismaVar)
+                {
+                    uygunSaatler.Add(saat);
                 }
             }
 
-            return uygunSaatler; // Uygun saatlerin listesini döndürüyoruz
+            return uygunSaatler;
         }
 
 
 
+
+
         [HttpPost]
+      
         public IActionResult RandevuAlFinal(Randevu randevu)
         {
             // Validate required fields
@@ -198,26 +189,40 @@ namespace KuaforWebSitesi.Controllers
 
             try
             {
+                // Saat ve tarih bilgilerini birleştirme
+                if (randevu.Tarih < DateTime.Now.Date)
+                {
+                    TempData["msj"] = "Geçmiş bir tarih seçilemez.";
+                    return RedirectToAction("RandevuAl"); // Bu işlemdeki yönlendirme kullanıcıyı tekrar doğru sayfaya yönlendirir.
+                }
+
+                // Veritabanına kaydetme
                 db.Randevular.Add(randevu);
                 db.SaveChanges();
 
+                // Başarı mesajı
                 TempData["msj"] = "Randevunuz başarıyla kaydedildi.";
-                return RedirectToAction("RandevuList");
+                return RedirectToAction("RandevuList", new { id = randevu.RandevuID });
             }
             catch (Exception ex)
             {
                 TempData["msj"] = $"Hata oluştu: {ex.Message}";
-                return RedirectToAction("RandevuAl");
+                return RedirectToAction("RandevuAl");  // Hata durumunda yönlendirme tekrar form sayfasına yapılır.
             }
         }
 
 
 
 
-        public IActionResult RandevuList()
+
+        public async Task<IActionResult> RandevuList()
         {
-            var randevular = db.Randevular.Include(r => r.Hizmet).Include(r => r.Calisan).ToList();
-            return View(randevular);
+            var randevular = await db.Randevular
+                .Include(r => r.Hizmet) // Hizmet bilgisini de ekliyoruz
+                .Include(r => r.Calisan) // Çalışan bilgisini de ekliyoruz
+                .ToListAsync();
+
+            return View();
         }
 
     }

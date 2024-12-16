@@ -1,31 +1,23 @@
 is_global = true
-build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
+build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KuaforWebSitesi
 build_property.RootNamespace = KuaforWebSitesi
 build_property.ProjectDir = C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.RazorLangVersion = 8.0
+build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Admin/Index.cshtml]
@@ -82,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Randevu/RandevuAl.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1QWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Randevu/RandevuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1RWtsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/SENA/source/repos/KuaforWebSitesi/KuaforWebSitesi/Views/Randevu/RandevuList.cshtml]
