@@ -24,16 +24,17 @@ namespace KuaforWebSitesi.Controllers
                 return RedirectToAction("MusteriGiris", "Musteri");
             }
             var hizmetler = db.Hizmetler.ToList();
-
-            var musteriler = db.Musteriler.ToList();
             if (hizmetler == null || hizmetler.Count == 0)
             {
                 TempData["Error"] = "Hizmetler mevcut değil.";
             }
             else
             {
+                ViewData["MusteriID"] = musteriID;
+              
                 ViewData["Hizmetler"] = hizmetler;
-                ViewData["Musteriler"] = musteriler;
+              
+               
             }
             return View();
         }

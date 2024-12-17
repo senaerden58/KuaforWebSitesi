@@ -5,7 +5,7 @@
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class Saatler : Migration
+    public partial class UpdateCalisanGunHours : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

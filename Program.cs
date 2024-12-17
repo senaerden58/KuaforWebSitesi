@@ -1,4 +1,5 @@
 using KuaforWebSitesi.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +24,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
     options.Cookie.SameSite = SameSiteMode.Lax; // SameSite politikasýný ayarlama (isteðe baðlý)
 });
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.AccessDeniedPath = "/Account/AccessDenied";
+    });
 builder.Services.AddControllersWithViews();  // MVC için gerekli hizmeti ekleyin
 
 builder.Services.AddDbContext<KuaforDBContext>(options =>
@@ -55,6 +63,8 @@ app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
+
 
 app.MapControllerRoute(
     name: "default",

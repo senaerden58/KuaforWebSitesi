@@ -13,12 +13,12 @@ namespace KuaforWebSitesi.Models
     public class KuaforDBContext : DbContext
     {
         public KuaforDBContext(DbContextOptions<KuaforDBContext> options) : base(options) { }
-        //public DbSet<CalisanSaat> CalisanSaatler { get; set; }
+        //public DbSet<Role> Roles { get; set; } // Roles tablosu
         public DbSet<Musteri> Musteriler { get; set; }
         public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Hizmetler> Hizmetler { get; set; }
         public DbSet<Randevu> Randevular { get; set; }
-        public DbSet<Admin> Admin { get; set; }
+        //public DbSet<Admin> Admin { get; set; }
         public DbSet<CalisanHizmetler> CalisanHizmetler { get; set; }
         public DbSet<Gunler> Gunler { get; set; }
         public DbSet<HizmetKategori> HizmetKategoriler { get; set; }
@@ -125,9 +125,9 @@ new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
               new Hizmetler { HizmetID = 24, HizmetAdi = "Karbon Peeling", Sure = TimeSpan.FromMinutes(45), Fiyat = 1500, HizmetKategoriID = 4 }
           );
 
-            modelBuilder.Entity<Admin>().HasData(
-                new Admin { AdminID = 1, AdminMail = "b211210041@sakarya.edu.tr", AdminSifre = "sau" }
-                );
+            //modelBuilder.Entity<Admin>().HasData(
+            //    new Admin { AdminID = 1, AdminMail = "b211210041@sakarya.edu.tr", AdminSifre = "sau" }
+            //    );
 
 
             modelBuilder.Entity<Calisan>().HasData(
@@ -371,19 +371,11 @@ new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
                 .WithMany(g => g.CalisanGunler)
             .HasForeignKey(cg => cg.GunID);
 
-        //    modelBuilder.Entity<CalisanSaat>()
-        //.HasOne(cs => cs.Calisan)
-        //.WithMany(c => c.CalisanSaatler)
-        //.HasForeignKey(cs => cs.CalisanID)
-        //.OnDelete(DeleteBehavior.Restrict);
 
-        //    modelBuilder.Entity<CalisanSaat>()
-        //        .HasOne(cs => cs.Gun)
-        //        .WithMany(g => g.CalisanSaatler)
-        //        .HasForeignKey(cs => cs.GunID)
-        //        .OnDelete(DeleteBehavior.Restrict);
-
-
+            //modelBuilder.Entity<Musteri>()
+            //    .HasOne(m => m.Role)
+            //    .WithMany(r => r.Musteriler)
+            //    .HasForeignKey(m => m.RolID);
 
         }
     }

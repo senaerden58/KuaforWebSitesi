@@ -23,6 +23,9 @@ namespace KuaforWebSitesi.Models
         public ICollection<CalisanHizmetler>? CalisanHizmetler { get; set; }
         public ICollection<Randevu>? Randevular { get; set; } = new List<Randevu>();
         public ICollection<CalisanGun>? CalisanGunler { get; set; }
-        //public ICollection<CalisanSaat>? CalisanSaatler { get; set; }   
+
+        //public int RolID { get; set; } // Role ID (Roles tablosuna referans)
+        //public Role Role { get; set; } // Navigation property
+
     }
 }

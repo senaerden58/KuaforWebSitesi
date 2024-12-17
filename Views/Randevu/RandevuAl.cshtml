@@ -60,6 +60,11 @@
                 <input type="date" id="Tarih" name="Tarih" class="form-control" required
                        min="@DateTime.Now.ToString("yyyy-MM-dd")" />
             </div>
+        <!-- Çalışan Günleri Görüntüleme Alanı -->
+        <div class="mb-3">
+            <label class="form-label">Çalışan Uygun Günler:</label>
+            <span id="calisanGunlerNotu" class="text-success"></span>
+        </div>
 
         
 
@@ -74,14 +79,8 @@
 
         <!-- Müşteri Seçimi -->
         <div class="mb-3">
-            <label for="musteri" class="form-label">Müşteri Seç:</label>
-            <select id="musteri" name="musteriID" class="form-select" required>
-                <option value="">Müşteri Seçin</option>
-                @foreach (var musteri in (List<Musteri>)ViewData["Musteriler"])
-                {
-                    <option value="@musteri.MusteriID">@musteri.MusteriAd @musteri.MusteriSoyad</option>
-                }
-            </select>
+            <input type="hidden" id="musteri" name="musteriID" value="@ViewData["MusteriID"]" />
+
         </div>
 
         <button type="submit" class="btn btn-primary">Randevu Al</button>
@@ -164,10 +163,11 @@
                             alert("Seçtiğiniz gün, bu çalışan için uygun değil.");
                             Tarih.value = '';  // Clear the selected date
                         }
+                        
                     });
-
+                      calisanGunlerNotu.textContent = `Bu çalışan şu günlerde çalışıyor: ${gunler.join(", ")}`;
                     // Display the available days for the user
-                    calisanGunlerNotu.textContent = `Bu çalışan şu günlerde çalışıyor: ${gunler.join(", ")}`;
+                  
                 } else {
                     alert("Çalışan günleri yüklenemedi.");
                 }

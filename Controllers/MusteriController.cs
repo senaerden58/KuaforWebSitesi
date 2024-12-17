@@ -105,12 +105,12 @@ namespace KuaforWebSitesi.Controllers
                 return View(); 
             }
 
-            var admin = db.Admin.FirstOrDefault(a => a.AdminMail == musteriMail);
-            if (admin != null && musteriSifre == admin.AdminSifre)
-            {               
-                TempData["msj"] = "Admin Girişi Başarılı!";
-                return RedirectToAction("AdminPaneli", "Admin");
-            }
+            //var admin = db.Admin.FirstOrDefault(a => a.AdminMail == musteriMail);
+            //if (admin != null && musteriSifre == admin.AdminSifre)
+            //{               
+            //    TempData["msj"] = "Admin Girişi Başarılı!";
+            //    return RedirectToAction("AdminPaneli", "Admin");
+            //}
             var result = _passwordHasher.VerifyHashedPassword(mevcutMusteri, mevcutMusteri.MusteriSifre, musteriSifre);
             if (result == PasswordVerificationResult.Success)
             {

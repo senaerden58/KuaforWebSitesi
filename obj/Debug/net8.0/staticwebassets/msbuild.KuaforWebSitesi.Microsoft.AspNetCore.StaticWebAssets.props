@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xaojd2cpg8</Fingerprint>
-      <Integrity>yXYJmgXzpzMDtFzKfkbzuqFSrkCnEJP7XFiOfkE34iA=</Integrity>
+      <Fingerprint>lf5gl7vajd</Fingerprint>
+      <Integrity>gaBIcBdTG3QfzDWwDdeau9sTDu9hVWsun4hgrpAiZ70=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\randevu.css'))</OriginalItemSpec>

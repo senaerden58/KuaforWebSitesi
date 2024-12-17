@@ -14,20 +14,6 @@ namespace KuaforWebSitesi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Admin",
-                columns: table => new
-                {
-                    AdminID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    AdminMail = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AdminSifre = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Admin", x => x.AdminID);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Calisanlar",
                 columns: table => new
                 {
@@ -93,7 +79,9 @@ namespace KuaforWebSitesi.Migrations
                 {
                     CalisanID = table.Column<int>(type: "int", nullable: false),
                     GunID = table.Column<int>(type: "int", nullable: false),
-                    CalisanGunID = table.Column<int>(type: "int", nullable: false)
+                    CalisanGunID = table.Column<int>(type: "int", nullable: false),
+                    BaslangicSaati = table.Column<TimeSpan>(type: "time", nullable: false),
+                    BitisSaati = table.Column<TimeSpan>(type: "time", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -106,34 +94,6 @@ namespace KuaforWebSitesi.Migrations
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CalisanGunler_Gunler_GunID",
-                        column: x => x.GunID,
-                        principalTable: "Gunler",
-                        principalColumn: "GunID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "CalisanSaatler",
-                columns: table => new
-                {
-                    CalisanSaatID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CalisanID = table.Column<int>(type: "int", nullable: false),
-                    GunID = table.Column<int>(type: "int", nullable: false),
-                    BaslangicSaati = table.Column<TimeSpan>(type: "time", nullable: false),
-                    BitisSaati = table.Column<TimeSpan>(type: "time", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CalisanSaatler", x => x.CalisanSaatID);
-                    table.ForeignKey(
-                        name: "FK_CalisanSaatler_Calisanlar_CalisanID",
-                        column: x => x.CalisanID,
-                        principalTable: "Calisanlar",
-                        principalColumn: "CalisanID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_CalisanSaatler_Gunler_GunID",
                         column: x => x.GunID,
                         principalTable: "Gunler",
                         principalColumn: "GunID",
@@ -225,11 +185,6 @@ namespace KuaforWebSitesi.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Admin",
-                columns: new[] { "AdminID", "AdminMail", "AdminSifre" },
-                values: new object[] { 1, "b211210041@sakarya.edu.tr", "sau" });
-
-            migrationBuilder.InsertData(
                 table: "Calisanlar",
                 columns: new[] { "CalisanID", "CalisanAd", "CalisanMail", "CalisanSifre", "CalisanSoyad", "CalisanTelefon" },
                 values: new object[,]
@@ -271,36 +226,36 @@ namespace KuaforWebSitesi.Migrations
 
             migrationBuilder.InsertData(
                 table: "CalisanGunler",
-                columns: new[] { "CalisanID", "GunID", "CalisanGunID" },
+                columns: new[] { "CalisanID", "GunID", "BaslangicSaati", "BitisSaati", "CalisanGunID" },
                 values: new object[,]
                 {
-                    { 1, 1, 1 },
-                    { 1, 5, 2 },
-                    { 2, 2, 3 },
-                    { 2, 3, 4 },
-                    { 2, 4, 5 },
-                    { 2, 5, 6 },
-                    { 2, 6, 7 },
-                    { 3, 1, 8 },
-                    { 3, 3, 9 },
-                    { 3, 5, 10 },
-                    { 3, 6, 11 },
-                    { 4, 1, 12 },
-                    { 4, 2, 13 },
-                    { 4, 5, 14 },
-                    { 4, 6, 15 },
-                    { 5, 1, 16 },
-                    { 5, 5, 17 },
-                    { 5, 7, 18 },
-                    { 6, 2, 19 },
-                    { 6, 3, 20 },
-                    { 6, 5, 21 },
-                    { 6, 6, 22 },
-                    { 6, 7, 23 },
-                    { 7, 1, 24 },
-                    { 7, 3, 25 },
-                    { 7, 4, 26 },
-                    { 7, 7, 27 }
+                    { 1, 1, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 1 },
+                    { 1, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 2 },
+                    { 2, 2, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 3 },
+                    { 2, 3, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 4 },
+                    { 2, 4, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 5 },
+                    { 2, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 6 },
+                    { 2, 6, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 7 },
+                    { 3, 1, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 8 },
+                    { 3, 3, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 9 },
+                    { 3, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 10 },
+                    { 3, 6, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 11 },
+                    { 4, 1, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 12 },
+                    { 4, 2, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 13 },
+                    { 4, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 14 },
+                    { 4, 6, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 15 },
+                    { 5, 1, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 16 },
+                    { 5, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 17 },
+                    { 5, 7, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 18 },
+                    { 6, 2, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 19 },
+                    { 6, 3, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 20 },
+                    { 6, 5, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 21 },
+                    { 6, 6, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 22 },
+                    { 6, 7, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 23 },
+                    { 7, 1, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 24 },
+                    { 7, 3, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 25 },
+                    { 7, 4, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 26 },
+                    { 7, 7, new TimeSpan(0, 0, 0, 0, 0), new TimeSpan(0, 0, 0, 0, 0), 27 }
                 });
 
             migrationBuilder.InsertData(
@@ -448,16 +403,6 @@ namespace KuaforWebSitesi.Migrations
                 column: "HizmetID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CalisanSaatler_CalisanID",
-                table: "CalisanSaatler",
-                column: "CalisanID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CalisanSaatler_GunID",
-                table: "CalisanSaatler",
-                column: "GunID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Hizmetler_HizmetKategoriID",
                 table: "Hizmetler",
                 column: "HizmetKategoriID");
@@ -494,16 +439,10 @@ namespace KuaforWebSitesi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Admin");
-
-            migrationBuilder.DropTable(
                 name: "CalisanGunler");
 
             migrationBuilder.DropTable(
                 name: "CalisanHizmetler");
-
-            migrationBuilder.DropTable(
-                name: "CalisanSaatler");
 
             migrationBuilder.DropTable(
                 name: "Randevular");

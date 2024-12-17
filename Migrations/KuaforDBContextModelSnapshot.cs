@@ -22,35 +22,6 @@ namespace KuaforWebSitesi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("KuaforWebSitesi.Models.Admin", b =>
-                {
-                    b.Property<int>("AdminID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminID"));
-
-                    b.Property<string>("AdminMail")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("AdminSifre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("AdminID");
-
-                    b.ToTable("Admin");
-
-                    b.HasData(
-                        new
-                        {
-                            AdminID = 1,
-                            AdminMail = "b211210041@sakarya.edu.tr",
-                            AdminSifre = "sau"
-                        });
-                });
-
             modelBuilder.Entity("KuaforWebSitesi.Models.Calisan", b =>
                 {
                     b.Property<int>("CalisanID")

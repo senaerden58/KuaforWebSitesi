@@ -1,6 +1,7 @@
 ﻿using KuaforWebSitesi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
@@ -25,7 +26,7 @@ namespace KuaforWebSitesi.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public IActionResult CalisanEkle()
         {
             // Tüm günleri veritabanından al
