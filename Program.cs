@@ -25,18 +25,25 @@ builder.Services.AddSession(options =>
     options.Cookie.SameSite = SameSiteMode.Lax; // SameSite politikasýný ayarlama (isteðe baðlý)
 });
 
+
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login";
+        options.LoginPath = "/Musteri/MusteriGiris";
         options.AccessDeniedPath = "/Account/AccessDenied";
     });
+
+
+
 builder.Services.AddControllersWithViews();  // MVC için gerekli hizmeti ekleyin
+
+
 
 builder.Services.AddDbContext<KuaforDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<PasswordHasher<Musteri>>(); // PasswordHasher'ý DI sistemine ekleyin
-builder.Services.AddScoped<PasswordHasher<Calisan>>();
+builder.Services.AddScoped<PasswordHasher<Calisan>>(); // PasswordHasher'ý DI sistemine ekleyin
 
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())
@@ -48,6 +55,7 @@ if (!app.Environment.IsDevelopment())
 
 
 
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -55,6 +63,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
 app.UseDeveloperExceptionPage(); // Geliþtirici ortamýnda detaylý hata mesajlarý gösterir
 
 app.UseHttpsRedirection();

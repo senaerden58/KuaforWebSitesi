@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    [Migration("20241217113142_UpdateCalisanGunHours")]
-    partial class UpdateCalisanGunHours
+    [Migration("20241217213749_RolKabulu")]
+    partial class RolKabulu
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1296,6 +1296,29 @@ namespace KuaforWebSitesi.Migrations
                     b.ToTable("Musteriler");
                 });
 
+            modelBuilder.Entity("KuaforWebSitesi.Models.MusteriRol", b =>
+                {
+                    b.Property<int>("MusteriRolID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MusteriRolID"));
+
+                    b.Property<int>("MusteriID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RolID")
+                        .HasColumnType("int");
+
+                    b.HasKey("MusteriRolID");
+
+                    b.HasIndex("MusteriID");
+
+                    b.HasIndex("RolID");
+
+                    b.ToTable("MusteriRoller");
+                });
+
             modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
                 {
                     b.Property<int>("RandevuID")
@@ -1332,6 +1355,23 @@ namespace KuaforWebSitesi.Migrations
                     b.HasIndex("MusteriID");
 
                     b.ToTable("Randevular");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Rol", b =>
+                {
+                    b.Property<int>("RolID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RolID"));
+
+                    b.Property<string>("RolAdi")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RolID");
+
+                    b.ToTable("Roller");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanGun", b =>
@@ -1381,6 +1421,25 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired();
 
                     b.Navigation("HizmetKategoriler");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.MusteriRol", b =>
+                {
+                    b.HasOne("KuaforWebSitesi.Models.Musteri", "Musteri")
+                        .WithMany("MusteriRoller")
+                        .HasForeignKey("MusteriID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("KuaforWebSitesi.Models.Rol", "Rol")
+                        .WithMany("MusteriRoller")
+                        .HasForeignKey("RolID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Musteri");
+
+                    b.Navigation("Rol");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
@@ -1438,7 +1497,14 @@ namespace KuaforWebSitesi.Migrations
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Musteri", b =>
                 {
+                    b.Navigation("MusteriRoller");
+
                     b.Navigation("Randevular");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Rol", b =>
+                {
+                    b.Navigation("MusteriRoller");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var userRoleId = Context.Session.GetInt32("RolID"); // Kullanıcı rol ID'sini session'dan alıyoruz
+    Console.WriteLine("User Role ID: " + userRoleId); // Debug amacıyla, konsola yazdırıyoruz
+
+
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -20,62 +27,76 @@
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShineLaB</a>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
-                            @*buraya sayfa isimleri eklenir controller seklinde*@
-                          
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriList">Tüm Müşteriler</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGiris">Giriş Yap</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="Index">Takımımız</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Hizmetler" asp-action="Index">Hizmetler</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanEkle">Çalışan Ekle</a>
-                            </li> 
-                            @*   <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanList">Çalışan Listesi</a>
-                            </li> *@
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriCikis">Çıkış Yap</a>
-                            </li>
-                            @*  <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGoruntule">Goruntule</a>
-                            </li> *@
-                            @*  <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>
-                            </li> *@
-                            @*  <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>
-                            </li> *@
-                            @*  <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriSil">Musteri Sil</a>
-                            </li> *@
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGoruntule">Profil Goruntule</a>
-                            </li>
+                            @if (userRoleId == null || userRoleId == 2)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi</a>
+                                </li>
 
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGiris">Giriş Yap</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGuncelle">Profil Guncelle</a>
-                            </li>
-                            @*  <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGuncelle">Musteri Guncelle</a>
-                            </li> *@
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="Index">Takımımız</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link btn" asp-area="" asp-controller="Randevu" asp-action="RandevuAl" role="button">Randevu Al</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Hizmetler" asp-action="Index">Hizmetler</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriCikis">Çıkış Yap</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGoruntule">Profil Goruntule</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="ProfilGuncelle">Profil Guncelle</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link btn" asp-area="" asp-controller="Randevu" asp-action="RandevuAl" role="button">Randevu Al</a>
+                                </li>
+
+                            }
+                            @* Admin-specific links *@
+                            else if(userRoleId==1)
+                            {
+                                @*  admin *@
+                                @* <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGuncelle">Musteri Guncelle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGoruntule">Goruntule</a>
+                                </li> *@
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriList">Tüm Müşteriler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanList">Çalışan Listesi</a>
+                                </li>
+                              @*   <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriSil">Musteri Sil</a>
+                                </li>
+ *@
+                                
+
+                             @*    <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanEkle">Çalışan Ekle</a>
+                                </li> *@
+
+                            }
+                            
                         </ul>
 
                     </div>
@@ -100,17 +121,11 @@
             <p>info@shineLab.com</p>
         </div>
         <div class="footerDiv">
-            <!--sayfalari ekle-->
             <a asp-area="" asp-controller="Home" asp-action="Index">ShineLaB |</a>
-            <a asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi |</a>
-            <a asp-area="" asp-controller="Musteri" asp-action="MusteriList">Tüm Müşteriler |</a>
-
+            <a asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi |</a>    
             <a asp-area="" asp-controller="Musteri" asp-action="MusteriGiris">Giriş Yap |</a>
-
             <a asp-area="" asp-controller="Calisan" asp-action="Index">Takımımız |</a>
-
             <a asp-area="" asp-controller="Hizmetler" asp-action="Index">Hizmetler |</a>
-
             <a asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim |</a>
 
             <div class="icons">
@@ -129,12 +144,3 @@
     </footer>
 </body>
 </html>
-
-<!--footer duzeltilecek-->
-<!-- <div class="left">
- icons
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-pinterest"></i>
-</div>-->

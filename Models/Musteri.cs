@@ -45,6 +45,12 @@ namespace KuaforWebSitesi.Models
         public string MusteriSifre { get; set; }
 
 
+        public virtual ICollection<MusteriRol> MusteriRoller { get; set; }
+
+        public Musteri()
+        {
+            MusteriRoller = new List<MusteriRol>(); // Initialize to avoid null reference errors
+        }
 
         //[Required(ErrorMessage = "Şifreyi tekrar giriniz.")]
         //[Compare("MusteriSifre", ErrorMessage = "Şifreler eşleşmiyor.")]

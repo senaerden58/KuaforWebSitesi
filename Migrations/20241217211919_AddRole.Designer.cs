@@ -4,6 +4,7 @@ using KuaforWebSitesi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    partial class KuaforDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241217211919_AddRole")]
+    partial class AddRole
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1313,7 +1316,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.HasIndex("RolID");
 
-                    b.ToTable("MusteriRoller");
+                    b.ToTable("MusteriRol");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
@@ -1368,7 +1371,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.HasKey("RolID");
 
-                    b.ToTable("Roller");
+                    b.ToTable("Rol");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanGun", b =>

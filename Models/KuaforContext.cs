@@ -15,6 +15,8 @@ namespace KuaforWebSitesi.Models
         public KuaforDBContext(DbContextOptions<KuaforDBContext> options) : base(options) { }
         //public DbSet<Role> Roles { get; set; } // Roles tablosu
         public DbSet<Musteri> Musteriler { get; set; }
+        public DbSet<MusteriRol> MusteriRoller { get; set; }
+        public DbSet<Rol> Roller { get; set; }
         public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Hizmetler> Hizmetler { get; set; }
         public DbSet<Randevu> Randevular { get; set; }
@@ -376,6 +378,21 @@ new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
             //    .HasOne(m => m.Role)
             //    .WithMany(r => r.Musteriler)
             //    .HasForeignKey(m => m.RolID);
+
+            modelBuilder.Entity<MusteriRol>()
+     .HasKey(mr => new { mr.MusteriRolID });
+
+            // Musteri ve MusteriRol ilişkisi
+            modelBuilder.Entity<MusteriRol>()
+                .HasOne(mr => mr.Musteri)
+                .WithMany(m => m.MusteriRoller)
+                .HasForeignKey(mr => mr.MusteriID);
+
+            // Rol ve MusteriRol ilişkisi
+            modelBuilder.Entity<MusteriRol>()
+                .HasOne(mr => mr.Rol)
+                .WithMany(r => r.MusteriRoller)
+                .HasForeignKey(mr => mr.RolID);
 
         }
     }

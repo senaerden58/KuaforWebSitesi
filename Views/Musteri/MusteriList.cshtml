@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<KuaforWebSitesi.Models.Musteri>
 
 <div class="alert-danger">@TempData["msj"]</div>
-@if (Model.Count() < 1)
+@if (Model.Count() <1)
 {
     <div style="text-align:center" class="alert-info">Herhangi Bir Müşteri Yok</div>
 }
@@ -53,9 +53,9 @@ else
                    
                   
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        @* @Html.ActionLink("Edit", "MusteriGuncelle", new { id = item.MusteriID })| *@
+                        @Html.ActionLink("Profili Gör", "MusteriGoruntule", new { id = item.MusteriID }) |
+                        @*  @Html.ActionLink("Delete", "Delete", new { id = item.MusteriID })*@
                     </td>
                 </tr>
             }

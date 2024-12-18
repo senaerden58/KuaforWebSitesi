@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class InıtialCreate : Migration
+    public partial class AddRoleTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,6 +74,19 @@ namespace KuaforWebSitesi.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Rol",
+                columns: table => new
+                {
+                    RolID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RolAdi = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Rol", x => x.RolID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "CalisanGunler",
                 columns: table => new
                 {
@@ -119,6 +132,32 @@ namespace KuaforWebSitesi.Migrations
                         column: x => x.HizmetKategoriID,
                         principalTable: "HizmetKategoriler",
                         principalColumn: "HizmetKategoriID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MusteriRol",
+                columns: table => new
+                {
+                    MusteriRolID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MusteriID = table.Column<int>(type: "int", nullable: false),
+                    RolID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MusteriRol", x => x.MusteriRolID);
+                    table.ForeignKey(
+                        name: "FK_MusteriRol_Musteriler_MusteriID",
+                        column: x => x.MusteriID,
+                        principalTable: "Musteriler",
+                        principalColumn: "MusteriID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_MusteriRol_Rol_RolID",
+                        column: x => x.RolID,
+                        principalTable: "Rol",
+                        principalColumn: "RolID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -420,6 +459,16 @@ namespace KuaforWebSitesi.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_MusteriRol_MusteriID",
+                table: "MusteriRol",
+                column: "MusteriID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MusteriRol_RolID",
+                table: "MusteriRol",
+                column: "RolID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Randevular_CalisanID",
                 table: "Randevular",
                 column: "CalisanID");
@@ -445,10 +494,16 @@ namespace KuaforWebSitesi.Migrations
                 name: "CalisanHizmetler");
 
             migrationBuilder.DropTable(
+                name: "MusteriRol");
+
+            migrationBuilder.DropTable(
                 name: "Randevular");
 
             migrationBuilder.DropTable(
                 name: "Gunler");
+
+            migrationBuilder.DropTable(
+                name: "Rol");
 
             migrationBuilder.DropTable(
                 name: "Calisanlar");

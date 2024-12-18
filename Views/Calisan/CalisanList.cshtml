@@ -1,31 +1,65 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 @model IEnumerable<KuaforWebSitesi.Models.Calisan>
 
-
-<h2>Calisan Listesi</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Ad</th>
-            <th>Soyad</th>
-            <th>Email</th>
-            <th>Telefon</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var calisan in Model)
-        {
+<div class="alert-danger">@TempData["msj"]</div>
+@if (Model.Count() <1)
+{
+    <div style="text-align:center" class="alert-info">Herhangi Bir Müşteri Yok</div>
+}
+else
+{
+    <table class="table">
+        <thead>
             <tr>
-                <td>@calisan.CalisanAd</td>
-                <td>@calisan.CalisanSoyad</td>
-                <td>@calisan.CalisanMail</td>
-                <td>@calisan.CalisanTelefon</td>
-              
+                <th>
+                    @Html.DisplayNameFor(model => model.CalisanAd)
+
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CalisanSoyad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CalisanMail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CalisanTelefon)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CalisanSifre)
+                </th>
+           
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CalisanAd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CalisanSoyad)
+                    </td>
+                   
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CalisanMail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CalisanTelefon)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CalisanSifre)
+                    </td>
+                   
+                  
+                    <td>
+                       @*@Html.ActionLink("Edit", "MusteriGuncelle", new { id = item.MusteriID })| *@
+                     @*@Html.ActionLink("Profili Gör", "CalisanGoruntule", new { id = item.MusteriID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.MusteriID })*@ 
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
