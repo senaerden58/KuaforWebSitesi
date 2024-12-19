@@ -1,8 +1,6 @@
 ﻿@{
-    var userRoleId = Context.Session.GetInt32("RolID"); // Kullanıcı rol ID'sini session'dan alıyoruz
-    Console.WriteLine("User Role ID: " + userRoleId); // Debug amacıyla, konsola yazdırıyoruz
-
-
+    var userRoleId = Context.Session.GetInt32("RolID"); // Get the user role ID from session
+    var userName = Context.Session.GetString("MusteriAd"); // Get the customer name from session
 }
 
 <!DOCTYPE html>
@@ -27,7 +25,7 @@
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShineLaB</a>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
-                            @if (userRoleId == null || userRoleId == 2)
+                            @if (userRoleId == null && userName==null)
                             {
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriEkle">Kayıt İşlemi</a>
@@ -37,6 +35,25 @@
                                     <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriGiris">Giriş Yap</a>
                                 </li>
 
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="Index">Takımımız</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Hizmetler" asp-action="Index">Hizmetler</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Iletisim" asp-action="Index">İletişim</a>
+                                </li>
+                          
+                                <li class="nav-item">
+                                    <a class="nav-link btn" asp-area="" asp-controller="Randevu" asp-action="RandevuAl" role="button">Randevu Al</a>
+                                </li>
+
+                            }
+                            else if (userRoleId == null &&userName!=null)
+                            {
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="Index">Takımımız</a>
                                 </li>
@@ -64,6 +81,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link btn" asp-area="" asp-controller="Randevu" asp-action="RandevuAl" role="button">Randevu Al</a>
                                 </li>
+                                
+                                <li class="nav-item">
+                                    <span class="nav-link">Merhaba, @userName</span> <!-- Replace with actual customer name -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriCikis">Çıkış Yap</a>
+                                </li>
 
                             }
                             @* Admin-specific links *@
@@ -81,6 +105,15 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanList">Çalışan Listesi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Calisan" asp-action="CalisanEkle">Çalışan Ekle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Randevu" asp-action="RandevuListesi">Çalışan Ekle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Logout">Çıkış Yap</a>
                                 </li>
                               @*   <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Musteri" asp-action="MusteriAra">Musteri Ara</a>

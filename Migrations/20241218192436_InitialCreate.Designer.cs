@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    [Migration("20241217213749_RolKabulu")]
-    partial class RolKabulu
+    [Migration("20241218192436_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1049,7 +1049,7 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("HizmetKategoriID")
+                    b.Property<int?>("HizmetKategoriID")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("Sure")
@@ -1417,8 +1417,7 @@ namespace KuaforWebSitesi.Migrations
                     b.HasOne("KuaforWebSitesi.Models.HizmetKategori", "HizmetKategoriler")
                         .WithMany("Hizmetler")
                         .HasForeignKey("HizmetKategoriID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("HizmetKategoriler");
                 });

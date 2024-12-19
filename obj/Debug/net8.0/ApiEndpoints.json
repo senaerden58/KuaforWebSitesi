@@ -1,1 +1,121 @@
-[]
+[
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "GetHizmetKategoriler",
+    "RelativePath": "api/HizmetKategori",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[KuaforWebSitesi.Models.HizmetKategori, KuaforWebSitesi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "PostHizmetKategori",
+    "RelativePath": "api/HizmetKategori",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hizmetKategori",
+        "Type": "KuaforWebSitesi.Models.HizmetKategori",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KuaforWebSitesi.Models.HizmetKategori",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "GetHizmetKategori",
+    "RelativePath": "api/HizmetKategori/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "KuaforWebSitesi.Models.HizmetKategori",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "PutHizmetKategori",
+    "RelativePath": "api/HizmetKategori/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hizmetKategori",
+        "Type": "KuaforWebSitesi.Models.HizmetKategori",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "DeleteHizmetKategori",
+    "RelativePath": "api/HizmetKategori/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
+    "Method": "AddMultipleKategoriler",
+    "RelativePath": "api/HizmetKategori/AddMultipleKategoriler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

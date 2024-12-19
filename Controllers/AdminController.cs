@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace KuaforWebSitesi.Controllers
@@ -39,8 +40,8 @@ namespace KuaforWebSitesi.Controllers
         }
 
         // AdminPage method can also use role from the session
-       
 
+    
         // Logout action to clear session
         public IActionResult Logout()
         {

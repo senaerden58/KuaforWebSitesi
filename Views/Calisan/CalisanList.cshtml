@@ -1,5 +1,4 @@
-﻿
-@model IEnumerable<KuaforWebSitesi.Models.Calisan>
+﻿@model IEnumerable<KuaforWebSitesi.Models.Calisan>
 
 <div class="alert-danger">@TempData["msj"]</div>
 @if (Model.Count() <1)
@@ -54,12 +53,12 @@ else
                    
                   
                     <td>
-                       @*@Html.ActionLink("Edit", "MusteriGuncelle", new { id = item.MusteriID })| *@
-                     @*@Html.ActionLink("Profili Gör", "CalisanGoruntule", new { id = item.MusteriID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.MusteriID })*@ 
+                       @Html.ActionLink("Edit", "CalisanGuncelle", new { id = item.CalisanID })| 
+                        @Html.ActionLink("Delete", "CalisanSil", new { id = item.CalisanID })
                     </td>
                 </tr>
             }
         </tbody>
     </table>
+   
 }

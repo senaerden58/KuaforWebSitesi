@@ -28,7 +28,13 @@ namespace KuaforWebSitesi.Models
 
         public virtual Musteri Musteri { get; set; } 
         public virtual Calisan Calisan { get; set; } 
-        public virtual Hizmetler Hizmet { get; set; } 
+        public virtual Hizmetler Hizmetler { get; set; }
+        public enum RandevuDurumu
+        {
+            Bekliyor,
+            Onaylandı,
+            Iptal
+        }
 
     }
 }

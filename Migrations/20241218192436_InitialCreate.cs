@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace KuaforWebSitesi.Migrations
 {
     /// <inheritdoc />
-    public partial class AddRoleTable : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,7 +74,7 @@ namespace KuaforWebSitesi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Rol",
+                name: "Roller",
                 columns: table => new
                 {
                     RolID = table.Column<int>(type: "int", nullable: false)
@@ -83,7 +83,7 @@ namespace KuaforWebSitesi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Rol", x => x.RolID);
+                    table.PrimaryKey("PK_Roller", x => x.RolID);
                 });
 
             migrationBuilder.CreateTable(
@@ -122,7 +122,7 @@ namespace KuaforWebSitesi.Migrations
                     HizmetAdi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sure = table.Column<TimeSpan>(type: "time", nullable: false),
                     Fiyat = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    HizmetKategoriID = table.Column<int>(type: "int", nullable: false)
+                    HizmetKategoriID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -132,11 +132,11 @@ namespace KuaforWebSitesi.Migrations
                         column: x => x.HizmetKategoriID,
                         principalTable: "HizmetKategoriler",
                         principalColumn: "HizmetKategoriID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateTable(
-                name: "MusteriRol",
+                name: "MusteriRoller",
                 columns: table => new
                 {
                     MusteriRolID = table.Column<int>(type: "int", nullable: false)
@@ -146,17 +146,17 @@ namespace KuaforWebSitesi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MusteriRol", x => x.MusteriRolID);
+                    table.PrimaryKey("PK_MusteriRoller", x => x.MusteriRolID);
                     table.ForeignKey(
-                        name: "FK_MusteriRol_Musteriler_MusteriID",
+                        name: "FK_MusteriRoller_Musteriler_MusteriID",
                         column: x => x.MusteriID,
                         principalTable: "Musteriler",
                         principalColumn: "MusteriID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MusteriRol_Rol_RolID",
+                        name: "FK_MusteriRoller_Roller_RolID",
                         column: x => x.RolID,
-                        principalTable: "Rol",
+                        principalTable: "Roller",
                         principalColumn: "RolID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -459,13 +459,13 @@ namespace KuaforWebSitesi.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_MusteriRol_MusteriID",
-                table: "MusteriRol",
+                name: "IX_MusteriRoller_MusteriID",
+                table: "MusteriRoller",
                 column: "MusteriID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MusteriRol_RolID",
-                table: "MusteriRol",
+                name: "IX_MusteriRoller_RolID",
+                table: "MusteriRoller",
                 column: "RolID");
 
             migrationBuilder.CreateIndex(
@@ -494,7 +494,7 @@ namespace KuaforWebSitesi.Migrations
                 name: "CalisanHizmetler");
 
             migrationBuilder.DropTable(
-                name: "MusteriRol");
+                name: "MusteriRoller");
 
             migrationBuilder.DropTable(
                 name: "Randevular");
@@ -503,7 +503,7 @@ namespace KuaforWebSitesi.Migrations
                 name: "Gunler");
 
             migrationBuilder.DropTable(
-                name: "Rol");
+                name: "Roller");
 
             migrationBuilder.DropTable(
                 name: "Calisanlar");

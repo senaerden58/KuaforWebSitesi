@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    [Migration("20241217210651_AddRoleTableS")]
-    partial class AddRoleTableS
+    [Migration("20241218194744_Api")]
+    partial class Api
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1049,7 +1049,7 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("HizmetKategoriID")
+                    b.Property<int?>("HizmetKategoriID")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("Sure")
@@ -1316,7 +1316,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.HasIndex("RolID");
 
-                    b.ToTable("MusteriRol");
+                    b.ToTable("MusteriRoller");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Randevu", b =>
@@ -1371,7 +1371,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.HasKey("RolID");
 
-                    b.ToTable("Rol");
+                    b.ToTable("Roller");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.CalisanGun", b =>
@@ -1417,8 +1417,7 @@ namespace KuaforWebSitesi.Migrations
                     b.HasOne("KuaforWebSitesi.Models.HizmetKategori", "HizmetKategoriler")
                         .WithMany("Hizmetler")
                         .HasForeignKey("HizmetKategoriID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("HizmetKategoriler");
                 });

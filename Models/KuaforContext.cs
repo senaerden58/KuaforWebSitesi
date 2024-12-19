@@ -43,11 +43,7 @@ namespace KuaforWebSitesi.Models
                 .WithMany(g => g.CalisanGunler)
                 .HasForeignKey(cg => cg.GunID);
 
-            modelBuilder.Entity<Hizmetler>()
-                 .HasOne(h => h.HizmetKategoriler)   // Hizmetler tablosunun bir HizmetKategori'ye ait olduğunu belirtiyoruz
-                 .WithMany(k => k.Hizmetler)     // HizmetKategori tablosunun birden fazla Hizmetler içerebileceğini belirtiyoruz
-                 .HasForeignKey(h => h.HizmetKategoriID); // Yabancı anahtar ilişkisini kuruyoruz
-
+           
 
             modelBuilder.Entity<CalisanHizmetler>()
                 .HasOne(ch => ch.Calisan)
@@ -73,7 +69,7 @@ namespace KuaforWebSitesi.Models
                 .OnDelete(DeleteBehavior.Cascade); // Çalışan silindiğinde, ona ait randevular silinsin
 
             modelBuilder.Entity<Randevu>()
-                .HasOne(r => r.Hizmet)     // Randevu, Hizmet'e bağlı
+                .HasOne(r => r.Hizmetler)     // Randevu, Hizmet'e bağlı
                 .WithMany(h => h.Randevular)
                 .HasForeignKey(r => r.HizmetID)
                 .OnDelete(DeleteBehavior.Cascade); // Hizmet silindiğinde, ona ait randevular silinsin
@@ -342,7 +338,7 @@ new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Randevu>()
-                .HasOne(r => r.Hizmet)
+                .HasOne(r => r.Hizmetler)
                 .WithMany(h => h.Randevular)  // Hizmet tablosunda Randevu'ya ait bir bağlantı var mı?
                 .HasForeignKey(r => r.HizmetID)
 
@@ -393,6 +389,13 @@ new HizmetKategori { HizmetKategoriID = 5, KategoriAdi = "Gelin" }
                 .HasOne(mr => mr.Rol)
                 .WithMany(r => r.MusteriRoller)
                 .HasForeignKey(mr => mr.RolID);
+
+
+            modelBuilder.Entity<Hizmetler>()
+           .HasOne(h => h.HizmetKategoriler)
+           .WithMany(k => k.Hizmetler)
+           .HasForeignKey(h => h.HizmetKategoriID)
+           .OnDelete(DeleteBehavior.SetNull); // Kategori silindiğinde, ilgili hizmetin kategorisi NULL olacak
 
         }
     }

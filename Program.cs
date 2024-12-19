@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 
-
+builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();  // MVC için gerekli hizmeti ekleyin
 
 

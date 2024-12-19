@@ -5,9 +5,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
+using System.Linq;
+using static System.Web.Razor.Parser.SyntaxConstants;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace KuaforWebSitesi.Controllers
 {
+
+
     public class CalisanController : Controller
     {
        
@@ -26,23 +32,8 @@ namespace KuaforWebSitesi.Controllers
         {
             return View();
         }
-        [Authorize]
-        public IActionResult CalisanEkle()
-        {
-            // Tüm günleri veritabanından al
-            var gunler = db.Gunler.ToList();
-            var hizmetler = db.Hizmetler.ToList();
 
-          
-
-            // Günleri ve hizmetleri ViewBag içine gönder
-            ViewBag.Gunler = gunler;
-            ViewBag.Hizmetler = hizmetler;
-
-            return View(); // View'a geçiş yap
-        }
-
-
+        
 
 
         [HttpGet]
@@ -51,138 +42,200 @@ namespace KuaforWebSitesi.Controllers
 
             return View();
         }
-
+        /*tamamlandı*/
+        public IActionResult CalisanEkle()
+        {
+            // Hizmetler ve günler için ViewBag'leri dolduruyoruz
+            ViewBag.Hizmetler = db.Hizmetler.ToList(); // Tüm hizmetler
+            ViewBag.Gunler = db.Gunler.ToList();       // Tüm günler
+            return View();
+        }
+        /*tamamlandı*/
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CalisanKaydet([Bind("CalisanAd,CalisanSoyad,CalisanMail,CalisanTelefon,CalisanSifre")] Calisan calisan, int[] selectedGunler, int[] selectedHizmetler)
+        public async Task<IActionResult> CalisanKaydet(Calisan calisan, int[] SecilenHizmetler, int[] SecilenGunler)
         {
+            var varOlanEmailler = db.Calisanlar.FirstOrDefault(m => m.CalisanMail == calisan.CalisanMail);
+            var varOlanTelefonlar = db.Calisanlar.FirstOrDefault(m => m.CalisanTelefon == calisan.CalisanTelefon);
+
+            if (varOlanEmailler != null)
+            {
+                TempData["msj"] = "Bu e-posta adresi zaten kayıtlı.";
+                return RedirectToAction("CalisanEkle"); // Hemen geri dön
+            }
+            if (varOlanTelefonlar != null)
+            {
+                TempData["msj"] = "Bu telefon numarası zaten kayıtlı.";
+                return RedirectToAction("CalisanEkle"); // Hemen geri dön
+            }
+
             if (!ModelState.IsValid)
             {
-                return View("CalisanEkle"); // Model geçersizse, formu geri gönder
+                TempData["msj"] = "Kayıt işlemi başarısız. Lütfen alanları kontrol edin.";
+                return RedirectToAction("CalisanEkle");
             }
+
 
             try
             {
-                // Çalışanın şifresini hash'le
+                // Şifreyi hash'liyoruz
                 calisan.CalisanSifre = _passwordHasher.HashPassword(calisan, calisan.CalisanSifre);
 
-                // Çalışanı veritabanına ekle
+                // Çalışanı veritabanına ekliyoruz
                 db.Calisanlar.Add(calisan);
-                await db.SaveChangesAsync(); // Çalışanı kaydet ve CalisanID'yi al
-
-                // Seçilen günleri ekle
-                foreach (var gunID in selectedGunler)
-                {
-                    var calisanGun = new CalisanGun
-                    {
-                        CalisanID = calisan.CalisanID, // Çalışanın ID'si
-                        GunID = gunID // Seçilen günün ID'si
-                    };
-                    db.CalisanGunler.Add(calisanGun); // Çalışan ve gün ilişkisini ekle
-                }
-
-                // Seçilen hizmetleri ekle
-                foreach (var hizmetID in selectedHizmetler)
-                {
-                    var calisanHizmet = new CalisanHizmetler
-                    {
-                        CalisanID = calisan.CalisanID, // Çalışanın ID'si
-                        HizmetID = hizmetID // Seçilen hizmetin ID'si
-                    };
-                    db.CalisanHizmetler.Add(calisanHizmet); // Çalışan ve hizmet ilişkisini ekle
-                }
-
-                // Günleri ve hizmetleri kaydet
                 await db.SaveChangesAsync();
 
-                return RedirectToAction("Index"); // Başarıyla kaydedildikten sonra yönlendirme
+                // Çalışanın hizmetlerini ilişkilendiriyoruz
+                foreach (var hizmetID in SecilenHizmetler)
+                {
+                    db.CalisanHizmetler.Add(new CalisanHizmetler
+                    {
+                        CalisanID = calisan.CalisanID,
+                        HizmetID = hizmetID
+                    });
+                }
+
+                // Çalışanın seçtiği günleri ilişkilendiriyoruz
+                foreach (var gunID in SecilenGunler)
+                {
+                    var baslangicSaati = new TimeSpan(9, 0, 0);  // 09:00
+                    var bitisSaati = new TimeSpan(18, 0, 0);    // 18:00
+                    db.CalisanGunler.Add(new CalisanGun
+                    {
+                        CalisanID = calisan.CalisanID,
+                        GunID = gunID,
+                        BaslangicSaati = baslangicSaati,
+                        BitisSaati = bitisSaati
+                    });
+                }
+
+                await db.SaveChangesAsync();
+
+                // Kullanıcıya başarı mesajı veriyoruz
+                TempData["msj"] = $"{calisan.CalisanAd} adlı çalışan kaydedildi.";
+                return RedirectToAction("CalisanList");
             }
             catch (Exception ex)
             {
-                // Hata durumunda kullanıcıya mesaj göster
-                TempData["ErrorMessage"] = "Bir hata oluştu: " + ex.Message;
-                return View("CalisanEkle"); // Hata varsa, formu tekrar göster
+                TempData["msj"] = $"Kayıt işlemi sırasında bir hata oluştu: {ex.Message}";
+                return RedirectToAction("CalisanEkle");
             }
         }
 
 
 
 
-
+        /*tamamlandı*/
+        [HttpGet]
         public IActionResult CalisanGuncelle(int id)
         {
-            var calisan = db.Calisanlar.Find(id); // Performans için Find() kullanıyoruz
+            // id parametresinin doğru şekilde alındığını kontrol edin
+            Console.WriteLine($"Gelen CalisanID: {id}");
+
+            var calisan = db.Calisanlar.SingleOrDefault(m => m.CalisanID == id);
             if (calisan == null)
             {
-                TempData["msj"] = "Güncellenecek çalışan bulunamadı.";
+                TempData["msj"] = $"Çalışan ID {id} veritabanında bulunamadı.";
                 return RedirectToAction("CalisanList");
             }
-            return View(calisan);
+
+
+            return View(calisan); // Mevcut çalışan bilgileriyle formu göster
         }
 
 
-
-
+        /*tamamlandı*/
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CalisanGuncelle(Calisan calisan)
+        public async Task<IActionResult> CalisanGuncelle(Calisan calisan)
         {
             if (!ModelState.IsValid)
             {
-                TempData["msj"] = "Çalışan güncelleme işlemi başarısız. Lütfen alanları kontrol edin.";
+                // Hatalı form durumunda mevcut modelle tekrar formu döndürüyoruz
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine("Hata: " + error.ErrorMessage);  // Hata mesajlarını konsola yazdırıyoruz
+                }
+
+                TempData["msj"] = "Lütfen tüm alanları doldurun.";
                 return View(calisan);
             }
 
-            var calisanDb = db.Calisanlar.Find(calisan.CalisanID); // Performans için Find() kullanıyoruz
-            if (calisanDb == null)
+            var mevcutCalisan = db.Calisanlar.FirstOrDefault(m => m.CalisanID == calisan.CalisanID);
+            if (mevcutCalisan == null)
             {
-                TempData["msj"] = "Güncellenen çalışan bulunamadı.";
+                TempData["msj"] = "Çalışan bulunamadı.";
                 return RedirectToAction("CalisanList");
             }
 
-            // Şifreyi değiştirme
-            if (!string.IsNullOrEmpty(calisan.CalisanSifre))
+            // E-posta kontrolü, güncellenen çalışan hariç
+            var varOlanEmailler = db.Calisanlar
+                .FirstOrDefault(m => m.CalisanMail == calisan.CalisanMail && m.CalisanID != mevcutCalisan.CalisanID);
+            if (varOlanEmailler != null)
             {
-                calisan.CalisanSifre = _passwordHasher.HashPassword(calisan, calisan.CalisanSifre);
+                TempData["msj"] = "Bu e-posta adresi başka bir çalışan tarafından kullanılıyor.";
+                return View(calisan); // Hata mesajıyla birlikte tekrar formu döndürüyoruz
             }
-            else
+
+            // Telefon kontrolü, güncellenen çalışan hariç
+            var varOlanTelefonlar = db.Calisanlar
+                .FirstOrDefault(m => m.CalisanTelefon == calisan.CalisanTelefon && m.CalisanID != mevcutCalisan.CalisanID);
+            if (varOlanTelefonlar != null)
             {
-                calisan.CalisanSifre = calisanDb.CalisanSifre; // Eski şifreyi koruyalım
+                TempData["msj"] = "Bu telefon numarası başka bir çalışan tarafından kullanılıyor.";
+                return View(calisan); // Hata mesajıyla birlikte tekrar formu döndürüyoruz
             }
 
-            // Veritabanında güncelleme işlemi
-            calisanDb.CalisanAd = calisan.CalisanAd;
-            calisanDb.CalisanSoyad = calisan.CalisanSoyad;
-            calisanDb.CalisanMail = calisan.CalisanMail;
-            calisanDb.CalisanTelefon = calisan.CalisanTelefon;
-           
+            // Çalışan bilgilerini güncelle
+            mevcutCalisan.CalisanAd = calisan.CalisanAd;
+            mevcutCalisan.CalisanSoyad = calisan.CalisanSoyad;
+            mevcutCalisan.CalisanMail = calisan.CalisanMail;
+            mevcutCalisan.CalisanTelefon = calisan.CalisanTelefon;
 
-            db.SaveChanges();
+            db.Calisanlar.Update(mevcutCalisan);
+            await db.SaveChangesAsync();
 
-            TempData["msj"] = $"{calisan.CalisanAd} adlı çalışan başarıyla güncellendi.";
-            return RedirectToAction("CalisanList");
+            TempData["msj"] = "Çalışan başarıyla güncellendi.";
+            return RedirectToAction("CalisanList"); // Güncellenmiş çalışan listesine yönlendir
         }
 
-
-
-
-        public IActionResult CalisanSil(int id)
+        public async Task<IActionResult> CalisanSil(int id)
         {
-            var calisan = db.Calisanlar.Find(id); // Performans için Find() kullanıyoruz
+            // Çalışanı veritabanından buluyoruz
+            var calisan = await db.Calisanlar
+                                  .Include(c => c.CalisanHizmetler)   // Hizmetler ile ilişkili verileri yükle
+                                  .Include(c => c.CalisanGunler)      // Günlerle ilişkili verileri yükle
+                                  .FirstOrDefaultAsync(c => c.CalisanID == id);
+
             if (calisan == null)
             {
                 TempData["msj"] = "Silinecek çalışan bulunamadı.";
                 return RedirectToAction("CalisanList");
             }
 
-            // Çalışanın randevularını silme işlemi (isteğe bağlı)
-            db.Randevular.RemoveRange(db.Randevular.Where(r => r.CalisanID == calisan.CalisanID)); // Çalışanın randevuları silinebilir
+            try
+            {
+                // Çalışanın randevularını silme işlemi
+                db.Randevular.RemoveRange(db.Randevular.Where(r => r.CalisanID == calisan.CalisanID));
 
-            db.Calisanlar.Remove(calisan);
-            db.SaveChanges();
+                // Çalışanın hizmetlerini ve çalışma günlerini siliyoruz
+                db.CalisanHizmetler.RemoveRange(calisan.CalisanHizmetler);
+                db.CalisanGunler.RemoveRange(calisan.CalisanGunler);
 
-            TempData["msj"] = $"{calisan.CalisanAd} adlı çalışan başarıyla silindi.";
+                // Çalışanı siliyoruz
+                db.Calisanlar.Remove(calisan);
+
+                // Değişiklikleri veritabanına kaydediyoruz
+                await db.SaveChangesAsync();
+
+                TempData["msj"] = $"{calisan.CalisanAd} adlı çalışan başarıyla silindi.";
+            }
+            catch (Exception ex)
+            {
+                TempData["msj"] = $"Silme işlemi sırasında bir hata oluştu: {ex.Message}";
+            }
+
             return RedirectToAction("CalisanList");
         }
 

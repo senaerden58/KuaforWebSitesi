@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    [Migration("20241217212929_AddMusteriRol")]
-    partial class AddMusteriRol
+    [Migration("20241219215156_Hizmetler")]
+    partial class Hizmetler
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1049,7 +1049,7 @@ namespace KuaforWebSitesi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("HizmetKategoriID")
+                    b.Property<int?>("HizmetKategoriID")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("Sure")
@@ -1417,8 +1417,7 @@ namespace KuaforWebSitesi.Migrations
                     b.HasOne("KuaforWebSitesi.Models.HizmetKategori", "HizmetKategoriler")
                         .WithMany("Hizmetler")
                         .HasForeignKey("HizmetKategoriID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("HizmetKategoriler");
                 });
@@ -1450,7 +1449,7 @@ namespace KuaforWebSitesi.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmet")
+                    b.HasOne("KuaforWebSitesi.Models.Hizmetler", "Hizmetler")
                         .WithMany("Randevular")
                         .HasForeignKey("HizmetID")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -1464,7 +1463,7 @@ namespace KuaforWebSitesi.Migrations
 
                     b.Navigation("Calisan");
 
-                    b.Navigation("Hizmet");
+                    b.Navigation("Hizmetler");
 
                     b.Navigation("Musteri");
                 });

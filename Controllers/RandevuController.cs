@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using System.Linq;
-
+using System.ComponentModel.DataAnnotations;
 namespace KuaforWebSitesi.Controllers
 {
     public class RandevuController : Controller
@@ -203,7 +203,7 @@ namespace KuaforWebSitesi.Controllers
 
                 // Başarı mesajı
                 TempData["msj"] = "Randevunuz başarıyla kaydedildi.";
-                return RedirectToAction("RandevuList", new { id = randevu.RandevuID });
+                return RedirectToAction("RandevuListesi", new { id = randevu.RandevuID });
             }
             catch (Exception ex)
             {
@@ -213,18 +213,54 @@ namespace KuaforWebSitesi.Controllers
         }
 
 
-
-
-
-        public async Task<IActionResult> RandevuList()
+        public IActionResult RandevuListesi()
         {
-            var randevular = await db.Randevular
-                .Include(r => r.Hizmet) // Hizmet bilgisini de ekliyoruz
-                .Include(r => r.Calisan) // Çalışan bilgisini de ekliyoruz
-                .ToListAsync();
-
-            return View();
+            var randevular = db.Randevular
+               .Include(r => r.Hizmetler)
+               .Include(r => r.Calisan).
+               Include(r => r.Musteri)
+               .ToList();
+            return View(randevular);
         }
+
+        // Randevuyu onaylama işlemi
+        [HttpPost]
+        public IActionResult RandevuOnayla(int randevuID)
+        {
+            var randevu = db.Randevular.Find(randevuID);
+            if (randevu != null)
+            {
+                randevu.Durum = "Onaylandı";
+                db.SaveChanges();
+                TempData["msj"] = "Randevu başarıyla onaylandı.";
+            }
+            else
+            {
+                TempData["msj"] = "Randevu bulunamadı.";
+            }
+            return RedirectToAction("RandevuListesi");
+        }
+
+        // Randevu silme işlemi
+        [HttpPost]
+        public IActionResult RandevuSil(int randevuID)
+        {
+            var randevu = db.Randevular.Find(randevuID);
+            if (randevu != null)
+            {
+                db.Randevular.Remove(randevu);
+                db.SaveChanges();
+                TempData["msj"] = "Randevu başarıyla silindi.";
+            }
+            else
+            {
+                TempData["msj"] = "Randevu bulunamadı.";
+            }
+            return RedirectToAction("RandevuListesi");
+        }
+
+
+     
 
     }
 }

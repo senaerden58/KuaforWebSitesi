@@ -1,11 +1,13 @@
 ﻿using KuaforWebSitesi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace KuaforWebSitesi.Controllers
 {
-    public class HizmetKategoriController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class HizmetKategoriController : ControllerBase
     {
-
         private readonly KuaforDBContext db;
 
         public HizmetKategoriController(KuaforDBContext context)
@@ -13,35 +15,114 @@ namespace KuaforWebSitesi.Controllers
             db = context;
         }
 
-        public IActionResult AddMultipleKategoriler()
+        // POST: api/HizmetKategori/AddMultipleKategoriler
+        [HttpPost("AddMultipleKategoriler")]
+        public async Task<ActionResult> AddMultipleKategoriler()
         {
             try
             {
                 // Kategorileri bir liste halinde tanımlayalım
                 var kategoriler = new List<HizmetKategori>
-        {
-            new HizmetKategori { KategoriAdi = "Saç Bakımı" },
-            new HizmetKategori { KategoriAdi = "Saç Şekillenidirme" },
-            new HizmetKategori { KategoriAdi = "Gelin" },
-            new HizmetKategori { KategoriAdi = "Manikür & Pedikür" },
-            new HizmetKategori { KategoriAdi = "Cilt" }
-        };
+                {
+                    new HizmetKategori { KategoriAdi = "Saç Bakımı" },
+                    new HizmetKategori { KategoriAdi = "Saç Şekillenidirme" },
+                    new HizmetKategori { KategoriAdi = "Gelin" },
+                    new HizmetKategori { KategoriAdi = "Manikür & Pedikür" },
+                    new HizmetKategori { KategoriAdi = "Cilt" }
+                };
 
                 // Veritabanına kategorileri ekliyoruz
-                db.HizmetKategoriler.AddRange(kategoriler);
-                db.SaveChanges();
+                await db.HizmetKategoriler.AddRangeAsync(kategoriler);
+                await db.SaveChangesAsync();
 
-                ViewBag.Message = "Kategoriler başarıyla eklendi!";
-                return View(); // Yönlendirme
+                return Ok(new { message = "Kategoriler başarıyla eklendi!" });
             }
             catch (Exception ex)
             {
-                ViewBag.Message = "Bir hata oluştu: " + ex.Message;
-                return View(); // Yönlendirme
+                return BadRequest(new { message = "Bir hata oluştu: " + ex.Message });
             }
         }
 
+        // GET: api/HizmetKategori
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<HizmetKategori>>> GetHizmetKategoriler()
+        {
+            return await db.HizmetKategoriler.ToListAsync();
+        }
 
+        // GET: api/HizmetKategori/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<HizmetKategori>> GetHizmetKategori(int id)
+        {
+            var hizmetKategori = await db.HizmetKategoriler.FindAsync(id);
+
+            if (hizmetKategori == null)
+            {
+                return NotFound();
+            }
+
+            return hizmetKategori;
+        }
+
+        // POST: api/HizmetKategori
+        [HttpPost]
+        public async Task<ActionResult<HizmetKategori>> PostHizmetKategori(HizmetKategori hizmetKategori)
+        {
+            db.HizmetKategoriler.Add(hizmetKategori);
+            await db.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetHizmetKategori), new { id = hizmetKategori.HizmetKategoriID }, hizmetKategori);
+        }
+
+        // PUT: api/HizmetKategori/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutHizmetKategori(int id, HizmetKategori hizmetKategori)
+        {
+            if (id != hizmetKategori.HizmetKategoriID)
+            {
+                return BadRequest();
+            }
+
+            db.Entry(hizmetKategori).State = EntityState.Modified;
+
+            try
+            {
+                await db.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!HizmetKategoriExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/HizmetKategori/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteHizmetKategori(int id)
+        {
+            var hizmetKategori = await db.HizmetKategoriler.FindAsync(id);
+            if (hizmetKategori == null)
+            {
+                return NotFound();
+            }
+
+            db.HizmetKategoriler.Remove(hizmetKategori);
+            await db.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool HizmetKategoriExists(int id)
+        {
+            return db.HizmetKategoriler.Any(e => e.HizmetKategoriID == id);
+        }
     }
 }
-

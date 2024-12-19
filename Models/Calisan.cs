@@ -6,10 +6,13 @@ namespace KuaforWebSitesi.Models
     {
         [Key]
         public int CalisanID { get; set; }
+
         [Required]
         public string CalisanAd { get; set; }
+
         [Required]
         public string CalisanSoyad { get; set; }
+
         [Required]
         [EmailAddress]
         public string CalisanMail { get; set; }
@@ -17,6 +20,7 @@ namespace KuaforWebSitesi.Models
         [Required]
         [Phone]
         public string CalisanTelefon { get; set; }
+
         [Required]
         public string CalisanSifre { get; set; }
     
