@@ -82,6 +82,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "jQuery": {
               "target": "Package",
               "version": "[3.7.1, )"

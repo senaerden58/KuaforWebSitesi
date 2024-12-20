@@ -1,8 +1,10 @@
 ﻿using KuaforWebSitesi.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace KuaforWebSitesi.Models
 {
+
     public class HizmetKategori
     {
         public int HizmetKategoriID { get; set; }  // Kategorinin ID'si

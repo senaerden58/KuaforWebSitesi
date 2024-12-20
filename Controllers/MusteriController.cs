@@ -39,7 +39,7 @@ namespace KuaforWebSitesi.Controllers
         /* musteri tamamlandı*/
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> MusteriKaydet(Musteri musteri) 
+        public async Task<IActionResult> MusteriKaydet(Musteri musteri)
         {
             var varOlanEmailler = db.Musteriler.FirstOrDefault(m => m.MusteriMail == musteri.MusteriMail);
             var varOlanTelefonlar = db.Musteriler.FirstOrDefault(m => m.MusteriTelefon == musteri.MusteriTelefon);
@@ -64,15 +64,15 @@ namespace KuaforWebSitesi.Controllers
                 }
 
                 TempData["msj"] = "Kayıt işlemi başarısız. Lütfen alanları kontrol edin.";
-                return RedirectToAction("MusteriEkle"); 
+                return RedirectToAction("MusteriEkle");
             }
 
             try
             {
                 musteri.MusteriSifre = _passwordHasher.HashPassword(musteri, musteri.MusteriSifre);
-               
+
                 db.Musteriler.Add(musteri);
-               
+
                 await db.SaveChangesAsync();
                 var musteriRol = new MusteriRol
                 {
@@ -84,13 +84,13 @@ namespace KuaforWebSitesi.Controllers
                 db.MusteriRoller.Add(musteriRol);
                 await db.SaveChangesAsync();
                 TempData["msj"] = $"{musteri.MusteriAd} adlı müşteri kaydedildi.";
-                return RedirectToAction("MusteriList"); 
+                return RedirectToAction("MusteriList");
             }
             catch (Exception ex)
             {
                 // Hata durumunda mesaj göster
                 TempData["msj"] = $"Kayıt işlemi sırasında bir hata oluştu: {ex.Message}";
-                return RedirectToAction("MusteriEkle"); 
+                return RedirectToAction("MusteriEkle");
             }
         }
 
@@ -101,24 +101,24 @@ namespace KuaforWebSitesi.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult MusteriGiris(string musteriMail, string musteriSifre)
         {
-            
+
             if (string.IsNullOrEmpty(musteriMail) || string.IsNullOrEmpty(musteriSifre))
             {
                 TempData["msj"] = "E-posta ve şifre alanlarını doldurun.";
-                return View();  
+                return View();
             }
             var mevcutMusteri = db.Musteriler
                 .Include(m => m.MusteriRoller)
                 .ThenInclude(mr => mr.Rol)
                 .FirstOrDefault(m => m.MusteriMail == musteriMail);
- 
+
             if (mevcutMusteri == null)
             {
                 TempData["msj"] = "Bu e-posta ile kayıtlı bir kullanıcı bulunamadı.";
-                return View(); 
+                return View();
             }
 
-       
+
             var result = _passwordHasher.VerifyHashedPassword(mevcutMusteri, mevcutMusteri.MusteriSifre, musteriSifre);
             if (result == PasswordVerificationResult.Success)
             {
@@ -151,7 +151,7 @@ namespace KuaforWebSitesi.Controllers
         }
 
 
-      
+
         public IActionResult AdminPaneli()
         {
             return View();
@@ -184,17 +184,17 @@ namespace KuaforWebSitesi.Controllers
                                 m.MusteriSoyad.Contains(aramaKriteri) ||
                                 m.MusteriMail.Contains(aramaKriteri))
                     .ToList();
-        
+
                 return View("MusteriList", bulunanMusteriler);  // Bulunan müşteriler listelenir
             }
-        
+
             // Eğer arama yapılmamışsa, tüm müşteriler listelenir
             var tumMusteriler = db.Musteriler.ToList();
             return View("MusteriList", tumMusteriler);  // Tüm müşteri listesi gösterilir
         }
 
         /*admin*/
-     
+
         //[HttpGet]
         //public IActionResult MusteriSil(int id)
         //{
@@ -204,12 +204,12 @@ namespace KuaforWebSitesi.Controllers
         //        TempData["msj"] = "Silinecek müşteri bulunamadı.";
         //        return RedirectToAction("MusteriList");
         //    }
-        
+
         //    // Müşteriyi sil
         //    db.Musteriler.Remove(musteri);
         //    db.SaveChanges();
         //    TempData["msj"] = $"{musteri.MusteriAd} adlı müşteri başarıyla silindi.";
-        
+
         //    return RedirectToAction("MusteriList");
         //}
 
@@ -235,10 +235,20 @@ namespace KuaforWebSitesi.Controllers
                 return RedirectToAction("MusteriGiris");
             }
 
+            var aktifRandevular = db.Randevular
+                .Include(r => r.Hizmetler)
+                    .Include(r => r.Calisan)
+                    .Where(r => r.MusteriID == musteri.MusteriID && r.Tarih >= DateTime.Now)
+                .OrderBy(r => r.Tarih)
+                 .ToList();
+
+            // Listeyi View'e gönder
+            ViewBag.AktifRandevular = aktifRandevular;
+
             return View(musteri);
         }
 
-      
+
         /* musteri tamamlandı*/
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -333,7 +343,7 @@ namespace KuaforWebSitesi.Controllers
                 return View(musteri);
             }
 
-          
+
             var musteriID = HttpContext.Session.GetString("MusteriID");
             if (string.IsNullOrEmpty(musteriID))
             {
@@ -375,17 +385,17 @@ namespace KuaforWebSitesi.Controllers
                 TempData["msj"] = "Şifre yanlış. Lütfen tekrar deneyin.";
                 return View(musteri);  // Formu yeniden döndürüyoruz
             }
-                  
+
             mevcutMusteri.MusteriAd = musteri.MusteriAd;
             mevcutMusteri.MusteriSoyad = musteri.MusteriSoyad;
             mevcutMusteri.MusteriMail = musteri.MusteriMail;
-            mevcutMusteri.MusteriTelefon = musteri.MusteriTelefon; 
+            mevcutMusteri.MusteriTelefon = musteri.MusteriTelefon;
 
             db.Musteriler.Update(mevcutMusteri);
-            await db.SaveChangesAsync();  
+            await db.SaveChangesAsync();
 
             TempData["msj"] = "Profil başarıyla güncellendi.";
-            return RedirectToAction("ProfilGoruntule"); 
+            return RedirectToAction("ProfilGoruntule");
         }
 
         ///*admin*/
@@ -512,7 +522,7 @@ namespace KuaforWebSitesi.Controllers
         //    }
         //}
 
-       
+
 
 
 

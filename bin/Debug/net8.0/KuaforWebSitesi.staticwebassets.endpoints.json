@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "css/ProfilGoruntule.css",
+      "AssetFile": "css/ProfilGoruntule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 10:11:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="
+        }
+      ]
+    },
+    {
+      "Route": "css/ProfilGoruntule.npeah3df1b.css",
+      "AssetFile": "css/ProfilGoruntule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 10:11:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "npeah3df1b"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="
+        },
+        {
+          "Name": "label",
+          "Value": "css/ProfilGoruntule.css"
+        }
+      ]
+    },
+    {
       "Route": "css/calisan.css",
       "AssetFile": "css/calisan.css",
       "Selectors": [],

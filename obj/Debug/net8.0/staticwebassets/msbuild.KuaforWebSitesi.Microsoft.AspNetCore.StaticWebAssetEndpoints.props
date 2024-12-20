@@ -108,6 +108,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IHs5TL6ui7SneJrbsFVqhHOX2YiDhillS76e4UubZzI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1890"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IHs5TL6ui7SneJrbsFVqhHOX2YiDhillS76e4UubZzI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 18:12:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/ProfilGoruntule.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilGoruntule.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2515"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 10:11:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/ProfilGoruntule.npeah3df1b.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ProfilGoruntule.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"npeah3df1b"},{"Name":"integrity","Value":"sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/ProfilGoruntule.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2515"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 10:11:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/randevu.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\randevu.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

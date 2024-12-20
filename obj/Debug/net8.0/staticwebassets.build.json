@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4RT7Rcnvr6e6Na0CBTbVZ0uqb0USS31prvxbv5/43c0=",
+  "Hash": "0EEoGIaGfij7NtfqJZOdXz3Hh7FPtvCd7fi7UUJoJKU=",
   "Source": "KuaforWebSitesi",
   "BasePath": "_content/KuaforWebSitesi",
   "Mode": "Default",
@@ -246,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\kayit.css"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\ProfilGoruntule.css",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "css/ProfilGoruntule#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "npeah3df1b",
+      "Integrity": "BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ProfilGoruntule.css"
     },
     {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\randevu.css",
@@ -2916,6 +2937,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-IHs5TL6ui7SneJrbsFVqhHOX2YiDhillS76e4UubZzI="
+        }
+      ]
+    },
+    {
+      "Route": "css/ProfilGoruntule.css",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\ProfilGoruntule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 10:11:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="
+        }
+      ]
+    },
+    {
+      "Route": "css/ProfilGoruntule.npeah3df1b.css",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\ProfilGoruntule.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 10:11:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "npeah3df1b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/ProfilGoruntule.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWoO44RG1Jzr5eeaDAwcQ3YiFRiXQK11LCThDCbbUiw="
         }
       ]
     },

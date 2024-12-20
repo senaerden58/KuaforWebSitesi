@@ -14,6 +14,46 @@ namespace KuaforWebSitesi.Controllers
         {
             db = context;
         }
+        // GET: api/HizmetKategori
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<HizmetKategori>>> GetHizmetKategoriler()
+        {
+            var kategoriler = await db.HizmetKategoriler.Include(h => h.Hizmetler).ToListAsync();
+            return Ok(kategoriler);
+        }
+
+        // GET: api/HizmetKategori/{id}
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<HizmetKategori>> GetHizmetKategori(int id)
+        //{
+        //    var kategori = await db.HizmetKategoriler.Include(h => h.Hizmetler).FirstOrDefaultAsync(h => h.HizmetKategoriID == id);
+
+        //    if (kategori == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return Ok(kategori);
+        //}
+
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<HizmetKategori>>> GetHizmetKategoriler()
+        //{
+        //    var kategoriler = await db.HizmetKategoriler
+        //        .Include(h => h.Hizmetler)
+        //        .ToListAsync();
+
+        //    var kategoriDtos = kategoriler.Select(k => new HizmetKategori
+        //    {
+        //        HizmetKategoriID = k.HizmetKategoriID,
+        //        KategoriAdi = k.KategoriAdi,
+        //        HizmetAdlari = k.Hizmetler?.Select(h => h.HizmetAdi).ToList()  // Hizmet adlarını al
+        //    }).ToList();
+
+        //    return Ok(kategoriDtos);
+        //}
+
 
         // POST: api/HizmetKategori/AddMultipleKategoriler
         [HttpPost("AddMultipleKategoriler")]
@@ -44,11 +84,11 @@ namespace KuaforWebSitesi.Controllers
         }
 
         // GET: api/HizmetKategori
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<HizmetKategori>>> GetHizmetKategoriler()
-        {
-            return await db.HizmetKategoriler.ToListAsync();
-        }
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<HizmetKategori>>> GetHizmetKategoriler()
+        //{
+        //    return await db.HizmetKategoriler.ToListAsync();
+        //}
 
         // GET: api/HizmetKategori/5
         [HttpGet("{id}")]
