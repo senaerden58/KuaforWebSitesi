@@ -30,6 +30,7 @@ namespace KuaforWebSitesi.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 
@@ -237,6 +238,20 @@ namespace KuaforWebSitesi.Controllers
             }
 
             return RedirectToAction("CalisanList");
+        }
+
+        public IActionResult CalisanGoster()
+        {
+            var calisanlar = db.Calisanlar
+                                .Include(c => c.CalisanGunler)
+                                .ThenInclude(cg => cg.Gunler)  // CalisanGun'ün Gun ile ilişkisini alıyoruz
+                                .Include(c => c.CalisanHizmetler)
+                                .ThenInclude(ch => ch.Hizmet)
+                                .ThenInclude(h => h.HizmetKategoriler)  // Hizmet'in kategorilerini dahil ediyoruz
+                                .ToList();
+
+            ViewBag.Msj = TempData["msj"];
+            return View(calisanlar);
         }
 
 

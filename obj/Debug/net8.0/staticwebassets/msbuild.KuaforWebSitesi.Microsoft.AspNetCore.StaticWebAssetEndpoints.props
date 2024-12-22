@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/calisan.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\calisan.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq\u002BIM\u002BXDoBEfqO3s="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5540"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WDbqxmRlwdnMl8Stt/bphri2Tv4wq\u002BIM\u002BXDoBEfqO3s=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 16:04:53 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo\u002BS5VRPuHzm1YeE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3941"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo\u002BS5VRPuHzm1YeE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 23:18:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/calisan.gi1sridm9m.css">
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/calisan.han6ri9zdl.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\calisan.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gi1sridm9m"},{"Name":"integrity","Value":"sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq\u002BIM\u002BXDoBEfqO3s="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/calisan.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5540"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WDbqxmRlwdnMl8Stt/bphri2Tv4wq\u002BIM\u002BXDoBEfqO3s=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 16:04:53 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"han6ri9zdl"},{"Name":"integrity","Value":"sha256-l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo\u002BS5VRPuHzm1YeE="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/calisan.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3941"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo\u002BS5VRPuHzm1YeE=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 23:18:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/calisanDetay.8a3hlv7pdr.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\calisanDetay.css'))</AssetFile>
@@ -132,17 +132,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lf5gl7vajd"},{"Name":"integrity","Value":"sha256-gaBIcBdTG3QfzDWwDdeau9sTDu9hVWsun4hgrpAiZ70="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/randevu.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2115"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gaBIcBdTG3QfzDWwDdeau9sTDu9hVWsun4hgrpAiZ70=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Dec 2024 18:43:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.brapuet8d0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"brapuet8d0"},{"Name":"integrity","Value":"sha256-SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW\u002BrCdhQ="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5400"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW\u002BrCdhQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:27:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4655"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 14:39:26 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/css/site.q8lb6wv7i1.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q8lb6wv7i1"},{"Name":"integrity","Value":"sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="},{"Name":"label","Value":"_content/KuaforWebSitesi/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4655"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 14:39:26 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW\u002BrCdhQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5400"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW\u002BrCdhQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:27:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -155,6 +155,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Nov 2024 15:32:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/dropDown.iaqqgot2th.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dropDown.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iaqqgot2th"},{"Name":"integrity","Value":"sha256-mse\u002B2wvdaulQLCc9EMFtp/fYDD8eL\u002BGwQhJBCAEQvtc="},{"Name":"label","Value":"_content/KuaforWebSitesi/js/dropDown.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"232"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mse\u002B2wvdaulQLCc9EMFtp/fYDD8eL\u002BGwQhJBCAEQvtc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:22:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/dropDown.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dropDown.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mse\u002B2wvdaulQLCc9EMFtp/fYDD8eL\u002BGwQhJBCAEQvtc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"232"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mse\u002B2wvdaulQLCc9EMFtp/fYDD8eL\u002BGwQhJBCAEQvtc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 15:22:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/js/Görünür.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Görünür.js'))</AssetFile>
@@ -912,29 +924,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1117"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 28 Nov 2024 15:32:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/acalisan1.dt30b66nu5.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan1.jpeg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/uploads/IMG_6893.087npk0szz.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\IMG_6893.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dt30b66nu5"},{"Name":"integrity","Value":"sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/acalisan1.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100317"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"087npk0szz"},{"Name":"integrity","Value":"sha256-UA1EYy1kM/0CJsA7dvA2QKGl\u002BIzKomPxzQ9lgiqn2\u002B8="},{"Name":"label","Value":"_content/KuaforWebSitesi/uploads/IMG_6893.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1431632"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022UA1EYy1kM/0CJsA7dvA2QKGl\u002BIzKomPxzQ9lgiqn2\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 19:35:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/acalisan1.jpeg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan1.jpeg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/uploads/IMG_6893.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\IMG_6893.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100317"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UA1EYy1kM/0CJsA7dvA2QKGl\u002BIzKomPxzQ9lgiqn2\u002B8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1431632"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022UA1EYy1kM/0CJsA7dvA2QKGl\u002BIzKomPxzQ9lgiqn2\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 19:35:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/acalisan2.6dcs04z3pb.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/AslıŞahin.8ftwlx7pdq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\AslıŞahin.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6dcs04z3pb"},{"Name":"integrity","Value":"sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/acalisan2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18897"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:10:04 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8ftwlx7pdq"},{"Name":"integrity","Value":"sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/Asl\u0131\u015Eahin.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33630"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/acalisan2.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/AslıŞahin.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\AslıŞahin.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"18897"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:10:04 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"33630"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan.png'))</AssetFile>
@@ -948,77 +960,101 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"whbq91uqx0"},{"Name":"integrity","Value":"sha256-tGmL4b2MgaY3qbAEIvUa9mtgplX25P/mop3qdB1XLWk="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1025820"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022tGmL4b2MgaY3qbAEIvUa9mtgplX25P/mop3qdB1XLWk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 11:03:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan1.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan1.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.0bdhtk7tj3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0bdhtk7tj3"},{"Name":"integrity","Value":"sha256-nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24720"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.dt30b66nu5.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dt30b66nu5"},{"Name":"integrity","Value":"sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100317"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100317"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6\u002BIk7zr/XU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/CeydaKeskin.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24720"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/defaultt.er7q2x4wyz.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\defaultt.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"er7q2x4wyz"},{"Name":"integrity","Value":"sha256-yk\u002BHbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/defaultt.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3283"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022yk\u002BHbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 20:01:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/defaultt.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\defaultt.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yk\u002BHbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3283"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022yk\u002BHbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 20:01:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/DilanKaya.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\DilanKaya.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fhm6ZQxEZe0hopd086jS383qkd\u002BCZN1ZBEnWyU0IDuI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"23104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fhm6ZQxEZe0hopd086jS383qkd\u002BCZN1ZBEnWyU0IDuI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 11:10:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan1.makryuybzk.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan1.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/DilanKaya.makryuybzk.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\DilanKaya.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"makryuybzk"},{"Name":"integrity","Value":"sha256-fhm6ZQxEZe0hopd086jS383qkd\u002BCZN1ZBEnWyU0IDuI="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan1.jpg"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"makryuybzk"},{"Name":"integrity","Value":"sha256-fhm6ZQxEZe0hopd086jS383qkd\u002BCZN1ZBEnWyU0IDuI="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/DilanKaya.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"23104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022fhm6ZQxEZe0hopd086jS383qkd\u002BCZN1ZBEnWyU0IDuI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 11:10:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan2.ci4v75s6yv.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/EceTuncer.e317m46w2j.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\EceTuncer.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ci4v75s6yv"},{"Name":"integrity","Value":"sha256-lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"27250"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan2.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan2.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"27250"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan3.inoi6cn2sp.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan3.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"inoi6cn2sp"},{"Name":"integrity","Value":"sha256-skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan3.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25333"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:24 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan3.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan3.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"25333"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:24 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan4.e317m46w2j.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan4.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e317m46w2j"},{"Name":"integrity","Value":"sha256-SsdzUkzfjS4SkP29HG28dGvA\u002BgeLmrNJifMpNntzrKg="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan4.jpg"}]]]></EndpointProperties>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"e317m46w2j"},{"Name":"integrity","Value":"sha256-SsdzUkzfjS4SkP29HG28dGvA\u002BgeLmrNJifMpNntzrKg="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/EceTuncer.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39656"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SsdzUkzfjS4SkP29HG28dGvA\u002BgeLmrNJifMpNntzrKg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan4.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan4.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/EceTuncer.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\EceTuncer.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SsdzUkzfjS4SkP29HG28dGvA\u002BgeLmrNJifMpNntzrKg="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"39656"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SsdzUkzfjS4SkP29HG28dGvA\u002BgeLmrNJifMpNntzrKg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan5.8ftwlx7pdq.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan5.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/ElifYılmaz.ci4v75s6yv.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ElifYılmaz.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8ftwlx7pdq"},{"Name":"integrity","Value":"sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan5.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33630"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ci4v75s6yv"},{"Name":"integrity","Value":"sha256-lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/ElifY\u0131lmaz.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"27250"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan5.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan5.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/ElifYılmaz.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ElifYılmaz.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"33630"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"27250"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lAM4Nc5R3Asa\u002BpWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan6.0bdhtk7tj3.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan6.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/NisanYıldırım.6dcs04z3pb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\NisanYıldırım.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0bdhtk7tj3"},{"Name":"integrity","Value":"sha256-nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/calisan6.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24720"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6dcs04z3pb"},{"Name":"integrity","Value":"sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/NisanY\u0131ld\u0131r\u0131m.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"18897"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:10:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/calisan6.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan6.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/NisanYıldırım.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\NisanYıldırım.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24720"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"18897"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:10:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/ŞeymaÇetin.inoi6cn2sp.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ŞeymaÇetin.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"inoi6cn2sp"},{"Name":"integrity","Value":"sha256-skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY="},{"Name":"label","Value":"_content/KuaforWebSitesi/web/images/calisanlar/\u015Eeyma\u00C7etin.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25333"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/calisanlar/ŞeymaÇetin.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ŞeymaÇetin.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"25333"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022skxisHRAJOS4Bh\u002BN7iCX\u002BS5QTRIpVqTpEkTfB5/bizY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 12:09:24 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/KuaforWebSitesi/web/images/cilt.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\cilt.jpg'))</AssetFile>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0EEoGIaGfij7NtfqJZOdXz3Hh7FPtvCd7fi7UUJoJKU=",
+  "Hash": "vVgQhRt6/56fn5Ao3x9SsIf5wFKe70WPZ2aszsVRVhE=",
   "Source": "KuaforWebSitesi",
   "BasePath": "_content/KuaforWebSitesi",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gi1sridm9m",
-      "Integrity": "WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=",
+      "Fingerprint": "han6ri9zdl",
+      "Integrity": "l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\calisan.css"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q8lb6wv7i1",
-      "Integrity": "tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=",
+      "Fingerprint": "brapuet8d0",
+      "Integrity": "SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -330,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\dropDown.js",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "js/dropDown#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iaqqgot2th",
+      "Integrity": "mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dropDown.js"
     },
     {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\Görünür.js",
@@ -1634,12 +1655,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg",
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\uploads\\IMG_6893.jpg",
       "SourceId": "KuaforWebSitesi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
       "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/acalisan1#[.{fingerprint}]?.jpeg",
+      "RelativePath": "uploads/IMG_6893#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1648,19 +1669,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dt30b66nu5",
-      "Integrity": "Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=",
+      "Fingerprint": "087npk0szz",
+      "Integrity": "UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg"
+      "OriginalItemSpec": "wwwroot\\uploads\\IMG_6893.jpg"
     },
     {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan2.jpg",
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\AslıŞahin.jpg",
       "SourceId": "KuaforWebSitesi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
       "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/acalisan2#[.{fingerprint}]?.jpg",
+      "RelativePath": "web/images/calisanlar/AslıŞahin#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1669,11 +1690,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6dcs04z3pb",
-      "Integrity": "mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=",
+      "Fingerprint": "8ftwlx7pdq",
+      "Integrity": "9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\acalisan2.jpg"
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\AslıŞahin.jpg"
     },
     {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan.png",
@@ -1697,12 +1718,12 @@
       "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan.png"
     },
     {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan1.jpg",
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpeg",
       "SourceId": "KuaforWebSitesi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
       "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan1#[.{fingerprint}]?.jpg",
+      "RelativePath": "web/images/calisanlar/CeydaKeskin#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1711,103 +1732,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "makryuybzk",
-      "Integrity": "fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=",
+      "Fingerprint": "dt30b66nu5",
+      "Integrity": "Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan1.jpg"
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpeg"
     },
     {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan2.jpg",
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpg",
       "SourceId": "KuaforWebSitesi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
       "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ci4v75s6yv",
-      "Integrity": "lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan3.jpg",
-      "SourceId": "KuaforWebSitesi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
-      "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan3#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "inoi6cn2sp",
-      "Integrity": "skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan3.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan4.jpg",
-      "SourceId": "KuaforWebSitesi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
-      "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan4#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "e317m46w2j",
-      "Integrity": "SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan5.jpg",
-      "SourceId": "KuaforWebSitesi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
-      "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan5#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8ftwlx7pdq",
-      "Integrity": "9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan6.jpg",
-      "SourceId": "KuaforWebSitesi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
-      "BasePath": "_content/KuaforWebSitesi",
-      "RelativePath": "web/images/calisanlar/calisan6#[.{fingerprint}]?.jpg",
+      "RelativePath": "web/images/calisanlar/CeydaKeskin#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1820,7 +1757,133 @@
       "Integrity": "nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\calisan6.jpg"
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\defaultt.png",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/defaultt#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "er7q2x4wyz",
+      "Integrity": "yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\defaultt.png"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\DilanKaya.jpg",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/DilanKaya#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "makryuybzk",
+      "Integrity": "fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\DilanKaya.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\EceTuncer.jpg",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/EceTuncer#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e317m46w2j",
+      "Integrity": "SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\EceTuncer.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ElifYılmaz.jpg",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/ElifYılmaz#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ci4v75s6yv",
+      "Integrity": "lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\ElifYılmaz.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\NisanYıldırım.jpg",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/NisanYıldırım#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6dcs04z3pb",
+      "Integrity": "mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\NisanYıldırım.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ŞeymaÇetin.jpg",
+      "SourceId": "KuaforWebSitesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\",
+      "BasePath": "_content/KuaforWebSitesi",
+      "RelativePath": "web/images/calisanlar/ŞeymaÇetin#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "inoi6cn2sp",
+      "Integrity": "skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web\\images\\calisanlar\\ŞeymaÇetin.jpg"
     },
     {
       "Identity": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\cilt.jpg",
@@ -2213,7 +2276,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "3941"
         },
         {
           "Name": "Content-Type",
@@ -2221,11 +2284,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=\""
+          "Value": "\"l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 16:04:53 GMT"
+          "Value": "Sun, 22 Dec 2024 23:18:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2235,12 +2298,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s="
+          "Value": "sha256-l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE="
         }
       ]
     },
     {
-      "Route": "css/calisan.gi1sridm9m.css",
+      "Route": "css/calisan.han6ri9zdl.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\calisan.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2250,7 +2313,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5540"
+          "Value": "3941"
         },
         {
           "Name": "Content-Type",
@@ -2258,11 +2321,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=\""
+          "Value": "\"l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 16:04:53 GMT"
+          "Value": "Sun, 22 Dec 2024 23:18:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2272,7 +2335,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gi1sridm9m"
+          "Value": "han6ri9zdl"
         },
         {
           "Name": "label",
@@ -2280,7 +2343,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s="
+          "Value": "sha256-l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE="
         }
       ]
     },
@@ -3105,6 +3168,51 @@
       ]
     },
     {
+      "Route": "css/site.brapuet8d0.css",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 15:27:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "brapuet8d0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -3115,7 +3223,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4655"
+          "Value": "5400"
         },
         {
           "Name": "Content-Type",
@@ -3123,11 +3231,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
+          "Value": "\"SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
+          "Value": "Fri, 20 Dec 2024 15:27:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3137,52 +3245,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.q8lb6wv7i1.css",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4655"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Dec 2024 14:39:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "q8lb6wv7i1"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0="
+          "Value": "sha256-SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ="
         }
       ]
     },
@@ -3265,6 +3328,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/dropDown.iaqqgot2th.js",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\dropDown.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 15:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iaqqgot2th"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dropDown.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc="
+        }
+      ]
+    },
+    {
+      "Route": "js/dropDown.js",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\dropDown.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 15:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc="
         }
       ]
     },
@@ -8517,8 +8662,8 @@
       ]
     },
     {
-      "Route": "web/images/calisanlar/acalisan1.dt30b66nu5.jpeg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg",
+      "Route": "uploads/IMG_6893.087npk0szz.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\uploads\\IMG_6893.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8527,7 +8672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "100317"
+          "Value": "1431632"
         },
         {
           "Name": "Content-Type",
@@ -8535,11 +8680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+          "Value": "\"UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:56 GMT"
+          "Value": "Sun, 22 Dec 2024 19:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8549,21 +8694,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dt30b66nu5"
+          "Value": "087npk0szz"
         },
         {
           "Name": "label",
-          "Value": "web/images/calisanlar/acalisan1.jpeg"
+          "Value": "uploads/IMG_6893.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+          "Value": "sha256-UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8="
         }
       ]
     },
     {
-      "Route": "web/images/calisanlar/acalisan1.jpeg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg",
+      "Route": "uploads/IMG_6893.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\uploads\\IMG_6893.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8572,7 +8717,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "100317"
+          "Value": "1431632"
         },
         {
           "Name": "Content-Type",
@@ -8580,11 +8725,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+          "Value": "\"UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:56 GMT"
+          "Value": "Sun, 22 Dec 2024 19:35:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8594,13 +8739,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+          "Value": "sha256-UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8="
         }
       ]
     },
     {
-      "Route": "web/images/calisanlar/acalisan2.6dcs04z3pb.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan2.jpg",
+      "Route": "web/images/calisanlar/AslıŞahin.8ftwlx7pdq.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\AslıŞahin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8609,7 +8754,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18897"
+          "Value": "33630"
         },
         {
           "Name": "Content-Type",
@@ -8617,11 +8762,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+          "Value": "\"9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:10:04 GMT"
+          "Value": "Thu, 05 Dec 2024 12:09:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8631,21 +8776,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6dcs04z3pb"
+          "Value": "8ftwlx7pdq"
         },
         {
           "Name": "label",
-          "Value": "web/images/calisanlar/acalisan2.jpg"
+          "Value": "web/images/calisanlar/AslıŞahin.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+          "Value": "sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="
         }
       ]
     },
     {
-      "Route": "web/images/calisanlar/acalisan2.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan2.jpg",
+      "Route": "web/images/calisanlar/AslıŞahin.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\AslıŞahin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8654,7 +8799,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18897"
+          "Value": "33630"
         },
         {
           "Name": "Content-Type",
@@ -8662,11 +8807,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+          "Value": "\"9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:10:04 GMT"
+          "Value": "Thu, 05 Dec 2024 12:09:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8676,7 +8821,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+          "Value": "sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="
         }
       ]
     },
@@ -8763,418 +8908,8 @@
       ]
     },
     {
-      "Route": "web/images/calisanlar/calisan1.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23104"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 11:10:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan1.makryuybzk.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "23104"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 11:10:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "makryuybzk"
-        },
-        {
-          "Name": "label",
-          "Value": "web/images/calisanlar/calisan1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan2.ci4v75s6yv.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ci4v75s6yv"
-        },
-        {
-          "Name": "label",
-          "Value": "web/images/calisanlar/calisan2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan2.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan3.inoi6cn2sp.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25333"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "inoi6cn2sp"
-        },
-        {
-          "Name": "label",
-          "Value": "web/images/calisanlar/calisan3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan3.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25333"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan4.e317m46w2j.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "39656"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "e317m46w2j"
-        },
-        {
-          "Name": "label",
-          "Value": "web/images/calisanlar/calisan4.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan4.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "39656"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:34 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan5.8ftwlx7pdq.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "33630"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8ftwlx7pdq"
-        },
-        {
-          "Name": "label",
-          "Value": "web/images/calisanlar/calisan5.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan5.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan5.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "33630"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 12:09:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc="
-        }
-      ]
-    },
-    {
-      "Route": "web/images/calisanlar/calisan6.0bdhtk7tj3.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan6.jpg",
+      "Route": "web/images/calisanlar/CeydaKeskin.0bdhtk7tj3.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9209,7 +8944,7 @@
         },
         {
           "Name": "label",
-          "Value": "web/images/calisanlar/calisan6.jpg"
+          "Value": "web/images/calisanlar/CeydaKeskin.jpg"
         },
         {
           "Name": "integrity",
@@ -9218,8 +8953,90 @@
       ]
     },
     {
-      "Route": "web/images/calisanlar/calisan6.jpg",
-      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan6.jpg",
+      "Route": "web/images/calisanlar/CeydaKeskin.dt30b66nu5.jpeg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt30b66nu5"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/CeydaKeskin.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/CeydaKeskin.jpeg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/CeydaKeskin.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9251,6 +9068,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/defaultt.er7q2x4wyz.png",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\defaultt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 20:01:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "er7q2x4wyz"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/defaultt.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/defaultt.png",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\defaultt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3283"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 20:01:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/DilanKaya.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\DilanKaya.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 11:10:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/DilanKaya.makryuybzk.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\DilanKaya.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23104"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 11:10:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "makryuybzk"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/DilanKaya.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/EceTuncer.e317m46w2j.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\EceTuncer.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e317m46w2j"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/EceTuncer.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/EceTuncer.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\EceTuncer.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39656"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/ElifYılmaz.ci4v75s6yv.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ElifYılmaz.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ci4v75s6yv"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/ElifYılmaz.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/ElifYılmaz.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ElifYılmaz.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/NisanYıldırım.6dcs04z3pb.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\NisanYıldırım.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:10:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dcs04z3pb"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/NisanYıldırım.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/NisanYıldırım.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\NisanYıldırım.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:10:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/ŞeymaÇetin.inoi6cn2sp.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ŞeymaÇetin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "inoi6cn2sp"
+        },
+        {
+          "Name": "label",
+          "Value": "web/images/calisanlar/ŞeymaÇetin.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
+        }
+      ]
+    },
+    {
+      "Route": "web/images/calisanlar/ŞeymaÇetin.jpg",
+      "AssetFile": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ŞeymaÇetin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 12:09:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
         }
       ]
     },

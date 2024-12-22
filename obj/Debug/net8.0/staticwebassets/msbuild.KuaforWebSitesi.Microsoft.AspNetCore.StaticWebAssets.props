@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gi1sridm9m</Fingerprint>
-      <Integrity>WDbqxmRlwdnMl8Stt/bphri2Tv4wq+IM+XDoBEfqO3s=</Integrity>
+      <Fingerprint>han6ri9zdl</Fingerprint>
+      <Integrity>l3EcAL0zs4Hsf9EwGKwRM8nc3Aluo+S5VRPuHzm1YeE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\calisan.css'))</OriginalItemSpec>
@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q8lb6wv7i1</Fingerprint>
-      <Integrity>tsmcF9lntv64EdYp0EdqI1jERRmf1E9ngMf9tMQkKH0=</Integrity>
+      <Fingerprint>brapuet8d0</Fingerprint>
+      <Integrity>SVeUzGnpePHhxwkQ0XvYeHkM9MaEmjWjvpbnW+rCdhQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -233,6 +233,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dropDown.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>js/dropDown.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>iaqqgot2th</Fingerprint>
+      <Integrity>mse+2wvdaulQLCc9EMFtp/fYDD8eL+GwQhJBCAEQvtc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\dropDown.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Görünür.js'))">
       <SourceType>Package</SourceType>
@@ -1368,41 +1386,41 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan1.jpeg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\IMG_6893.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>KuaforWebSitesi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/acalisan1.jpeg</RelativePath>
+      <RelativePath>uploads/IMG_6893.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dt30b66nu5</Fingerprint>
-      <Integrity>Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=</Integrity>
+      <Fingerprint>087npk0szz</Fingerprint>
+      <Integrity>UA1EYy1kM/0CJsA7dvA2QKGl+IzKomPxzQ9lgiqn2+8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan1.jpeg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\IMG_6893.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan2.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\AslıŞahin.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>KuaforWebSitesi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/acalisan2.jpg</RelativePath>
+      <RelativePath>web/images/calisanlar/AslıŞahin.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6dcs04z3pb</Fingerprint>
-      <Integrity>mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=</Integrity>
+      <Fingerprint>8ftwlx7pdq</Fingerprint>
+      <Integrity>9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\acalisan2.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\AslıŞahin.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan.png'))">
       <SourceType>Package</SourceType>
@@ -1422,102 +1440,30 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan1.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>KuaforWebSitesi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan1.jpg</RelativePath>
+      <RelativePath>web/images/calisanlar/CeydaKeskin.jpeg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>makryuybzk</Fingerprint>
-      <Integrity>fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=</Integrity>
+      <Fingerprint>dt30b66nu5</Fingerprint>
+      <Integrity>Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan1.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan2.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>KuaforWebSitesi</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan2.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ci4v75s6yv</Fingerprint>
-      <Integrity>lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan2.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan3.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KuaforWebSitesi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan3.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>inoi6cn2sp</Fingerprint>
-      <Integrity>skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan3.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan4.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KuaforWebSitesi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan4.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>e317m46w2j</Fingerprint>
-      <Integrity>SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan4.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan5.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KuaforWebSitesi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan5.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8ftwlx7pdq</Fingerprint>
-      <Integrity>9GXj38mLasECQGL0wdrsf3Bdxs1QVklGq4VO7BARSpc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan5.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan6.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>KuaforWebSitesi</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/KuaforWebSitesi</BasePath>
-      <RelativePath>web/images/calisanlar/calisan6.jpg</RelativePath>
+      <RelativePath>web/images/calisanlar/CeydaKeskin.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1528,7 +1474,115 @@
       <Integrity>nBoOkItsLC0UvCS4r4xDWwoHISgubUpY3D6R2vvCa58=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\calisan6.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\CeydaKeskin.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\defaultt.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/defaultt.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>er7q2x4wyz</Fingerprint>
+      <Integrity>yk+HbtmCBF0rhbeDIDQvXBWp8YLBMlxRn2nApYLOQXY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\defaultt.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\DilanKaya.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/DilanKaya.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>makryuybzk</Fingerprint>
+      <Integrity>fhm6ZQxEZe0hopd086jS383qkd+CZN1ZBEnWyU0IDuI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\DilanKaya.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\EceTuncer.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/EceTuncer.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>e317m46w2j</Fingerprint>
+      <Integrity>SsdzUkzfjS4SkP29HG28dGvA+geLmrNJifMpNntzrKg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\EceTuncer.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ElifYılmaz.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/ElifYılmaz.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ci4v75s6yv</Fingerprint>
+      <Integrity>lAM4Nc5R3Asa+pWG5n3Lk1XKD/Ig06FGVc3DvImm8oE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ElifYılmaz.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\NisanYıldırım.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/NisanYıldırım.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>6dcs04z3pb</Fingerprint>
+      <Integrity>mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\NisanYıldırım.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ŞeymaÇetin.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>KuaforWebSitesi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/KuaforWebSitesi</BasePath>
+      <RelativePath>web/images/calisanlar/ŞeymaÇetin.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>inoi6cn2sp</Fingerprint>
+      <Integrity>skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\calisanlar\ŞeymaÇetin.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web\images\cilt.jpg'))">
       <SourceType>Package</SourceType>

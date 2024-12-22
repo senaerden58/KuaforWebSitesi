@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\js\\Görünür.js"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\dropDown.js",
+      "PackagePath": "staticwebassets\\js\\dropDown.js"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\randevu.js",
       "PackagePath": "staticwebassets\\js\\randevu.js"
     },
@@ -305,6 +309,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\uploads\\IMG_6893.jpg",
+      "PackagePath": "staticwebassets\\uploads\\IMG_6893.jpg"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\ShineLaB.png",
       "PackagePath": "staticwebassets\\web\\images\\ShineLaB.png"
     },
@@ -313,40 +321,44 @@
       "PackagePath": "staticwebassets\\web\\images\\ShineLaBflu.png"
     },
     {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan1.jpeg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\acalisan1.jpeg"
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\AslıŞahin.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\AslıŞahin.jpg"
     },
     {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\acalisan2.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\acalisan2.jpg"
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpeg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\CeydaKeskin.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\CeydaKeskin.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\CeydaKeskin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\DilanKaya.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\DilanKaya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\EceTuncer.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\EceTuncer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ElifYılmaz.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\ElifYılmaz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\NisanYıldırım.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\NisanYıldırım.jpg"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan.png",
       "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan.png"
     },
     {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan1.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan1.jpg"
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\defaultt.png",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\defaultt.png"
     },
     {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan2.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan3.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan4.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan5.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\calisan6.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\calisan6.jpg"
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\calisanlar\\ŞeymaÇetin.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\calisanlar\\ŞeymaÇetin.jpg"
     },
     {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\web\\images\\cilt.jpg",

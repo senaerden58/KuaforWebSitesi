@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KuaforWebSitesi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dba8c08691e025b14dde3afa6193365f4d7759c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9927b856f44e62918f80ab615f91a2de88182df4")]
 [assembly: System.Reflection.AssemblyProductAttribute("KuaforWebSitesi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KuaforWebSitesi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

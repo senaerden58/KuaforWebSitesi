@@ -46,7 +46,7 @@ namespace KuaforWebSitesi.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear(); // Clear session data
-            return RedirectToAction("Index", "Home"); // Redirect to home page
+            return RedirectToAction("Index", "Home");
         }
 
        

@@ -1,85 +1,115 @@
-html,body, footer {
+html, body, footer {
     font-size: 14px;
     margin: 0;
     padding: 0;
-    margin-bottom:0;
+    margin-bottom: 0;
+    text-align: center; /* Sayfa içeriðini ortalamak için */
     box-sizing: border-box;
-    padding:0;
     position: relative;
     min-height: 100%;
     scroll-behavior: smooth;
-}
-.navbar a {
-    color: #CBB26A !important; 
-    text-decoration: none; /* Alt çizgiyi kaldýrýr, opsiyonel */
-    padding:0;
-    font-size:15px;
+    background-color:#f9f9f9;
 }
 
-.navbar a:hover {
-    color: #CBB36F !important; /* Hover durumunda koyu pembe */
-    text-decoration:underline;
-    font-size:17px;
+.navbar {
+    width: 100%;
+    background-color: #f9f9f9; /* Navbar arka planý */
+    display: flex;
+    justify-content: center; /* Navbar öðelerini yatayda ortalar */
+    align-items: center; /* Navbar öðelerini dikeyde ortalar */
+    padding: 0;
+    margin:0;
+    margin-bottom:0;
+    box-sizing: border-box;
 }
+.navbar-collapse .container-fluid {
+    background-color: #f9f9f9;
+}
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+     /* Menü öðelerini yatayda ortalar */
+    align-items: center; /* Menü öðelerini dikeyde ortalar */
+    width: 100%;
+    padding: 0;
+    margin: 0; /* Gereksiz margin'i kaldýrdým */
+}
+
+    .navbar .nav-item {
+        list-style: none; /* Liste iþaretlerini kaldýr */
+        margin: 0; /* Her item arasýnda yatay boþluk */
+    }
+
+    .navbar a {
+        color: #CBB26A !important;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 0px; /* Baðlantýlar arasýna padding ekledim */
+    }
+
+        .navbar a:hover {
+            color: #CBB36F !important;
+            text-decoration: underline;
+            font-size: 17px;
+        }
 
 .home .navbar .nav-item .nav-link.btn {
-    padding: 5px 15px; /* Butonun iç paddingini biraz artýrdým */
+    padding: 5px 15px;
     font-size: 0.8rem;
     background-color: #f9f9f9;
     font-weight: bold !important;
     border-radius: 5px;
     text-align: center;
-    margin-left: auto; /* Navbar içinde saða yaslamak için */
-    border: 1px solid #CBB26A; /* Butona kenarlýk ekledim */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Yumuþak geçiþ */
+    margin-left: auto;
+    border: 1px solid #CBB26A;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.home .navbar .nav-item .nav-link.btn:hover {
-    background-color: #4d4d4d;
-    color: white;
+.nav-item {
+    display: flex  !important; /* Flexbox ile öðeleri yatayda hizalar */
+    align-items: center; /* Dikeyde ortalama */
 }
+    .nav-item:last-child {
+        margin-left: auto; /* Son öðeyi saða yaslar */
+    }
 
-*{
+    .home .navbar .nav-item .nav-link.btn:hover {
+        background-color: #4d4d4d;
+        color: white;
+    }
+
+* {
     background-color: #f9f9f9;
 }
 
-.home .navbar {
-    width: 100%;
-    position: relative;
-    margin: 0 auto; /* Ortalamak için */
-    box-sizing: border-box;
-    display: flex; /* Flexbox ile öðeleri hizalamak */
-    justify-content: center; /* Navbar'ý yatayda ortalamak */
-    padding: 0;
-}
-.navbar .nav-item:last-child {
-    margin-left: auto; /* Son öðeyi saða yerleþtir */
+.dropdown-menu {
+    display: none; /* Baþlangýçta gizli */
+
 }
 
-.home .navbar-nav {
-    width: 100%;
-    align-items: center; /* Menü öðelerini dikeyde ortalar */
-    justify-content: space-around; /* Menü öðeleri arasýnda eþit boþluk býrakýr */
-    padding: 0 20px; /* Navbar kenarlarýna biraz boþluk eklemek */
-}
+    .dropdown-menu.show {
+        display: block; /* Týklanýnca gösterilecek */
+        margin-top: 90px;
+    }
+
 
 .home .logo img {
     height: 60px;
 }
 
-
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-img,video{
-    width:100%;
+img, video {
+    width: 100%;
+    margin: 0;
+    display: block; /* Görseli blok seviyesinde eleman yaparak altýndaki boþluðu kaldýrýyoruz */
 }
 
 /*footer kýsmý*/

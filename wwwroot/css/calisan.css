@@ -10,78 +10,56 @@
     top: 0;
     left: 0;
     height: auto;
-   
 }
-.calisanBody img{
-    width:100%;
-    height:auto;
+
+.calisanBody img {
+    width: 100%;
+    height: auto;
 }
+
 .headerText {
-    position:absolute;
+    position: absolute;
     text-align: center;
-    margin-top: 50px; /* Üstten boşluk bırak */
-    background-color:transparent;
-    width: auto; /* Yatayda genişlik */
-    top:0%;
+    margin-top: 50px; 
+    background-color: transparent;
+    width: auto; 
+    top: 0%;
 }
 
-    .headerText p {
-        background-color: transparent;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 2vw; /* Ekran genişliğine göre font boyutunu ayarla */
-        color: #CBB26A;
-        margin-bottom: 0px;
-        font-weight: bold;
-        margin-top: 5px !important;
-    }
+.headerText p {
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw; 
+    color: #CBB26A;
+    margin-bottom: 0px;
+    font-weight: bold;
+    margin-top: 5px !important;
+}
 
-    .headerText h3 {
-        background-color: transparent;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1vw; /* Ekran genişliğine göre font boyutunu ayarla */
-        color: #333;
-        
-        margin: 0;
-        padding: 10px;
-    }
+.headerText h3 {
+    background-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1vw; /* Ekran genişliğine göre font boyutunu ayarla */
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
 
 
-    .calisanBody h2 {
-        position: absolute;
-        font-family: 'Josefin Sans',sans-serif;
-        margin-top:14%;
-        float:left;
-        margin-bottom:0;
-        align-content: center;
-        font-weight: bold;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        font-size: 3vw; /* Ekran genişliğine göre font boyutunu ayarlar */
-        color: #CBB26A;
-        background-color: transparent; /* Arka plan rengini şeffaf yapar */
-    }
 .about {
     display: flex;
     border-radius: 10px;
-    margin-top: -250px;
-    margin-bottom:0;
+    margin-top: -70px !important;
+    margin-bottom: 0px !important;
     margin-left: 10px;
-    gap: 0px; /* Küçük resimler arasında boşluk bırakır */
-    position: absolute; /* Ana resmin üstünde yer alır */
-    top: 50%; /* Ana resmin ortasına yerleştirir */
+    position : absolute;
+    top: 50%; 
     background-color: transparent;
-    transform: translateY(-50%); /* Y ekseninde ortalar */
-}
-.altKisim {
-    display: flex;
-    border-radius: 10px;
-    flex-wrap: wrap; /* Küçük ekranlar için uygun */
-    margin-top: 10%;
-    margin-left: 10px;
-   
-    position: absolute; /* Ana resmin üstünde yer alır */
-    top: 50%; /* Ana resmin ortasına yerleştirir */
-    background-color: transparent;
-  
+    transform: translateY(-50%); 
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
 }
 
 
@@ -90,117 +68,117 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
-    margin-top: 200px;
+    margin-top: 100px;
     align-items: center;
     overflow: hidden;
-    width: 200px; /* Küçük resimlerin genişliği */
-    height: 200px; /* Küçük resimlerin yüksekliği */
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
-    background-color: transparent; /* Arka planı şeffaf yapar */
-  
-}
-
-
-.altKisim .calisan {
-    display: flex;
-    flex-direction: column;
-    margin-top:-100px;
-    margin-left: 10px;
-    align-items: center;
-    overflow: hidden;
-    width: 200px; /* Küçük resimlerin genişliği */
-    height: 200px; /* Küçük resimlerin yüksekliği */
-    border-radius: 10px;
-    background-color: transparent; /* Arka planı şeffaf yapar */
-   
-}
-
-.altKisim h2 {
-    position: absolute;
-    font-family: 'Josefin Sans',sans-serif;
-    margin-top:-50px;
-    text-align:center;
-    margin-left:20%;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    font-size: 3vw; /* Ekran genişliğine göre font boyutunu ayarlar */
-    color: #CBB26A;
-    background-color: transparent; /* Arka plan rengini şeffaf yapar */
-}
-
-.about .calisan img {
-    width: 100%; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
-    height: 100%; /* Kapsayıcı yüksekliğine uyar */
-    object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
-    border-radius: 10px;
-    cursor: pointer;
-  
-   
-}
-.about .calisan{
-    position:relative;
-}
-
-.altKisim .calisan {
-    position: relative;
+    background-color: transparent;
+    position: relative; /*sonradan*/
 }
 
 .calisan .calisanAdAlan {
-    margin-top:15px;
+    position: absolute;
+    margin-top: -100px;
+    margin-bottom: 0px;
     position: absolute;
     color: #CBB26A;
     display: flex;
-    height:auto;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
+    opacity: 0;
+    background-color: transparent !important;
+    font-family: 'Josefin Sans',sans-serif;
+    transition: opacity 0.3s ease-in-out; /* Hover'da yazı görünür olsun */
+}
+
+.calisan .hizmetler {
+    position: absolute;
+    color: #CBB26A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem; /* Font boyutu arttırıldı */
     opacity: 0;
     background-color: transparent;
-    font-family: 'Josefin Sans',sans-serif;
-}
-.about .calisan:hover img
- {
-    filter: brightness(50%); /* Hover sırasında resmin kararması */
-    opacity: 1; /* Hover sırasında yazının görünür hale gelmesi */
-}
-.altKisim .calisan:hover img {
-    filter: brightness(50%); /* Hover sırasında resmin kararması */
-    opacity: 1; /* Hover sırasında yazının görünür hale gelmesi */
-}
- .calisan:hover .calisanAdAlan{
-    opacity:1;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 8px;
 }
 
 
-.altKisim .calisan img:hover {
-    width: 100%; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
-    height: 100%; /* Kapsayıcı yüksekliğine uyar */
-    object-fit: cover; /* Resmi kapsayıcıya göre ölçeklendirir */
+.calisan .calisanAdAlan h6, .calisan .hizmetler .h6 {
+    background-color: transparent;
+    font-size: 1rem !important; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.calisan:hover .calisanAdAlan,
+.calisan:hover .hizmetler {
+    opacity: 1; /* Hover'da yazılar görünür olur */
+}
+
+    .calisan:hover .calisanAdAlan ~ img,
+    .calisan:hover .hizmetler ~ img {
+        filter: brightness(50%); /* Resmin kararması */
+    }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; /* Font boyutu ayarlandı */
+    justify-content: center;
+    background-color: transparent;
+}
+
+
+li {
+    margin: 1px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem; /* Font boyutu ayarlandı */
+    color: #CBB26A;
+    background-color: transparent;
+}
+
+.calisan:hover img {
+    filter: brightness(50%); /* Resmin kararması */
+    transition: filter 0.3s ease-in-out; /* Kararma efekti */
+}
+
+.about .calisan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    opacity: 0.7; /* Resme tıklanabilirlik efekti */
     cursor: pointer;
-    transition: all 0.5s;
 }
-.about .calisan img:hover, .altKisim .calisan img:hover {
-    filter: brightness(50%);
-    opacity:1;
+
+ 
+.about .calisan img:hover {
+    filter: brightness(50%); 
+    opacity: 1;
 }
 
 
-   
-/* Responsive Design */
 @media (max-width: 768px) {
-    .headerText p, .headerText h3, .calisanBody h2 {
-        font-size: 4vw; /* Küçük ekranlar için daha büyük font boyutu */
+    .headerText p, .headerText h3 {
+        font-size: 4vw;
     }
 
     .calisan {
-        width: 150px; /* Küçük ekranlar için daha küçük resimler */
+        width: 150px; 
         height: 150px;
     }
 
-        .calisan img {
-            width: 100%;
-            height: 100%;
-        }
+    .calisan img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
 }

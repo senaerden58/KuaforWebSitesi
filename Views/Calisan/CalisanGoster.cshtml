@@ -1,4 +1,6 @@
-﻿@model KuaforWebSitesi.Models.Calisan
+﻿@using System.Linq
+@model List<KuaforWebSitesi.Models.Calisan>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +22,8 @@
                 Hepsi, müşterilerine özel bir deneyim ve yaklaşım sunar.
             </h3>
         </div>
-      @*  @*  <h2>Stilistler</h2> *@
-@*         <div class="about">
+        @*  @*  <h2>Stilistler</h2> *@
+        @*         <div class="about">
             <div class="calisan">
                 <img src="~/web/images/calisanlar/calisan1.jpg" alt="calisan1" />
                 <p class="calisanAdAlan">
@@ -81,7 +83,7 @@
         </div>
         <div class="altKisim">
           @*   <h2>Estetisyenler</h2> *@
-          @*   <div class="calisan">
+        @*   <div class="calisan">
                 <img src="~/web/images/calisanlar/acalisan1.jpeg" alt="acalisan1" />
                 <p class="calisanAdAlan">
                     Ceyda Özdemir<br />
@@ -104,23 +106,42 @@
             </div>
         </div> *@ 
 
-        @*   <div class="about">
-            @foreach (var calisan in CalisanList)
+        <div class="about">
+            @foreach (var calisan in Model)
             {
-                var fotoYolu = Url.Content($"~/web/images/calisanlar/{calisan.Ad}{calisan.Soyad}.jpg");
-                var varsayilanFoto = Url.Content("~/web/images/calisanlar/default.jpg");
+                var fotoYolu = Url.Content($"~/web/images/calisanlar/{calisan.CalisanAd}{calisan.CalisanSoyad}.jpg");
+                var varsayilanFoto = Url.Content("~/web/images/calisanlar/defaultt.png");
 
                 <div class="calisan">
-                    <img src="@fotoYolu" onerror="this.src='@varsayilanFoto'" alt="@calisan.Ad @calisan.Soyad" />
-                    <p class="calisanAdAlan">
-                        @calisan.Ad @calisan.Soyad<br />
-                        Günleri: @calisan.Gunler<br />
-                        Verilen Hizmetler: <br />
-                        @calisan.Hizmetler
-                    </p>
+                    <img src="@fotoYolu" onerror="this.src='@varsayilanFoto'" alt="@calisan.CalisanAd @calisan.CalisanSoyad" />
+                    <div class="calisanAdAlan">
+                        <h6>@calisan.CalisanAd @calisan.CalisanSoyad</h6>
+                    </div>
+                    <br />
+                    <div class="hizmetler">
+                        <h6>Verilen Hizmetler:</h6>
+                        <br />
+                        <ul>
+                            @{
+                                var yazdirilanKategoriler = new HashSet<string>();  // Kategorileri tutacak HashSet
+                            }
+
+                            @foreach (var hizmet in calisan.CalisanHizmetler)
+                            {
+                                @if (!yazdirilanKategoriler.Contains(hizmet.Hizmet.HizmetKategoriler.KategoriAdi))  // KategoriAdi'yi kontrol ediyoruz
+                                {
+                                    yazdirilanKategoriler.Add(hizmet.Hizmet.HizmetKategoriler.KategoriAdi);  // Eğer yazdırılmamışsa, ekliyoruz
+                                    <li>
+                                        @hizmet.Hizmet.HizmetKategoriler.KategoriAdi  <!-- KategoriAdi'ni yazdırıyoruz -->
+                                    </li>
+
+                                }
+                            }
+                        </ul>
+                    </div>
                 </div>
             }
-        </div> *@
+        </div>
     </div>
 
     @section Scripts {

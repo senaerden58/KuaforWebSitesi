@@ -1,6 +1,14 @@
 ﻿using KuaforWebSitesi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
+using System.Linq;
+using static System.Web.Razor.Parser.SyntaxConstants;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace KuaforWebSitesi.Controllers
 {

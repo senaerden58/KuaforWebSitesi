@@ -203,7 +203,7 @@ namespace KuaforWebSitesi.Controllers
 
                 // Başarı mesajı
                 TempData["msj"] = "Randevunuz başarıyla kaydedildi.";
-                return RedirectToAction("RandevuListesi", new { id = randevu.RandevuID });
+                return RedirectToAction("ProfilGoruntule","Musteri" ,new { id = randevu.RandevuID });
             }
             catch (Exception ex)
             {

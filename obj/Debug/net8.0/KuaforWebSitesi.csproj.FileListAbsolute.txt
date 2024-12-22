@@ -180,3 +180,10 @@ C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Syst
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\System.Web.WebPages.dll
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\RestSharp.dll

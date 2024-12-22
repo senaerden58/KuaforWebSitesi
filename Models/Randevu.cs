@@ -26,15 +26,16 @@ namespace KuaforWebSitesi.Models
         public string Durum { get; set; } = "Bekliyor"; // Randevu durumu (Onaylandı, Beklemede, İptal Edildi vb.)
         // Navigation properties
 
-        public virtual Musteri Musteri { get; set; } 
-        public virtual Calisan Calisan { get; set; } 
+        public virtual Musteri Musteri { get; set; }
+        public virtual Calisan Calisan { get; set; }
         public virtual Hizmetler Hizmetler { get; set; }
-        public enum RandevuDurumu
-        {
-            Bekliyor,
-            Onaylandı,
-            Iptal
-        }
 
     }
+    public enum RandevuDurumu
+    {
+        Bekliyor,
+        Onaylandı,
+        Iptal
+    }
+
 }
