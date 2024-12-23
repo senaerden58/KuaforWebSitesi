@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "KuaforWebSitesi.Controllers.GunlukKazancController",
+    "Method": "GunlukKazanc",
+    "RelativePath": "api/GunlukKazanc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KuaforWebSitesi.Controllers.HizmetKategoriController",
     "Method": "GetHizmetKategoriler",
     "RelativePath": "api/HizmetKategori",
