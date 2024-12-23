@@ -119,34 +119,13 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "KuaforWebSitesi.Controllers.KuaforWebSitesi.Controllers.VerimlilikController",
-    "Method": "Index",
+    "ContainingType": "KuaforWebSitesi.Controllers.VerimlilikController",
+    "Method": "TumCalisanlarVerimlilik",
     "RelativePath": "api/Verimlilik",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KuaforWebSitesi.Controllers.KuaforWebSitesi.Controllers.VerimlilikController",
-    "Method": "GetVerimlilik",
-    "RelativePath": "api/Verimlilik/{calisanId}/verimlilik",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "calisanId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "tarih",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

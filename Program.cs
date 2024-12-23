@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHttpClient();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -26,7 +28,6 @@ builder.Services.AddSession(options =>
 });
 
 
-
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
@@ -36,7 +37,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 
 builder.Services.AddControllers();
-builder.Services.AddControllersWithViews();  // MVC için gerekli hizmeti ekleyin
+builder.Services.AddControllersWithViews(); // MVC için gerekli hizmeti ekleyin
+
 
 
 
@@ -74,6 +76,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 app.UseAuthentication();
+
 
 
 app.MapControllerRoute(
