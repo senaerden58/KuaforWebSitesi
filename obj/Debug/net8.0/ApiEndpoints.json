@@ -129,6 +129,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "KuaforWebSitesi.Controllers.IletisimController",
+    "Method": "MesajGonder",
+    "RelativePath": "api/Iletisim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "KuaforWebSitesi.Models.Iletisim",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KuaforWebSitesi.Controllers.IletisimController",
+    "Method": "GetMesajlar",
+    "RelativePath": "api/Iletisim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "KuaforWebSitesi.Controllers.VerimlilikController",
     "Method": "TumCalisanlarVerimlilik",
     "RelativePath": "api/Verimlilik",

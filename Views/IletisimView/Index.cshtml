@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model List<KuaforWebSitesi.Models.Iletisim>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,11 +18,12 @@
         <div class="contact-form">
             <h2>Bize Mesaj Gönderin</h2>
             <form id="contactForm" action="/api/Iletisim" method="post">
-                <input type="text" name="name" placeholder="Adınız" required>
-                <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-                <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+                <input type="text" name="Ad" placeholder="Adınız" required>
+                <input type="email" name="Eposta" placeholder="E-posta Adresiniz" required>
+                <textarea name="Mesaj" rows="5" placeholder="Mesajınız" required></textarea>
                 <button type="submit">Gönder</button>
             </form>
+
 
         </div>
 
@@ -58,36 +61,37 @@
         const form = document.querySelector('#contactForm');
 
         form.addEventListener('submit', async (e) => {
-        e.preventDefault(); // Sayfa yenilenmesini engelle
+            e.preventDefault(); // Sayfa yenilenmesini engelle
 
-        const formData = new FormData(form);
-        const data = {
-        Ad: formData.get('Ad'), // name="Ad" input değerini al
-        Eposta: formData.get('Eposta'), // name="Eposta" input değerini al
-        Mesaj: formData.get('Mesaj') // name="Mesaj" textarea değerini al
-        };
+            const formData = new FormData(form);
+            const data = {
+                Ad: formData.get('Ad'), // name="Ad" input değerini al
+                Eposta: formData.get('Eposta'), // name="Eposta" input değerini al
+                Mesaj: formData.get('Mesaj') // name="Mesaj" textarea değerini al
+            };
 
-        try {
-        const response = await fetch('/api/Iletisim', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data) // JSON formatında veri gönderme
+            try {
+                const response = await fetch('/api/Iletisim', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data) // JSON formatında veri gönderme
+                });
+
+                const result = await response.json(); // API'den gelen yanıtı al
+                if (response.ok) {
+                    alert(result.message); // Başarılı yanıtı göster
+                } else {
+                    alert('Bir hata oluştu.');
+                }
+            } catch (error) {
+                console.error('Mesaj gönderme sırasında bir hata oluştu:', error);
+                alert('Bir hata oluştu.');
+            }
         });
 
-        const result = await response.json(); // API'den gelen yanıtı al
-        if (response.ok) {
-        alert(result.message); // Başarılı yanıtı göster
-        } else {
-        alert('Bir hata oluştu.');
-        }
-        } catch (error) {
-        console.error('Mesaj gönderme sırasında bir hata oluştu:', error);
-        alert('Bir hata oluştu.');
-        }
-        });
     </script>
-
 </body>
 </html>
+

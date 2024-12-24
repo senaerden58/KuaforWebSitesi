@@ -26,6 +26,9 @@ namespace KuaforWebSitesi.Models
         public DbSet<HizmetKategori> HizmetKategoriler { get; set; }
         public DbSet<CalisanGun> CalisanGunler { get; set; }
 
+        public DbSet<Iletisim> Iletisimler { get; set; }
+
+     
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Hizmetler>()

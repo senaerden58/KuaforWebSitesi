@@ -24,8 +24,7 @@ namespace KuaforWebSitesi.Controllers
             db = context;
         }
 
-        [HttpGet]
-       
+        [HttpGet]     
         public IActionResult TumCalisanlarVerimlilik()
         {
             // Tüm çalışanları al

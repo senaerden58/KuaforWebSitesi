@@ -47,12 +47,20 @@ builder.Services.AddDbContext<KuaforDBContext>(options =>
 builder.Services.AddScoped<PasswordHasher<Musteri>>(); // PasswordHasher'ý DI sistemine ekleyin
 builder.Services.AddScoped<PasswordHasher<Calisan>>(); // PasswordHasher'ý DI sistemine ekleyin
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
 
 
 
@@ -77,7 +85,7 @@ app.UseRouting();
 app.UseAuthorization();
 app.UseAuthentication();
 
-
+app.UseCors("AllowAll");
 
 app.MapControllerRoute(
     name: "default",

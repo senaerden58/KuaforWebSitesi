@@ -4,6 +4,7 @@ using KuaforWebSitesi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KuaforWebSitesi.Migrations
 {
     [DbContext(typeof(KuaforDBContext))]
-    partial class KuaforDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241224113058_iletisimKismi")]
+    partial class iletisimKismi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1276,6 +1279,31 @@ namespace KuaforWebSitesi.Migrations
                     b.HasKey("IletisimId");
 
                     b.ToTable("Iletisimler");
+                });
+
+            modelBuilder.Entity("KuaforWebSitesi.Models.Mesaj", b =>
+                {
+                    b.Property<int>("MesajID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MesajID"));
+
+                    b.Property<string>("Ad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Eposta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MesajIcerik")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MesajID");
+
+                    b.ToTable("Mesajlar");
                 });
 
             modelBuilder.Entity("KuaforWebSitesi.Models.Musteri", b =>
