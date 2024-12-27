@@ -188,3 +188,4 @@ C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Micr
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\RestSharp.dll
 C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SENA\source\repos\KuaforWebSitesi\KuaforWebSitesi\bin\Debug\net8.0\System.Net.Http.Json.dll

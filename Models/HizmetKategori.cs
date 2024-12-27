@@ -8,10 +8,10 @@ namespace KuaforWebSitesi.Models
 
     public class HizmetKategori
     {
-        public int HizmetKategoriID { get; set; }  // Kategorinin ID'si
-        public string KategoriAdi { get; set; }    // Kategori adı (Saç, Manikür vb.)
+        public int HizmetKategoriID { get; set; } 
+        public string KategoriAdi { get; set; }   
 
-        public virtual ICollection<Hizmetler>? Hizmetler { get; set; }  // Bu kategoriye ait hizmetler
+        public virtual ICollection<Hizmetler>? Hizmetler { get; set; }  
     }
 }
 

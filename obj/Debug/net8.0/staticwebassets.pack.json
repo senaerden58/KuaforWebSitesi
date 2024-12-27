@@ -57,6 +57,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\images\\acalisan1.jpeg",
+      "PackagePath": "staticwebassets\\images\\acalisan1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\images\\acalisan2.jpg",
+      "PackagePath": "staticwebassets\\images\\acalisan2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\images\\calisan3.jpg",
+      "PackagePath": "staticwebassets\\images\\calisan3.jpg"
+    },
+    {
       "Id": "C:\\Users\\SENA\\source\\repos\\KuaforWebSitesi\\KuaforWebSitesi\\wwwroot\\js\\Görünür.js",
       "PackagePath": "staticwebassets\\js\\Görünür.js"
     },

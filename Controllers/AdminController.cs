@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace KuaforWebSitesi.Controllers
 {
-    [Authorize(Roles = "Admin")]  // Ensures only users with "Admin" role can access the actions in this controller
+    [Authorize(Roles = "Admin")] 
     public class AdminController : Controller
     {
         private readonly KuaforDBContext db;
@@ -39,13 +39,10 @@ namespace KuaforWebSitesi.Controllers
             return View();
         }
 
-        // AdminPage method can also use role from the session
-
-    
-        // Logout action to clear session
+     
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear(); // Clear session data
+            HttpContext.Session.Clear(); 
             return RedirectToAction("Index", "Home");
         }
 

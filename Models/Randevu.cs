@@ -23,8 +23,8 @@ namespace KuaforWebSitesi.Models
 
         [Required]
         public TimeSpan Saat { get; set; }
-        public string Durum { get; set; } = "Bekliyor"; // Randevu durumu (Onaylandı, Beklemede, İptal Edildi vb.)
-        // Navigation properties
+        public string Durum { get; set; } = "Bekliyor"; 
+      
 
         public virtual Musteri Musteri { get; set; }
         public virtual Calisan Calisan { get; set; }

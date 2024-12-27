@@ -94,6 +94,10 @@
               "target": "Package",
               "version": "[112.1.0, )"
             },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "jQuery": {
               "target": "Package",
               "version": "[3.7.1, )"

@@ -5,7 +5,7 @@ namespace KuaforWebSitesi.Models
     public class Iletisim
     {
         [Key]
-        public int IletisimId { get; set; }  // Primary Key ekliyoruz
+        public int IletisimId { get; set; }  
         [Required(ErrorMessage = "Ad alanı zorunludur.")]
         public string Ad { get; set; }
         [Required(ErrorMessage = "E-posta alanı zorunludur.")]

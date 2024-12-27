@@ -7,14 +7,13 @@ namespace KuaforWebSitesi.Models
     {
         public string HashPassword(string password)
         {
-            // Salt oluşturuluyor
+         
             byte[] salt = new byte[16];
             using (var rng = new RNGCryptoServiceProvider())
             {
                 rng.GetBytes(salt);
             }
 
-            // Şifreyi hash'lemek
             string hashedPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
                 password: password,
                 salt: salt,
@@ -27,8 +26,7 @@ namespace KuaforWebSitesi.Models
 
         public bool VerifyPassword(string password, string storedHash)
         {
-            // Burada hash karşılaştırması yapılır
-            // Bu metodda hash karşılaştırma işlemi yapılacak.
+            
             return storedHash == HashPassword(password);
         }
     }

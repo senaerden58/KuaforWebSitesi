@@ -13,7 +13,7 @@ namespace KuaforWebSitesi.Controllers
         private readonly KuaforDBContext db;
         public VerimlilikViewController(HttpClient httpClient)
         {
-            _httpClient = httpClient;  // HttpClient'ı constructor üzerinden alıyoruz.
+            _httpClient = httpClient;  
         }
 
         public async Task<IActionResult> TumCalisanlarVerimlilik()
@@ -24,8 +24,8 @@ namespace KuaforWebSitesi.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonData = await response.Content.ReadAsStringAsync();
-                    var sonucListesi = JsonConvert.DeserializeObject<List<CalisanVerimlilik>>(jsonData);  // CalisanVerimlilik modelini kullanıyoruz
-                    return View(sonucListesi);  // Verileri view'e gönderiyoruz
+                    var sonucListesi = JsonConvert.DeserializeObject<List<CalisanVerimlilik>>(jsonData);  
+                    return View(sonucListesi);  
                 }
                 return View("Error");  
             }

@@ -9,8 +9,8 @@ namespace KuaforWebSitesi.Models
         public int GunID { get; set; }
 
         [Required]
-        public string GunAdi { get; set; } // Pazartesi, Salı, Çarşamba vb.
-        public virtual ICollection<CalisanGun> CalisanGunler { get; set; }  // Hangi çalışanların hangi günlerde çalıştığını tutar
+        public string GunAdi { get; set; }
+        public virtual ICollection<CalisanGun> CalisanGunler { get; set; } 
         //public virtual ICollection<CalisanSaat> CalisanSaatler { get; set; } // Hangi çalışanlar hangi saatlerde çalışıyor
     }
 }

@@ -11,13 +11,13 @@ namespace KuaforWebSitesi.Models
         public string HizmetAdi { get; set; } = null!;
 
         [Required]
-        public TimeSpan Sure { get; set; } // Hizmetin süresi
+        public TimeSpan Sure { get; set; } 
 
         [Required]
-        public decimal Fiyat { get; set; } // Hizmetin fiyatı
+        public decimal Fiyat { get; set; } 
         public int? HizmetKategoriID { get; set; }
         public HizmetKategori HizmetKategoriler { get; set; } = null!;
-        // Kategoriye bağlanma
+      
 
 
         public ICollection<Randevu>? Randevular { get; set; }

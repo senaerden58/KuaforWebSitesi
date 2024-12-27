@@ -46,9 +46,9 @@ namespace KuaforWebSitesi.Controllers
         /*tamamlandı*/
         public IActionResult CalisanEkle()
         {
-            // Hizmetler ve günler için ViewBag'leri dolduruyoruz
-            ViewBag.Hizmetler = db.Hizmetler.ToList(); // Tüm hizmetler
-            ViewBag.Gunler = db.Gunler.ToList();       // Tüm günler
+           
+            ViewBag.Hizmetler = db.Hizmetler.ToList();
+            ViewBag.Gunler = db.Gunler.ToList();       
             return View();
         }
         /*tamamlandı*/
@@ -80,14 +80,14 @@ namespace KuaforWebSitesi.Controllers
 
             try
             {
-                // Şifreyi hash'liyoruz
+               
                 calisan.CalisanSifre = _passwordHasher.HashPassword(calisan, calisan.CalisanSifre);
 
-                // Çalışanı veritabanına ekliyoruz
+               
                 db.Calisanlar.Add(calisan);
                 await db.SaveChangesAsync();
 
-                // Çalışanın hizmetlerini ilişkilendiriyoruz
+                
                 foreach (var hizmetID in SecilenHizmetler)
                 {
                     db.CalisanHizmetler.Add(new CalisanHizmetler
@@ -131,7 +131,7 @@ namespace KuaforWebSitesi.Controllers
         [HttpGet]
         public IActionResult CalisanGuncelle(int id)
         {
-            // id parametresinin doğru şekilde alındığını kontrol edin
+            // id parametresinin doğru şekilde alındığını kontrol ediyoruz
             Console.WriteLine($"Gelen CalisanID: {id}");
 
             var calisan = db.Calisanlar.SingleOrDefault(m => m.CalisanID == id);

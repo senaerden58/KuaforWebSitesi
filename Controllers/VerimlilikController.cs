@@ -40,10 +40,10 @@ namespace KuaforWebSitesi.Controllers
                                            join h in db.Hizmetler on r.HizmetID equals h.HizmetID
                                            where r.CalisanID == calisanId && h.Sure != null
                                            select h.Sure.TotalMinutes)
-                                    .AsEnumerable()  // Get data into memory
+                                    .AsEnumerable()  
                                     .Sum();
 
-                // Eğer toplam hizmet süresi 0 ise, sıfır kabul et ve hesaplamayı buna göre yap
+              
                 if (calisanHizmetSuresi == 0)
                 {
                     calisanHizmetSuresi = 0;
@@ -55,7 +55,7 @@ namespace KuaforWebSitesi.Controllers
                                           join h in db.Hizmetler on r.HizmetID equals h.HizmetID
                                           where h.Sure != null
                                           select h.Sure.TotalMinutes)
-                                  .AsEnumerable()  // Get data into memory
+                                  .AsEnumerable() 
                                   .Sum();
 
                 // Eğer toplam hizmet süresi 0 ise, sıfır kabul et

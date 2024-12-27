@@ -5,6 +5,11 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
 //https://localhost:7035/api/Iletisim
+
+
+//DELETE https://localhost:7035/api/Iletisim/2 !delete yapmayı unutma postman
+
+
 namespace KuaforWebSitesi.Controllers
 {
     [Route("api/[controller]")]
@@ -36,25 +41,24 @@ namespace KuaforWebSitesi.Controllers
 
             try
             {
-                // Mesajı veritabanına ekliyoruz
+              
                 await db.Iletisimler.AddAsync(model);
                 await db.SaveChangesAsync();
 
-                // Başarılı işlem sonrası mesajı döndürüyoruz
                 return Ok(new { message = "Mesajınız başarıyla alındı, teşekkür ederiz." });
             }
             catch (Exception ex)
             {
-                // Hata durumunda loglama yapıyoruz ve kullanıcıya uygun mesaj dönüyoruz
+               
                 Console.WriteLine($"Hata: {ex.Message}");
                 return StatusCode(500, new { message = "Bir hata oluştu. Lütfen tekrar deneyin." });
             }
         }
 
-        // E-posta geçerliliğini kontrol eden fonksiyon
+       
         private bool IsValidEmail(string email)
         {
-            // Basit bir e-posta regex kontrolü
+           
             var emailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
             return emailRegex.IsMatch(email);
         }
@@ -64,22 +68,58 @@ namespace KuaforWebSitesi.Controllers
         {
             try
             {
-                var mesajlar = db.Iletisimler.ToList();  // Veritabanındaki tüm mesajları alıyoruz
+                var mesajlar = db.Iletisimler.ToList();  
 
                 if (mesajlar == null || mesajlar.Count == 0)
                 {
                     return NotFound(new { message = "Hiç mesaj bulunmamaktadır." });
                 }
 
-                return Ok(mesajlar);  // Mesajları geri döndürüyoruz
+                return Ok(mesajlar);  
             }
             catch (Exception ex)
             {
-                // Hata durumunda geri dönecek mesaj
+             
                 Console.WriteLine($"Hata: {ex.Message}");
                 return StatusCode(500, new { message = "Mesajlar alınırken bir hata oluştu." });
             }
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMesaj(int id)
+        {
+            Console.WriteLine($"Received DELETE request for ID: {id}");
+
+            try
+            {
+               
+                Console.WriteLine($"Attempting to delete message with ID: {id}");
+
+                var iletisim = await db.Iletisimler.FirstOrDefaultAsync(x => x.IletisimId == id);
+
+              
+                if (iletisim == null)
+                {
+                    Console.WriteLine($"Mesaj ID {id} bulunamadı.");
+                    return NotFound(new { message = "Mesaj bulunamadı." });
+                }
+
+                db.Iletisimler.Remove(iletisim);
+                await db.SaveChangesAsync();
+
+                
+                Console.WriteLine($"Mesaj ID {id} başarıyla silindi.");
+                return Ok(new { message = "Mesaj başarıyla silindi." });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Hata oluştu: {ex.Message}");
+                return StatusCode(500, new { message = "Bir hata oluştu: " + ex.Message });
+            }
+        }
+
+
     }
 }
+
 

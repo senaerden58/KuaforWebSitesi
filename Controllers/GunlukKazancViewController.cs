@@ -5,6 +5,9 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
+//apiiii
+
+
 namespace KuaforWebSitesi.Controllers
 {
     public class GunlukKazancViewController : Controller
@@ -13,7 +16,7 @@ namespace KuaforWebSitesi.Controllers
         private readonly KuaforDBContext db;
         public GunlukKazancViewController(HttpClient httpClient)
         {
-            _httpClient = httpClient;  // HttpClient'ı constructor üzerinden alıyoruz.
+            _httpClient = httpClient; 
         }
         public async Task<IActionResult> GunlukKazanc()
         {
@@ -23,8 +26,8 @@ namespace KuaforWebSitesi.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonData = await response.Content.ReadAsStringAsync();
-                    var sonucListesi = JsonConvert.DeserializeObject<List<GunlukKazancViewModel>>(jsonData);  // CalisanVerimlilik modelini kullanıyoruz
-                    return View(sonucListesi);  // Verileri view'e gönderiyoruz
+                    var sonucListesi = JsonConvert.DeserializeObject<List<GunlukKazancViewModel>>(jsonData);  
+                    return View(sonucListesi); 
                 }
                 return View("Error");
             }

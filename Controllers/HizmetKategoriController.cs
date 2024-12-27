@@ -10,6 +10,7 @@ using static System.Web.Razor.Parser.SyntaxConstants;
 using System.Security.Cryptography;
 using System.Text;
 
+
 namespace KuaforWebSitesi.Controllers
 {
     [Route("api/[controller]")]

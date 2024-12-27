@@ -76,11 +76,10 @@ namespace KuaforWebSitesi.Controllers
                 await db.SaveChangesAsync();
                 var musteriRol = new MusteriRol
                 {
-                    MusteriID = musteri.MusteriID,  // Yeni kaydedilen müşteri ID'sini alıyoruz
+                    MusteriID = musteri.MusteriID, 
                     RolID = 2 // Varsayılan olarak "Müşteri" rolünü atıyoruz
                 };
 
-                // MusteriRol ilişkilendirmesini kaydediyoruz
                 db.MusteriRoller.Add(musteriRol);
                 await db.SaveChangesAsync();
                 TempData["msj"] = $"{musteri.MusteriAd} adlı müşteri kaydedildi.";
@@ -88,7 +87,7 @@ namespace KuaforWebSitesi.Controllers
             }
             catch (Exception ex)
             {
-                // Hata durumunda mesaj göster
+                
                 TempData["msj"] = $"Kayıt işlemi sırasında bir hata oluştu: {ex.Message}";
                 return RedirectToAction("MusteriEkle");
             }
@@ -126,12 +125,12 @@ namespace KuaforWebSitesi.Controllers
                 HttpContext.Session.SetString("MusteriID", mevcutMusteri.MusteriID.ToString());
                 HttpContext.Session.SetString("MusteriAd", mevcutMusteri.MusteriAd);
                 HttpContext.Session.SetString("MusteriMail", mevcutMusteri.MusteriMail);
-                var rol = mevcutMusteri.MusteriRoller.FirstOrDefault()?.Rol; // İlk ilişkili rol alınıyor
+                var rol = mevcutMusteri.MusteriRoller.FirstOrDefault()?.Rol; 
                 if (rol != null && rol.RolID == 1) // RoleID kontrolü
                 {
-                    HttpContext.Session.SetInt32("RolID", rol.RolID); // RolID session'a kaydediliyor
+                    HttpContext.Session.SetInt32("RolID", rol.RolID); 
                     TempData["msj"] = "Admin girişi başarılı!";
-                    return RedirectToAction("Index", "Home"); // Admin paneline yönlendirilir
+                    return RedirectToAction("Index", "Home");
                 }
                 TempData["msj"] = "Giriş başarılı!";
                 return RedirectToAction("Index", "Home");
@@ -164,10 +163,10 @@ namespace KuaforWebSitesi.Controllers
             if (musteri == null)
             {
                 TempData["msj"] = "Kullanıcı bilgilerine ulaşılamadı.";
-                return RedirectToAction("MusteriGoruntule", "Admin");  // Adminin müşteri arama sayfasına yönlendirme
+                return RedirectToAction("MusteriGoruntule", "Admin"); 
             }
 
-            return View(musteri);  // Müşteri bilgilerini adminin görebileceği şekilde görüntüleme
+            return View(musteri);  
         }
 
         /*admin*/
@@ -175,22 +174,22 @@ namespace KuaforWebSitesi.Controllers
         [HttpGet]
         public IActionResult MusteriAra(string aramaKriteri)
         {
-            // Arama kriteri girilmişse
+
             if (!string.IsNullOrEmpty(aramaKriteri))
             {
-                // Ad, soyad veya mail adresine göre arama yapıyoruz
+               
                 var bulunanMusteriler = db.Musteriler
                     .Where(m => m.MusteriAd.Contains(aramaKriteri) ||
                                 m.MusteriSoyad.Contains(aramaKriteri) ||
                                 m.MusteriMail.Contains(aramaKriteri))
                     .ToList();
 
-                return View("MusteriList", bulunanMusteriler);  // Bulunan müşteriler listelenir
+                return View("MusteriList", bulunanMusteriler);  
             }
 
-            // Eğer arama yapılmamışsa, tüm müşteriler listelenir
+
             var tumMusteriler = db.Musteriler.ToList();
-            return View("MusteriList", tumMusteriler);  // Tüm müşteri listesi gösterilir
+            return View("MusteriList", tumMusteriler);  
         }
 
         /*admin*/
@@ -220,7 +219,7 @@ namespace KuaforWebSitesi.Controllers
         public IActionResult ProfilGoruntule()
         {
 
-            // Oturumdaki müşteri ID'sini al
+            
             var musteriID = HttpContext.Session.GetString("MusteriID");
             if (string.IsNullOrEmpty(musteriID))
             {
@@ -242,7 +241,7 @@ namespace KuaforWebSitesi.Controllers
                 .OrderBy(r => r.Tarih)
                  .ToList();
 
-            // Listeyi View'e gönder
+           
             ViewBag.AktifRandevular = aktifRandevular;
 
             return View(musteri);
@@ -277,27 +276,27 @@ namespace KuaforWebSitesi.Controllers
                 return RedirectToAction("ProfilGuncelle");
             }
 
-            // Yeni şifre mevcut şifre ile aynı olmamalı
+          
             if (eskiSifre == yeniSifre)
             {
                 TempData["msj"] = "Yeni şifre mevcut şifre ile aynı olamaz.";
                 return RedirectToAction("ProfilGuncelle");
             }
 
-            // Yeni şifreyi ve onay şifresini kontrol etme
+          
             if (yeniSifre != yeniSifreOnayi)
             {
                 TempData["msj"] = "Yeni şifreler eşleşmiyor.";
                 return RedirectToAction("ProfilGuncelle");
             }
 
-            // Yeni şifreyi şifreleyerek güncelleme
+        
             musteri.MusteriSifre = passwordHasher.HashPassword(musteri, yeniSifre);
             db.Musteriler.Update(musteri);
             await db.SaveChangesAsync();
 
             TempData["msj"] = "Şifre başarıyla güncellendi.";
-            return RedirectToAction("ProfilGoruntule"); // Profil görüntüleme sayfasına yönlendir
+            return RedirectToAction("ProfilGoruntule"); 
         }
 
 
@@ -321,7 +320,7 @@ namespace KuaforWebSitesi.Controllers
                 return RedirectToAction("MusteriGiris");
             }
 
-            return View(musteri); // Mevcut müşteri bilgileriyle formu göster
+            return View(musteri); 
         }
 
 
@@ -333,10 +332,10 @@ namespace KuaforWebSitesi.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Hatalı form durumunda mevcut modelle tekrar formu döndür
+                
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
-                    Console.WriteLine("Hata: " + error.ErrorMessage);  // Hata mesajlarını konsola yazdırıyoruz
+                    Console.WriteLine("Hata: " + error.ErrorMessage);  
                 }
 
                 TempData["msj"] = "Lütfen tüm alanları doldurun.";
@@ -358,22 +357,22 @@ namespace KuaforWebSitesi.Controllers
                 return RedirectToAction("MusteriGiris");
             }
 
-            // E-posta kontrolü, güncellenen müşteri hariç
+           
             var varOlanEmailler = db.Musteriler
                 .FirstOrDefault(m => m.MusteriMail == musteri.MusteriMail && m.MusteriID != mevcutMusteri.MusteriID);
             if (varOlanEmailler != null)
             {
                 TempData["msj"] = "Bu e-posta adresi başka bir müşteri tarafından kullanılıyor.";
-                return View(musteri); // Hata mesajıyla birlikte tekrar formu döndürüyoruz
+                return View(musteri);
             }
 
-            // Telefon kontrolü, güncellenen müşteri hariç
+            
             var varOlanTelefonlar = db.Musteriler
                 .FirstOrDefault(m => m.MusteriTelefon == musteri.MusteriTelefon && m.MusteriID != mevcutMusteri.MusteriID);
             if (varOlanTelefonlar != null)
             {
                 TempData["msj"] = "Bu telefon numarası başka bir müşteri tarafından kullanılıyor.";
-                return View(musteri); // Hata mesajıyla birlikte tekrar formu döndürüyoruz
+                return View(musteri); 
             }
 
 
@@ -383,7 +382,7 @@ namespace KuaforWebSitesi.Controllers
             if (result == PasswordVerificationResult.Failed)
             {
                 TempData["msj"] = "Şifre yanlış. Lütfen tekrar deneyin.";
-                return View(musteri);  // Formu yeniden döndürüyoruz
+                return View(musteri);  
             }
 
             mevcutMusteri.MusteriAd = musteri.MusteriAd;
@@ -465,10 +464,9 @@ namespace KuaforWebSitesi.Controllers
             Debug.WriteLine("abc");
 
 
-            // Session'dan kullanıcı bilgilerini kontrol et
-            var userRoleId = HttpContext.Session.GetInt32("RolID"); // Kullanıcı rol ID'sini session'dan alıyoruz
-            Console.WriteLine("User Role ID: " + userRoleId); // Debug amacıyla, konsola yazdırıyoruz
-            if (userRoleId == 0 || userRoleId == 2 || userRoleId == null) // Eğer oturumda kullanıcı bilgisi yoksa
+            var userRoleId = HttpContext.Session.GetInt32("RolID"); 
+            Console.WriteLine("User Role ID: " + userRoleId);
+            if (userRoleId == 0 || userRoleId == 2 || userRoleId == null) 
             {
                 Debug.WriteLine("giris yapamamissin");
                 return RedirectToAction("MusteriGiris", "Musteri");
@@ -476,7 +474,7 @@ namespace KuaforWebSitesi.Controllers
 
             Debug.WriteLine("User Role ID: " + userRoleId);
 
-            // Giriş yapmışsa müşteri listesini getir
+           
             var musteriler = db.Musteriler.ToList();
             ViewBag.Msj = TempData["msj"];
             return View(musteriler);

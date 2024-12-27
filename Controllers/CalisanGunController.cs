@@ -16,7 +16,7 @@ namespace KuaforWebSitesi.Controllers
         }
 
         // Çalışanların çalışma saatlerini güncelleme
-        // Çalışanların çalışma saatlerini güncelleme
+      
         public IActionResult UpdateCalisanGunlerHours()
         {
             // Tüm CalisanGunler kayıtlarını alıyoruz
@@ -32,34 +32,34 @@ namespace KuaforWebSitesi.Controllers
             // Veritabanına kaydediyoruz
             db.SaveChanges();
 
-            // Başarılı mesajı ile geri dönüyoruz
+         
             TempData["msj"] = "Çalışan saatleri başarıyla güncellenmiştir.";
-            return RedirectToAction("Index");  // İstediğiniz bir view'a yönlendirebilirsiniz
+            return RedirectToAction("Index");  
         }
 
 
         // Yeni çalışanlar için varsayılan çalışma saatleri ekleme
         public IActionResult AddDefaultWorkingHoursForNewEmployees()
         {
-            // Yeni çalışanlar için varsayılan çalışma saatleri ekliyoruz
+
             var yeniCalisanGunler = db.Calisanlar
                 .Select(c => new CalisanGun
                 {
                     CalisanID = c.CalisanID,
-                    GunID = 1,  // Örnek olarak, tüm çalışanlar için ilk günü seçiyorum. Bu kısmı ihtiyaca göre değiştirebilirsiniz.
+                    GunID = 1,
                     BaslangicSaati = new TimeSpan(9, 0, 0),  // 09:00
                     BitisSaati = new TimeSpan(18, 0, 0)     // 18:00
                 })
                 .ToList();
 
-            // Yeni çalışma saatlerini veritabanına ekliyoruz
+
             db.CalisanGunler.AddRange(yeniCalisanGunler);
             db.SaveChanges();
 
-            // Başarılı mesajı ile geri dönüyoruz
+
             TempData["msj"] = "Yeni çalışanlar için çalışma saatleri başarıyla eklendi.";
-            return RedirectToAction("Index");  // İstediğiniz bir view'a yönlendirebilirsiniz
-        }
+            return RedirectToAction("Index");
+        }  
 
         // Çalışan saatlerini görüntüleme
         public IActionResult ViewCalisanGunler()
@@ -69,7 +69,7 @@ namespace KuaforWebSitesi.Controllers
                 .Include(cg => cg.Gunler)
                 .ToList();
 
-            return View(calisanGunler);  // İlgili View'ı döndürüyoruz
+            return View(calisanGunler); 
         }
     }
 }

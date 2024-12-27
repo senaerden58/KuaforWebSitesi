@@ -8,7 +8,7 @@
 
         public int RolID { get; set; } 
         public Rol Rol { get; set; }
-        public MusteriRol(int rolID = 2) // Default value set to 2 (Customer)
+        public MusteriRol(int rolID = 2) 
         {
             RolID = rolID;
         }

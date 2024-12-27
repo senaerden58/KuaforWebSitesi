@@ -11,6 +11,9 @@ wwwroot\css\ProfilGoruntule.css
 wwwroot\css\randevu.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\acalisan1.jpeg
+wwwroot\images\acalisan2.jpg
+wwwroot\images\calisan3.jpg
 wwwroot\js\dropDown.js
 wwwroot\js\Görünür.js
 wwwroot\js\randevu.js

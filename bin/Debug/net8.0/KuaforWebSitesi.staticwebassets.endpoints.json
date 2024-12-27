@@ -1151,6 +1151,252 @@
       ]
     },
     {
+      "Route": "images/acalisan1.dt30b66nu5.jpeg",
+      "AssetFile": "images/acalisan1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:05:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dt30b66nu5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+        },
+        {
+          "Name": "label",
+          "Value": "images/acalisan1.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "images/acalisan1.jpeg",
+      "AssetFile": "images/acalisan1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:05:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ufb9zGlPY800xWrIbGUDb1linuLicl4HU6+Ik7zr/XU="
+        }
+      ]
+    },
+    {
+      "Route": "images/acalisan2.6dcs04z3pb.jpg",
+      "AssetFile": "images/acalisan2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:07:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dcs04z3pb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+        },
+        {
+          "Name": "label",
+          "Value": "images/acalisan2.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/acalisan2.jpg",
+      "AssetFile": "images/acalisan2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:07:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mq39Hz1p7eYfKGGhvW9xCAVEudjldb11uoI1YFU9a5Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/calisan3.inoi6cn2sp.jpg",
+      "AssetFile": "images/calisan3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:08:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "inoi6cn2sp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
+        },
+        {
+          "Name": "label",
+          "Value": "images/calisan3.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/calisan3.jpg",
+      "AssetFile": "images/calisan3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Dec 2024 16:08:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-skxisHRAJOS4Bh+N7iCX+S5QTRIpVqTpEkTfB5/bizY="
+        }
+      ]
+    },
+    {
       "Route": "js/Görünür.js",
       "AssetFile": "js/Görünür.js",
       "Selectors": [],

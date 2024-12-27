@@ -135,7 +135,6 @@
         }
 
         // Çalışan seçildiğinde günleri yükle
-                      // Çalışan seçildiğinde günleri yükle
                 async function GetCalisanGunler() {
             const calisanID = document.getElementById("calisan").value;
             const Tarih = document.getElementById("Tarih");
@@ -151,10 +150,10 @@
                     const gunlerMap = { "pazartesi": 1, "salı": 2, "çarşamba": 3, "perşembe": 4, "cuma": 5, "cumartesi": 6, "pazar": 0 };
                     const availableDays = gunler.map(gun => gunlerMap[gun.toLowerCase()]);
 
-                    // Enable the date input
+                  
                     Tarih.disabled = false;
 
-                    // Set the available days' logic
+                   
                     Tarih.addEventListener('input', function() {
                         const selectedDate = new Date(Tarih.value);
                         const selectedDay = selectedDate.getDay();
@@ -166,7 +165,7 @@
                         
                     });
                       calisanGunlerNotu.textContent = `Bu çalışan şu günlerde çalışıyor: ${gunler.join(", ")}`;
-                    // Display the available days for the user
+                  
                   
                 } else {
                     alert("Çalışan günleri yüklenemedi.");
@@ -231,17 +230,13 @@
             }
         }
 
-        // Tarih değiştiğinde saatlerin güncellenmesi
-       
-
-        
 
         // Tarih değiştiğinde saatlerin güncellenmesi
         document.getElementById("Tarih").addEventListener("change", function () {
             getUygunSaatler(); // Saatler değişen tarihe göre yeniden yüklenir
         });
 
-        // Event listeners for date and service changes to trigger saatler
+       
         document.getElementById("hizmet").addEventListener("change", getUygunSaatler);
         document.getElementById("Tarih").addEventListener("change", getUygunSaatler);
 
