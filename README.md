@@ -9,3 +9,5 @@ Admin ise tüm müşterileri görebilir , tüm çalışanları görebilir ve ça
 Aynı zamanda admin çalışanların verimliliğini , günlük kazançlarını takip edebilir. 
 Müşteri olunsa da olunmasa da web sitesine yorum yazılabilir ve bu yorumları sadece admin görebilir .
 Admin ve müşteri ayrımı session ile yapılmıştır. 
+
+Ekstra yapay zeka ile saçlarınıza renk katabilirsiniz.
