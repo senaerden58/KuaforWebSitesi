@@ -41,14 +41,12 @@ namespace KuaforWebSitesi.Controllers
                 request.AddParameter("hair_type", hairStyle);
 
 
-                request.AddParameter("hair_type", "201");
-                request.AddParameter("task_type", "hairstyle"); 
-                request.AddParameter("hair_type", "101");
-                request.AddParameter("task_type", "hairstyle"); 
-                request.AddParameter("hair_type", "801");
-                request.AddParameter("task_type", "hairstyle"); 
+                request.AddParameter("hair_type", hairStyle);
+                request.AddParameter("task_type", "hairstyle"); // task_type sabit olarak kalır
 
                 var response = await client.ExecuteAsync(request);
+
+            
                 if (response.IsSuccessful)
                 {
                     var jsonResponse = System.Text.Json.JsonDocument.Parse(response.Content);
